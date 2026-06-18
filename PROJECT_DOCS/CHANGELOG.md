@@ -1,0 +1,67 @@
+# Changelog
+
+All notable project changes should be documented here. Newest entries go first.
+
+## 2026-06-18
+
+### Added
+
+- Added a mobile Knowledge Map drawer so selected node content appears before the browser/filter panel on mobile.
+- Added compact mobile Team Builder slot styling so all three selected fighters can remain visible.
+- Added `TASKS.md` as the active project work queue.
+- Added `TASK_REQUEST.md` as the currently active development request file.
+- Added the required PROJECT_DOCS read/update workflow to `ROADMAP.md` and `FEATURES.md`.
+- Added Phase 2 Content Formatting + Editor UX implementation for grouped filters and Knowledge Map copy cleanup.
+- Added Phase 1 Content Formatting + Editor UX implementation for structured DHC and assist rendering.
+- Added `Current Priority: Content Formatting + Editor UX` to the roadmap.
+- Added a docs-only task checklist for content formatting, tag cleanup, grouped filters, Knowledge Map naming, Movie Room structure, and admin inline editing.
+- Added PROJECT_DOCS system.
+- Added roadmap, vision, features and future ideas tracking.
+- Added Knowledge Map prototype.
+- Added Movie Room prototype.
+- Added Team Builder modal improvements.
+- Added `CONTENT_GUIDELINES.md` quick reference.
+- Merged content guideline rules into Roadmap, Features, Future Ideas, and Vision.
+
+### Changed
+
+- Structured note rendering now displays multiple DHC/assist items as lists instead of merging them into one paragraph.
+- Imported note cleanup now repairs common glued label boundaries such as missing separators before `Neutral`, `Control`, `Damage`, `Mix`, `Support`, and similar content headings.
+- Mobile Team Builder cards now use compact horizontal cards instead of tall showcase cards.
+- Knowledge Map mobile navigation is collapsible while desktop remains open.
+- Established `PROJECT_DOCS` as the primary project memory and source of truth instead of chat history.
+- Documented how future feature requests should move through `FUTURE_IDEAS.md`, `ROADMAP.md`, `TASKS.md`, and `TASK_REQUEST.md`.
+- Replaced giant flat tag dropdown behavior with grouped filter categories:
+  - Position.
+  - Playstyle.
+  - Team Role.
+  - Assist Type.
+  - Team Needs.
+- Renamed the public `Network` tab/label to `Knowledge Map`.
+- Improved Knowledge Map empty-state and generic relationship copy so it explains connections or missing data more clearly.
+- DHC notes now render as structured blocks instead of raw paragraph dumps when source data exists.
+- Assist notes now render as structured blocks with Provides, Best For, Why, and Tags.
+- Tags are normalized before rendering as chips or filters, removing duplicates, trailing periods, sentence-like tags, comma-heavy fragments, and obvious imported PDF leftovers.
+- Updated `ROADMAP.md`, `FEATURES.md`, and `CONTENT_GUIDELINES.md` to treat Phase 1 formatting as implemented.
+- Expanded project docs so they preserve implementation details and planning context.
+- Documented tag quality rules:
+  - Use short concepts like Pressure, Mix, Battery.
+  - Do not use sentence-like tags.
+- Documented DHC note structure:
+  - Who likes DHCing into this.
+  - Why.
+  - Who this character likes DHCing into.
+  - Why.
+  - Special interactions.
+- Documented assist note structure:
+  - Provides.
+  - Best For.
+  - Why.
+  - Tags.
+- Documented grouped filter, Knowledge Map naming, Movie Room structure, and admin inline editing expectations in `CONTENT_GUIDELINES.md`.
+
+### Notes
+
+- Future feature work should update these docs during the same pass.
+- `CONTENT_GUIDELINES.md` remains the compact formatting reference.
+- The main docs now include the content philosophy so planning and implementation stay aligned.

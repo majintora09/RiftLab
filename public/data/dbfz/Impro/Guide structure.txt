@@ -1,0 +1,316 @@
+# CHARACTER SYNERGY TEMPLATE
+
+## Character Identity
+
+### Primary Roles
+
+* Role 1:
+* Role 2:
+* Role 3:
+
+### Team Archetypes
+
+* Rushdown
+* Mix
+* Neutral
+* Zoning
+* Grappler
+* Support
+* Resource Generator
+* Resource Spender
+
+### One-Sentence Summary
+
+* Example: "A neutral-focused anchor that converts meter into massive damage."
+
+---
+
+## What This Character Contributes
+
+### Damage
+
+* Strengths:
+* Weaknesses:
+* Notes:
+
+### Neutral
+
+* Strengths:
+* Weaknesses:
+* Notes:
+
+### Mix
+
+* Strengths:
+* Weaknesses:
+* Notes:
+
+### Support
+
+* Strengths:
+* Weaknesses:
+* Notes:
+
+### Resource Economy
+
+* Builds Meter:
+* Spends Meter:
+* Benefits From Meter:
+* Notes:
+
+---
+
+## Team Placement
+
+### Point
+
+* Viable? (Yes/No/Situational)
+* Why:
+* Requirements:
+
+### Mid
+
+* Viable? (Yes/No/Situational)
+* Why:
+* Requirements:
+
+### Anchor
+
+* Viable? (Yes/No/Situational)
+* Why:
+* Requirements:
+
+### Preferred Position
+
+* Position:
+* Explanation:
+
+---
+
+## Assist Analysis
+
+### A Assist
+
+#### Provides
+
+* Neutral:
+* Mix:
+* Combo Extensions:
+* Utility:
+
+#### Best Partners
+
+*
+*
+*
+
+#### Weak Partners
+
+*
+*
+*
+
+---
+
+### B Assist
+
+#### Provides
+
+* Neutral:
+* Mix:
+* Combo Extensions:
+* Utility:
+
+#### Best Partners
+
+*
+*
+*
+
+#### Weak Partners
+
+*
+*
+*
+
+---
+
+### C Assist
+
+#### Provides
+
+* Neutral:
+* Mix:
+* Combo Extensions:
+* Utility:
+
+#### Best Partners
+
+*
+*
+*
+
+#### Weak Partners
+
+*
+*
+*
+
+---
+
+## DHC Synergy
+
+### Characters That Love DHCing Into This Character
+
+*
+*
+*
+
+#### Why
+
+*
+
+---
+
+### Characters This Character Loves DHCing Into
+
+*
+*
+*
+
+#### Why
+
+*
+
+---
+
+### Special DHC Interactions
+
+*
+*
+*
+
+---
+
+## Best Team Archetypes
+
+### Control → Cashout
+
+#### Why It Works
+
+*
+
+#### Example Teams
+
+*
+*
+
+---
+
+### Mix → Kill
+
+#### Why It Works
+
+*
+
+#### Example Teams
+
+*
+*
+
+---
+
+### Rushdown → Pressure
+
+#### Why It Works
+
+*
+
+#### Example Teams
+
+*
+*
+
+---
+
+## Win Conditions
+
+### Primary Win Condition
+
+*
+
+### Secondary Win Condition
+
+*
+
+### Late-Game Win Condition
+
+*
+
+---
+
+## Team Building Questions
+
+### This Character Wants Teammates Who...
+
+*
+*
+*
+
+### This Character Struggles With Teammates Who...
+
+*
+*
+*
+
+### Before Adding This Character Ask:
+
+* Does my team need damage?
+* Does my team need neutral?
+* Does my team need mix?
+* Does my team need support?
+* Does my team generate enough meter?
+
+---
+
+## Matchup Impact
+
+### Strong Against
+
+*
+*
+*
+
+### Struggles Against
+
+*
+*
+*
+
+### Team Types It Helps Beat
+
+*
+*
+*
+
+### Team Types It Struggles To Support Against
+
+*
+*
+*
+
+---
+
+## Summary
+
+### Why Pick This Character?
+
+*
+
+### Why Avoid This Character?
+
+*
+
+### Final Verdict
+
+*

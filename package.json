@@ -1,0 +1,10 @@
+{
+  "name": "dbfz-team-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "import-dustloop": "node scripts/import-dustloop.js",
+    "build": "node scripts/build-static.js"
+  }
+}
