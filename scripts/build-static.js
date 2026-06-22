@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const output = path.join(root, "dist");
-const basePath = normalizeBasePath(process.env.FG_LAB_BASE_PATH || "/");
+const basePath = "/";
 const routes = [
   "/roadmap",
   "/games/dbfz",
@@ -37,8 +37,6 @@ copyTree("public/data", "public/data", (source) => !source.includes(`${path.sep}
 const sourceHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const builtHtml = sourceHtml.replaceAll("__FG_LAB_BASE_PATH__", basePath);
 writeFile("index.html", builtHtml);
-writeFile("404.html", builtHtml);
-writeFile(".nojekyll", "");
 
 for (const route of routes) {
   writeFile(path.join(route.replace(/^\//, ""), "index.html"), builtHtml);
@@ -49,11 +47,6 @@ writeFile("build-info.json", `${JSON.stringify({ basePath, routes, generatedAt: 
 console.log(`Static build complete: ${path.relative(root, output)}`);
 console.log(`Base path: ${basePath}`);
 console.log(`Generated routes: ${routes.length}`);
-
-function normalizeBasePath(value) {
-  const clean = String(value || "/").trim().replace(/^\/+|\/+$/g, "");
-  return clean ? `/${clean}/` : "/";
-}
 
 function copyFiles(files) {
   for (const relativePath of files) {

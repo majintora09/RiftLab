@@ -8,7 +8,7 @@ This file is the active project work queue. Use it with `TASK_REQUEST.md` before
 
 Current critical work.
 
-- Keep Cloudflare Pages and GitHub Pages static builds green as routes and assets change.
+- Keep the Cloudflare Pages static build green as routes and assets change.
 - Finish the Content Formatting + Editor UX priority.
 - Audit imported character content for raw transcript-style formatting.
 - Continue auditing character Synergies and DHC notes anywhere they still render as raw text.
@@ -23,6 +23,7 @@ Current critical work.
 - Expand the completed "Who pairs with my character?" prototype into team-weakness and easy-team decision flows.
 - Keep recommendations, reasoning, tradeoffs, and next actions more prominent than raw reference data.
 - Keep the shared decision contract and 2XKO collections small, modular, and source-backed.
+- Use the completed Research Import Workflow to capture and approve 2XKO evidence before updating recommendations.
 
 ## Medium Priority
 
@@ -38,7 +39,7 @@ Important but not blocking.
 - Maintain frame data readability where it supports decisions, without expanding FG Lab into a frame-data wiki.
 - Keep DBZ Broly tagged as Grappler.
 - Keep character page clicks separate from Team Builder modal behavior.
-- Use the completed Research Vault workflow to add and review 2XKO records before building recommendations.
+- Merge approved Research Vault exports into the canonical 2XKO synergy files after human review.
 - Replace TODO fields in the 15 2XKO intelligence records only after relevant Research Vault evidence is verified.
 - Populate the 105 2XKO synergy files incrementally from verified Research Vault sources.
 - Replace Synergy Engine mock records with reviewed recommendations before presenting them as gameplay guidance.

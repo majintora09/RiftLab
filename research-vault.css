@@ -14,6 +14,39 @@
   gap: 16px;
 }
 
+.vault-workflow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 1px;
+  border: 1px solid var(--line);
+  list-style: none;
+  background: var(--line);
+}
+
+.vault-workflow li {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #0c1019;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.vault-workflow span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px solid rgba(114, 221, 255, 0.45);
+  color: #9ce8ff;
+}
+
 .vault-heading {
   align-items: end;
   border: 1px solid var(--line);
@@ -123,8 +156,21 @@
 
 .vault-filters {
   display: grid;
-  grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(150px, 1fr));
+  grid-template-columns: minmax(220px, 2fr) repeat(4, minmax(130px, 1fr));
   gap: 8px;
+}
+
+.vault-export-actions,
+.vault-review-actions,
+.research-record__context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vault-export-actions .platform-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
 }
 
 .vault-results-section {
@@ -176,6 +222,56 @@
   line-height: 1.5;
 }
 
+.research-record__context strong {
+  border-left: 2px solid #72ddff;
+  padding: 5px 8px;
+  background: rgba(114, 221, 255, 0.07);
+  font-size: 10px;
+}
+
+.research-record__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.research-record__meta div {
+  border: 1px solid var(--line);
+  padding: 8px;
+}
+
+.research-record__meta dt {
+  color: #9ce8ff;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.research-record__meta dd {
+  margin: 3px 0 0;
+  color: var(--text);
+  font-size: 10px;
+}
+
+.vault-review-actions button {
+  min-height: 40px;
+  border: 1px solid rgba(114, 221, 255, 0.35);
+  padding: 8px 11px;
+  background: #090d15;
+  color: #b8efff;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.vault-review-actions button:hover,
+.vault-review-actions button:focus-visible {
+  border-color: #72ddff;
+  color: #fff;
+}
+
 .research-tags span {
   border: 1px solid rgba(114, 221, 255, 0.28);
   padding: 4px 7px;
@@ -191,6 +287,11 @@
 }
 
 .vault-verification--verified {
+  border-color: rgba(105, 223, 148, 0.5);
+  color: #78df9d;
+}
+
+.vault-verification--approved {
   border-color: rgba(105, 223, 148, 0.5);
   color: #78df9d;
 }
@@ -224,6 +325,10 @@
   .vault-filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .vault-workflow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -241,6 +346,7 @@
 
   .vault-capture-form,
   .vault-filters,
+  .vault-workflow,
   .research-vault-workspace .research-vault-list {
     grid-template-columns: 1fr;
   }
@@ -252,5 +358,15 @@
   .vault-filter-heading .platform-action,
   .vault-form-actions .platform-action {
     width: 100%;
+  }
+
+  .vault-export-actions,
+  .vault-review-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .vault-review-actions button {
+    min-height: 44px;
   }
 }

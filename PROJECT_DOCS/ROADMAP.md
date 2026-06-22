@@ -64,6 +64,8 @@ Use `TASKS.md` as the active project work queue.
 
 ## Completed
 
+- Local Research Import Workflow from source capture through review, approval, and synergy JSON export.
+- Research Entry schema covering timestamp, character pair, Fuse, tags, notes, source, and confidence.
 - Generated 2XKO Synergy Database covering all 105 unique roster pairings.
 - Non-destructive roster-driven generator, deterministic pair index, and browser loading helpers.
 - Complete initial Noa-style 2XKO character intelligence structure for all 15 supplied roster characters.
@@ -74,9 +76,10 @@ Use `TASKS.md` as the active project work queue.
 - GitHub -> Cloudflare Pages 0 EUR deployment handoff.
 - Production output verified without `server.js` or any server runtime.
 - Real dependency-free static build output in `dist`.
-- Physical route generation for Cloudflare Pages and GitHub Pages.
-- Configurable GitHub project-site base path.
-- Free Cloudflare Pages and GitHub Pages deployment documentation.
+- Physical route generation and fallback routing for Cloudflare Pages.
+- Root-hosted static asset and route paths for Cloudflare Pages.
+- Free Cloudflare Pages deployment documentation.
+- GitHub Pages Actions and Pages-specific build artifacts removed; pushes deploy only through Cloudflare Pages.
 - 2XKO Synergy Engine v1 with ranked partner reasoning.
 - Reusable recommendation cards backed by local decision data.
 - Shared FG Lab decision-support data contract.
@@ -207,6 +210,7 @@ The DBFZ Lab continues evolving from a simple Team Builder into a DBFZ companion
 - [x] Decision-support data foundation.
 - [x] Character intelligence source files.
 - [x] Complete placeholder synergy pairing database.
+- [x] Local research capture, review, approval, and synergy export workflow.
 - [x] Mock character recommendation flow.
 - [x] Ranked duo recommendation prototype.
 - [ ] Fuse explanations.
@@ -368,10 +372,8 @@ npm run build
 
 Build output: `dist`.
 
-Supported free hosts:
+Production host:
 
 - Cloudflare Pages.
-- GitHub Pages.
-- Netlify static upload.
 
 No runtime server or database is required.

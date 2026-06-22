@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-06-22 - Research Import Workflow
+
+- Expanded Research Entries with timestamp, partner, Fuse, confidence, and explicit review stage.
+- Added a compact Quick Add flow and combined source, stage, confidence, tag, and full-text filters.
+- Added persistent Draft -> Needs Review -> Approved controls with legacy local-record migration.
+- Added complete Vault JSON export, approved-only bulk synergy export, and individual pair-file export.
+- Kept exported ratings and difficulty unset and pairing verification false until deliberate database review.
+- Added responsive workflow, metadata, and review controls without exposing the internal Vault in public navigation.
+
+## 2026-06-22 - Cloudflare-Only Deployment
+
+- Removed the GitHub Pages Actions deployment workflow so pushes no longer start Pages jobs.
+- Removed GitHub Pages-only `404.html`, `.nojekyll`, and repository subpath build configuration.
+- Kept Cloudflare Pages `_redirects`, physical static routes, and the GitHub-connected Cloudflare deployment flow intact.
+- Updated deployment documentation and project memory to make Cloudflare Pages the sole production target.
+
 All notable project changes should be documented here. Newest entries go first.
 
 ## 2026-06-22

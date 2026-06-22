@@ -1,6 +1,6 @@
 # Deploying FG Lab
 
-FG Lab builds to a completely static `dist` folder. Production hosting does not need Node, a server, a database, or a paid service.
+FG Lab builds to a completely static `dist` folder for Cloudflare Pages. Production hosting does not need Node, a server, a database, or a paid service.
 
 ## Build Locally
 
@@ -38,31 +38,6 @@ For the focused GitHub -> Cloudflare walkthrough, see `CLOUDFLARE_PAGES.md`.
 
 No environment variables are required for a normal `*.pages.dev` deployment. The generated `_redirects` file provides the static fallback, and physical route pages keep direct links refreshable.
 
-## GitHub Pages
-
-The repository includes `.github/workflows/deploy-pages.yml`.
-
-1. Push the repository to GitHub using the `main` branch.
-2. Open **Settings -> Pages**.
-3. Set **Source** to `GitHub Actions`.
-4. Run **Deploy FG Lab to GitHub Pages**, or push to `main`.
-
-The workflow automatically builds with:
-
-```text
-FG_LAB_BASE_PATH=/<repository-name>/
-```
-
-This keeps scripts, JSON, images, navigation, and direct route refreshes working on GitHub project Pages. The deployment artifact is the `dist` folder.
-
-To build the GitHub Pages version locally in PowerShell:
-
-```powershell
-$env:FG_LAB_BASE_PATH = "/YOUR_REPOSITORY_NAME/"
-npm run build
-Remove-Item Env:FG_LAB_BASE_PATH
-```
-
 ## Static Route Support
 
 The build generates physical `index.html` files for:
@@ -74,10 +49,8 @@ The build generates physical `index.html` files for:
 
 It also generates:
 
-- `dist/404.html` for GitHub Pages fallback.
 - `dist/_redirects` for Cloudflare Pages fallback.
-- `dist/.nojekyll` for GitHub Pages.
-- `dist/build-info.json` with the base path and generated route list.
+- `dist/build-info.json` with the root base path and generated route list.
 
 ## Deployment Boundaries
 
@@ -86,3 +59,4 @@ It also generates:
 - No production server process is required.
 - `server.js` is only a local preview helper.
 - Dustloop imports remain a local content preparation step, not live production scraping.
+- GitHub is the source repository; Cloudflare Pages is the only production deployment target.

@@ -255,3 +255,19 @@ Rules:
 - Contributors should suggest; Editors/Admins should publish.
 
 Keep descriptions short, structured and easy to scan.
+# Research Entry Standard
+
+Research is evidence for later recommendations, not a recommendation by itself.
+
+Each entry should record:
+
+- Source type and link.
+- Timestamp for the relevant video, VOD, message, or observation.
+- Character and optional partner.
+- Optional Fuse.
+- Short reusable tags.
+- A factual note describing what was shown, claimed, or tested.
+- Confidence: Low, Medium, or High.
+- Review stage: Draft, Needs Review, or Approved.
+
+Approval means the entry is ready to inform a synergy file. It does not automatically verify the entire pairing, assign a rating, or establish a matchup conclusion. Keep observations separate from conclusions, and retain source metadata during export.

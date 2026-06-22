@@ -7,7 +7,7 @@ This file tracks implemented and active features. Do not remove implementation d
 ## Stack
 
 - Plain HTML/CSS/JavaScript static frontend.
-- Static build compatible with Cloudflare Pages, GitHub Pages, and Netlify.
+- Static build configured exclusively for Cloudflare Pages.
 - Dependency-free build output in `dist`.
 - Local JSON data under `public/data/dbfz`.
 - Node scripts for local import/build utilities.
@@ -23,10 +23,8 @@ Implemented:
 - Runtime JavaScript, CSS, local JSON, backgrounds, and optimized portraits are copied.
 - Seventeen supported routes receive physical `index.html` files.
 - Cloudflare Pages fallback is emitted as `dist/_redirects`.
-- GitHub Pages fallback and Jekyll bypass are emitted as `dist/404.html` and `dist/.nojekyll`.
-- `FG_LAB_BASE_PATH` supports GitHub project sites.
-- Runtime routing and JSON paths understand the configured deployment base.
-- GitHub Actions workflow publishes `dist` for free.
+- Runtime routing and JSON paths use the root-hosted Cloudflare deployment base.
+- GitHub stores the source; connected Cloudflare Pages builds and publishes pushes.
 - `npm run preview` serves the built output locally for smoke testing only.
 
 Production does not use `server.js`, Node, a database, or a paid service.
@@ -124,12 +122,18 @@ Status: Internal Collection Tool
 Implemented:
 
 - Direct internal route at `/games/2xko/research-vault`.
-- Character, Source Type, Source Link, Notes, Tags, and Verification Status fields.
+- Research Entry fields for Source, Timestamp, Character, Partner, Fuse, Tags, Notes, and Confidence.
+- Quick Add form with automatic local timestamp and Draft status.
 - Local browser persistence for working records.
-- Search across characters, sources, notes, and tags.
-- Combined Source Type, Verification Status, and Tag filters.
+- Migration support for records saved by the original Vault storage schema.
+- Search across characters, partners, Fuses, sources, notes, and tags.
+- Combined Source, Review Stage, Confidence, and Tag filters.
+- Explicit Draft -> Needs Review -> Approved workflow controls.
 - Source links, seed/local origin, and updated-date tracking.
-- JSON export for review and later promotion into synergies, routes, matchups, and Fuse recommendations.
+- Full Vault JSON export for backup and repository updates.
+- Approved-only bulk synergy export grouped by canonical character pair.
+- Per-pair synergy JSON export using the existing synergy database schema.
+- Exported evidence preserves source, timestamp, confidence, tags, notes, and Fuse observations while leaving ratings unverified.
 - Responsive two-column and one-column layouts.
 - Dedicated `research-vault.js` and `research-vault.css` modules.
 

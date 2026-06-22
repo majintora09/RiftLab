@@ -208,7 +208,7 @@ The design target is:
 
 ## Deployment Philosophy
 
-Current deployment is fully static and compatible with Netlify, Cloudflare Pages, and GitHub Pages.
+Current deployment is fully static and published exclusively through GitHub-connected Cloudflare Pages.
 
 That means:
 

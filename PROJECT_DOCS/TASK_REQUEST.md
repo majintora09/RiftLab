@@ -5,34 +5,34 @@ Completed on 2026-06-22.
 
 ## Objective
 
-Generate the modular 2XKO Synergy Database for every unique two-character combination in the 15-character intelligence registry.
+Create a lightweight local Research Import Workflow that turns source observations into reviewed synergy evidence.
 
 ## Scope
 
-- Add a dependency-free synergy generator driven by `intelligenceFiles` in `data/games.js`.
-- Generate 105 unique unordered team files under `data/games/2xko/synergies`.
-- Use alphabetically normalized slugs for stable filenames.
-- Create a deterministic index manifest.
-- Preserve existing pair files unless an explicit overwrite flag is used.
-- Add browser helpers to resolve, list, and load pair records.
-- Run the generator automatically before static builds.
+- Extend Research Entries with source, timestamp, character, partner, Fuse, tags, notes, and confidence.
+- Add a fast local Quick Add form.
+- Add search and combined source, stage, confidence, and tag filters.
+- Add Draft -> Needs Review -> Approved controls.
+- Export the complete vault as JSON.
+- Export approved character-pair evidence into the existing synergy-file schema.
 
 ## Out Of Scope
 
-- No invented ratings, difficulty, matchup conclusions, Fuses, routes, or notes.
-- No wiki, move-list, frame-data, or command content.
-- No new public synergy interface.
-- No automatic verification.
+- No AI APIs or generated gameplay conclusions.
+- No external services, database, authentication system, or production server.
+- No automatic overwrite of repository synergy files from the browser.
+- No public navigation link for the internal Research Vault.
 
 ## Success Criteria
 
-- Exactly 105 pair files exist for the 15-character roster.
-- Every pair uses the requested schema and has `rating: null`, `difficulty: null`, `verified: false`.
-- Every pair supports multiple sources through an array.
-- Reversed character order resolves to the same canonical filename.
-- Future Team Builder code can load one pair or all pairs for a character.
-- `npm run build` regenerates missing files and ships the complete database.
+- Entries persist locally as JSON in browser storage and can be exported.
+- Existing v1 local entries migrate into the new normalized schema.
+- Review stage changes persist locally.
+- Only approved entries with both characters can be exported as synergy evidence.
+- Pair exports keep ratings and difficulty null and `verified: false`.
+- Search and filters work across the new fields.
+- The Vault remains responsive and absent from public 2XKO navigation.
 
 ## Notes
 
-Normal generation preserves researched files. `--overwrite` is reserved for intentionally resetting placeholders.
+The browser cannot safely write into the repository. Synergy exports are downloaded for deliberate human review before replacing or merging files under `data/games/2xko/synergies`.
