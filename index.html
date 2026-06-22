@@ -3,29 +3,86 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DBFZ Team Lab</title>
+    <title>FG Lab</title>
+    <script>
+      const base = document.createElement("base");
+      base.href = window.location.protocol === "file:" ? "./" : "/";
+      document.head.append(base);
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app-shell">
+    <main id="platformHome" class="platform-shell platform-home">
+      <header class="platform-topbar">
+        <a class="platform-brand" href="/" data-route="/">
+          <strong>FG</strong>
+          <span>Lab</span>
+        </a>
+        <a href="/roadmap" data-route="/roadmap">Roadmap</a>
+      </header>
+      <section class="platform-hero">
+        <div>
+          <p class="eyebrow">Fighting Game Knowledge Platform</p>
+          <h1>Choose Your Lab</h1>
+          <p>Build teams quickly, then study the system behind them. Each game keeps its own tools, data, and visual identity.</p>
+        </div>
+      </section>
+      <section class="platform-game-section" aria-labelledby="gameSelectTitle">
+        <header>
+          <p class="eyebrow">Game Select</p>
+          <h2 id="gameSelectTitle">Enter A Lab</h2>
+        </header>
+        <div id="gameCardGrid" class="platform-game-grid"></div>
+      </section>
+      <section id="fgLabRoadmap" class="platform-roadmap" aria-labelledby="roadmapTitle">
+        <header>
+          <p class="eyebrow">FG Lab Roadmap</p>
+          <h2 id="roadmapTitle">Controlled Expansion</h2>
+        </header>
+        <div class="platform-phase-grid">
+          <article><span>Phase 1</span><h3>Platform Foundation</h3><ul><li>Game selection landing page</li><li>Shared game config</li><li>Game-based routing</li><li>Mobile navigation</li><li>Keep DBFZ stable</li></ul></article>
+          <article><span>Phase 2</span><h3>DBFZ Completion</h3><ul><li>Complete character pages</li><li>Assists and team roles</li><li>Synergy tags</li><li>Routes</li></ul></article>
+          <article><span>Phase 3</span><h3>2XKO Expansion</h3><ul><li>Character database</li><li>Duo recommendations</li><li>Fuse explanations</li><li>Tag routes</li><li>Matchup notes</li></ul></article>
+          <article><span>Phase 4</span><h3>Community Features</h3><ul><li>Submit tech and routes</li><li>Upvotes</li><li>Creator/player profiles</li></ul></article>
+        </div>
+      </section>
+    </main>
+
+    <main id="twoXkoPortal" class="platform-shell two-xko-portal" hidden>
+      <header class="game-portal-topbar">
+        <button class="platform-brand" type="button" data-route="/">
+          <strong>FG</strong>
+          <span>Lab</span>
+        </button>
+        <div class="game-portal-title"><strong>2XKO</strong><span>Early Build</span></div>
+        <nav id="twoXkoNav" class="game-portal-nav" aria-label="2XKO sections"></nav>
+      </header>
+      <section class="two-xko-banner">
+        <p class="eyebrow">2XKO Research Portal</p>
+        <strong>Build the duo. Verify the logic.</strong>
+      </section>
+      <article id="twoXkoContent" class="two-xko-content"></article>
+    </main>
+
+    <main id="dbfzPortal" class="app-shell" hidden>
       <header class="hero">
         <div class="top-nav">
-          <div class="brand-lockup">
+          <button class="brand-lockup brand-button" type="button" data-route="/">
             <strong>DBFZ</strong>
             <span>Team Lab</span>
-          </div>
+          </button>
           <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
           </button>
           <nav class="main-nav" aria-label="Main sections">
-            <a href="#teamSlots" aria-current="page">Team Builder</a>
-            <a href="#playstyleTeams">Playstyle Teams</a>
-            <a href="#knowledgeNetwork">Knowledge Map</a>
-            <a href="#trainingLab">Training Lab</a>
-            <a href="#roster">Characters</a>
-            <a href="#videoLibrary">Videos</a>
+            <a href="/games/dbfz/team-builder" data-route="/games/dbfz/team-builder" aria-current="page">Team Builder</a>
+            <a href="/games/dbfz/playstyles" data-route="/games/dbfz/playstyles">Playstyle Teams</a>
+            <a href="/games/dbfz/knowledge-map" data-route="/games/dbfz/knowledge-map">Knowledge Map</a>
+            <a href="/games/dbfz/synergies" data-route="/games/dbfz/synergies">Training Lab</a>
+            <a href="/games/dbfz/characters" data-route="/games/dbfz/characters">Characters</a>
+            <a href="/games/dbfz/routes" data-route="/games/dbfz/routes">Videos</a>
           </nav>
           <div class="nav-actions">
             <button id="mobilePreviewToggle" class="text-button preview-toggle" type="button" aria-pressed="false">Mobile Preview</button>
@@ -626,11 +683,14 @@
       </section>
     </main>
 
+    <script src="data/games.js"></script>
     <script src="data/characters-data.js"></script>
     <script src="data/polished-overrides.js"></script>
     <script src="data/knowledge-db.js"></script>
     <script src="data/frame-data.local.js"></script>
     <script src="assets/manifest.js"></script>
     <script src="app.js"></script>
+    <script src="synergy-engine.js"></script>
+    <script src="platform.js"></script>
   </body>
 </html>

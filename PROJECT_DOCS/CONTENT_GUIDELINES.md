@@ -23,6 +23,57 @@ Phase 2 implemented:
 - Public navigation uses `Knowledge Map` instead of `Network`.
 - Knowledge Map fallback copy should explain the connection or what data is missing.
 
+## Decision-Oriented Content
+
+FG Lab content should answer a player question, not imitate a wiki entry.
+
+Use this order whenever possible:
+
+1. State the player need or question.
+2. Give the recommendation first.
+3. Explain why it fits.
+4. Name the tradeoffs or failure cases.
+5. Give a useful next step, route, partner, Fuse, matchup adjustment, or study link.
+
+Good:
+- Pair this character with a neutral assist because the shell already has damage but struggles to start offense.
+- Use this Fuse when the duo needs safer tag pressure; choose the alternative when damage matters more than stability.
+
+Bad:
+- A raw move list with no team-building purpose.
+- A long mechanics explanation that never tells the player what to choose.
+- Reference facts presented without a practical recommendation.
+
+Community tech should identify the use case, required character or team, setup, payoff, risk, source, and verification status.
+
+Decision records should use stable IDs to connect games, characters, Fuses, synergies, routes, matchups, sources, and community notes. Keep unverified collections empty rather than filling them with assumptions.
+
+For 2XKO character support, preserve:
+
+- Overview.
+- Strengths.
+- Weaknesses.
+- Recommended partner IDs.
+- Recommended Fuse IDs.
+- Matchup IDs.
+- Route IDs.
+- Community note IDs.
+
+These fields support recommendations and relationship tools. They should not be rendered as a giant wiki article.
+
+## Partner Recommendation Format
+
+Each partner recommendation should include:
+
+- Character ID.
+- Partner ID.
+- Score from 1-10.
+- One direct reason.
+- Difficulty.
+- Short reusable tags.
+
+The card should answer "Why is this partner recommended?" without requiring expansion. Mock or unverified records must carry a visible status label.
+
 ## Tags
 Good:
 - Pressure

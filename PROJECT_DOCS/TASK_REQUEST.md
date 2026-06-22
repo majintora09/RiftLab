@@ -1,130 +1,37 @@
 # Task Request
 
 Status:
-Completed on 2026-06-18.
+Completed on 2026-06-22.
 
 ## Objective
 
-Perform a focused bugfix and usability pass.
-
-The goal is to improve content readability, mobile usability, and Team Builder functionality before adding new features.
-
----
+Build the first lightweight FG Lab Synergy Engine so 2XKO can answer: Who works well with this character and why?
 
 ## Scope
 
-### 1. Character Page Formatting
-
-Current imported content is rendering incorrectly.
-
-Examples:
-
-* "This pickNeutralThis pickControl..."
-* Assist descriptions merging together.
-* Missing separators between imported content blocks.
-
-Implement proper structured rendering using CONTENT_GUIDELINES.md.
-
-Assist sections should render as:
-
-Provides:
-
-* Item
-* Item
-
-Best For:
-
-* Item
-* Item
-
-Why:
-
-* Explanation
-
-Tags:
-[Tag]
-[Tag]
-
-DHC notes should render using structured sections rather than paragraphs.
-
----
-
-### 2. Mobile Team Builder
-
-Current mobile mode only displays one fighter slot even when 3/3 fighters are locked.
-
-Expected:
-
-All three team members remain visible.
-
-Acceptable layouts:
-
-* Vertical stack
-* Compact cards
-
-Not acceptable:
-
-* Only one visible fighter
-
-Investigate:
-
-* Mobile rendering logic
-* Responsive breakpoints
-* Hidden or overflowed slots
-
----
-
-### 3. Knowledge Map Mobile UX
-
-Current mobile Knowledge Map sidebar is too large.
-
-Users must scroll excessively before seeing the selected node.
-
-Replace the permanent sidebar with a mobile-friendly solution.
-
-Preferred:
-
-* Collapsible drawer
-* Slide-out panel
-* Open Browser button
-
-Goal:
-
-Show selected node information immediately on mobile.
-
----
+- Add mock 2XKO character, partner, Fuse, and route recommendation data.
+- Add a reusable JSON-driven recommendation renderer.
+- Show partner name, score, reason, difficulty, and tags at a glance.
+- Show the selected character's strengths, weaknesses, recommended Fuses, routes, and notes.
+- Integrate the engine into the existing 2XKO Synergies route.
+- Keep the view compact and responsive.
 
 ## Out Of Scope
 
-Do not:
-
-* Add AI features
-* Add new pages
-* Rebuild the visual identity
-* Implement Movie Room automation
-* Implement admin editing yet
-
-This is a bugfix and polish pass only.
-
----
+- No frame data.
+- No wiki layout or long character articles.
+- No claims that mock recommendations are verified.
+- No backend, account, or admin editing work.
+- No DBFZ redesign.
 
 ## Success Criteria
 
-* Character page content renders cleanly.
-* Assist descriptions are readable.
-* DHC notes are structured.
-* Mobile Team Builder shows all 3 fighters.
-* Knowledge Map is usable on mobile.
-* Existing desktop experience remains intact.
-
----
+- The 2XKO Synergies page answers why each partner is recommended.
+- Recommendations load from local JSON rather than hardcoded page copy.
+- Components can render another character once real records are added.
+- Desktop and mobile layouts remain usable.
+- JavaScript and JSON validation pass.
 
 ## Notes
 
-Prioritize usability over new features.
-
-This task should improve the quality of the existing experience before expanding functionality.
-
-Update CHANGELOG.md after completion.
-
-Generate a fresh Netlify deployment ZIP.
+Mock records are clearly labeled as example data for interface testing.

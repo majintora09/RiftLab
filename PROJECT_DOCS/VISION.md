@@ -1,11 +1,34 @@
-# DBFZ Team Lab Vision
+# FG Lab Vision
 
-Last updated: 2026-06-18
+Last updated: 2026-06-22
 
-DBFZ Team Lab explains WHY teams work, not just WHAT to play.
+FG Lab explains WHY fighting game teams and systems work, not just WHAT to play.
+
+The platform supports multiple game-specific labs without flattening every game into the same tool. Dragon Ball FighterZ remains the active first lab. 2XKO begins as a research-led early build.
+
+## Decision-First Product Rule
+
+FG Lab is a decision tool, not a wiki.
+
+Existing resources already cover frame data, move lists, controls, basic mechanics, and patch notes. FG Lab may use those facts as supporting evidence, but reproducing them is not the product goal.
+
+The north-star interaction is:
+
+**Player question -> clear recommendation -> practical reasoning -> next action.**
+
+Examples:
+
+- I play Yasuo. Who should I pair with?
+- My team struggles against zoners. What should I change?
+- I want an easy team. What fits?
+- I want high-damage tag routes. Which shell supports that?
+- What Fuse should I use with Ahri + Ekko?
+
+Every future feature should help answer a real player decision. A feature that only displays more reference information is not enough.
 
 ## What Team Lab Is
 
+- A multi-game fighting game knowledge platform.
 - Team Builder.
 - Training Lab.
 - Character Database.
@@ -14,6 +37,8 @@ DBFZ Team Lab explains WHY teams work, not just WHAT to play.
 - Playstyle Teams.
 - A DBFZ companion app and interactive strategy guide.
 
+Each game keeps its own identity, terminology, data, and feature maturity while sharing navigation and platform foundations.
+
 ## What Team Lab Is Not
 
 - A tier list website.
@@ -21,10 +46,14 @@ DBFZ Team Lab explains WHY teams work, not just WHAT to play.
 - A combo database first.
 - A spreadsheet with portraits.
 - A place for raw transcript dumps.
+- A replacement for frame-data, move-list, controls, mechanics, or patch-note resources.
+- A content archive that displays information without helping the player choose or act.
 
 ## North Star
 
 A player should leave understanding who to pair a character with, what the team lacks, and what to study next.
+
+The long-term promise is: **Tell me what works together and why.**
 
 More specifically, a player should be able to answer:
 
@@ -86,22 +115,18 @@ It should cover:
 - Why avoid.
 - Final verdicts.
 
-### Character Knowledge
+### Character Decision Support
 
-Every character should eventually feel complete:
+Character content should help players decide:
 
-- Overview.
-- Strengths.
-- Weaknesses.
-- Assists.
-- Tags.
-- Team positions.
-- Synergies.
-- Frame data.
-- Community notes.
-- Movie Room links.
+- Who pairs well with this character and why.
+- What team problems this character solves or creates.
+- Which position, assist, Fuse, or shell fits the intended plan.
+- Which route goals and matchup problems the character supports.
+- Why to pick or avoid the character for a specific player need.
+- What community tech is relevant and how to use it.
 
-Character pages should be useful on their own, but also connected to team-building decisions.
+Reference data may support those answers, but it should not become the centerpiece of the page.
 
 ### Connected Knowledge Map
 

@@ -1,4 +1,4 @@
-# Deploying DBFZ Team Lab
+# Deploying FG Lab
 
 This is currently a static website. It does not need a backend.
 
@@ -29,12 +29,16 @@ Required:
 - `index.html`
 - `styles.css`
 - `app.js`
+- `platform.js`
+- `_redirects`
+- `data/games.js`
 - `data/characters-data.js`
 - `data/polished-overrides.js`
 - `data/knowledge-db.js`
 - `data/frame-data.local.js`
 - `public/data/dbfz/*`
 - `public/data/dbfz/frame-data/*`
+- `public/data/2xko/research-vault.json`
 - `assets/manifest.js`
 - `assets/backgrounds/background.webp`
 - `public/characters/portraits/*`
@@ -61,6 +65,7 @@ npm install
 npm run import-dustloop
 npm run build
 node --check app.js
+node --check platform.js
 node --check data/polished-overrides.js
 node --check assets/manifest.js
 node tools\build_asset_manifest.js
@@ -68,6 +73,9 @@ node tools\build_asset_manifest.js
 
 Then refresh the page and check:
 
+- The root game-selection page opens.
+- DBFZ deep links retain current functionality.
+- 2XKO placeholder routes and Research Vault open.
 - All portraits load.
 - Search and filters work.
 - Dragging into team slots works.

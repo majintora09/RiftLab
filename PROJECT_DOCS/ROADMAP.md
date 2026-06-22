@@ -1,6 +1,6 @@
-# DBFZ Team Lab Roadmap
+# FG Lab Roadmap
 
-Last updated: 2026-06-18
+Last updated: 2026-06-22
 
 This folder is the project planning source of truth. Future planning should use these docs instead of relying on chat history.
 
@@ -15,6 +15,17 @@ When major features are added or changed, update:
 - `TASK_REQUEST.md`
 
 `CONTENT_GUIDELINES.md` remains the quick reference for how character, assist, DHC, and tag content should be written.
+
+## Product Gate
+
+FG Lab is not a wiki. Before promoting work into the roadmap, answer:
+
+1. What player question does this solve?
+2. What recommendation or decision does the player receive?
+3. What reasoning or evidence supports the answer?
+4. What useful next action can the player take?
+
+Work that only duplicates frame data, move lists, controls, basic mechanics, or patch notes should not become a product priority. Reference data is supporting evidence for recommendations, not the destination.
 
 Current `PROJECT_DOCS` structure:
 
@@ -53,6 +64,17 @@ Use `TASKS.md` as the active project work queue.
 
 ## Completed
 
+- 2XKO Synergy Engine v1 with ranked partner reasoning.
+- Reusable recommendation cards backed by local decision data.
+- Shared FG Lab decision-support data contract.
+- Modular 2XKO character, Fuse, synergy, route, matchup, and community-note collections.
+- Game-config links to decision prompts and per-game data roots.
+- FG Lab game-selection landing page.
+- Shared game configuration and game-based routing.
+- DBFZ portal routing with legacy hash compatibility.
+- 2XKO early-build portal and placeholder sections.
+- 2XKO Research Vault local data structure.
+- Netlify/local-server SPA route fallback.
 - Team Builder.
 - Character Database.
 - Training Lab Prototype.
@@ -70,6 +92,7 @@ Use `TASKS.md` as the active project work queue.
 
 ## In Progress
 
+- 2XKO research collection and source verification.
 - Character Modal.
 - Better Filters.
 - Admin Inline Editing.
@@ -111,6 +134,9 @@ This priority is planning-only until implementation starts. The goal is to make 
 
 - Knowledge Map Expansion.
 - Movie Room Expansion.
+- Question-driven partner and team recommendations.
+- Team weakness diagnosis, including anti-zoner and ease-of-use needs.
+- 2XKO duo and Fuse recommendation foundations based on verified research.
 - Character Editor Prototype.
 - PDF Cleanup Pass.
 - Full character content polish pass.
@@ -131,7 +157,14 @@ This priority is planning-only until implementation starts. The goal is to make 
 
 ## Product Direction
 
-DBFZ Team Lab is evolving from a simple Team Builder into a DBFZ companion app:
+FG Lab is a multi-game fighting game companion platform. Each game receives its own lab while sharing game selection, routing, mobile foundations, and future community systems.
+
+Current game portals:
+
+- Dragon Ball FighterZ: active and feature-complete enough for team-building use.
+- 2XKO: planning/early build, focused on research collection before recommendations.
+
+The DBFZ Lab continues evolving from a simple Team Builder into a DBFZ companion app:
 
 - Team Builder: quick recommendations and team assembly.
 - Training Lab: deep reasoning behind shells, assists, DHCs, archetypes, and win conditions.
@@ -139,6 +172,36 @@ DBFZ Team Lab is evolving from a simple Team Builder into a DBFZ companion app:
 - Playstyle Teams: discovery based on how someone likes to play fighting games.
 - Movie Room: curated study resources for characters, shells, and teams.
 - Knowledge Map: connected navigation through characters, tags, assists, shells, archetypes, and playstyles.
+
+## FG Lab Platform Phases
+
+### Phase 1: Platform Foundation
+
+- [x] Game selection landing page.
+- [x] Shared game config.
+- [x] Game-based routing.
+- [x] Mobile-first game cards and portal navigation.
+- [x] Keep DBFZ stable and preserve legacy hashes.
+
+### Phase 2: DBFZ Completion
+
+- [ ] Complete character pages.
+- [ ] Complete assist and team-role data.
+- [ ] Complete synergy tags and routes.
+
+### Phase 3: 2XKO Expansion
+
+- [x] Decision-support data foundation.
+- [x] Mock character recommendation flow.
+- [x] Ranked duo recommendation prototype.
+- [ ] Fuse explanations.
+- [ ] Tag routes and matchup notes.
+
+### Phase 4: Community Features
+
+- [ ] Submit tech and routes.
+- [ ] Upvotes.
+- [ ] Creator/player profiles.
 
 ## Roadmap Priorities
 

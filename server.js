@@ -26,16 +26,29 @@ http
     }
 
     fs.readFile(filePath, (error, data) => {
-      if (error) {
-        res.writeHead(404);
-        res.end("Not found");
+      if (!error) {
+        res.writeHead(200, { "Content-Type": types[path.extname(filePath)] || "application/octet-stream" });
+        res.end(data);
         return;
       }
 
-      res.writeHead(200, { "Content-Type": types[path.extname(filePath)] || "application/octet-stream" });
-      res.end(data);
+      if (!path.extname(urlPath)) {
+        fs.readFile(path.join(root, "index.html"), (indexError, indexData) => {
+          if (indexError) {
+            res.writeHead(500);
+            res.end("Could not load application shell");
+            return;
+          }
+          res.writeHead(200, { "Content-Type": "text/html" });
+          res.end(indexData);
+        });
+        return;
+      }
+
+      res.writeHead(404);
+      res.end("Not found");
     });
   })
   .listen(port, host, () => {
-    console.log(`DBFZ Team Builder on http://${host}:${port}`);
+    console.log(`FG Lab on http://${host}:${port}`);
   });

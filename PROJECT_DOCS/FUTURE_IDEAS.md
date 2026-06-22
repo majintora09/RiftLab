@@ -1,8 +1,12 @@
 # Future Ideas
 
-Last updated: 2026-06-18
+Last updated: 2026-06-22
 
 This is the parking lot for future ideas. Promote items into `ROADMAP.md` when they become planned work.
+
+## Promotion Gate
+
+Only promote an idea when it has a clear player question, recommendation or decision, supporting reasoning, and useful next action. Expanding frame data, move lists, controls, mechanics, or patch-note coverage alone is not a product goal.
 
 Use `PROJECT_DOCS` as project memory:
 

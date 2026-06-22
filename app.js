@@ -3863,6 +3863,26 @@ document.addEventListener("keydown", (event) => {
   else if (document.body.classList.contains("mobile-preview")) setMobilePreview(false);
 });
 
+window.DBFZ_TEAM_LAB = {
+  setView(view) {
+    const allowedViews = new Set(["team", "characters", "playstyles", "knowledge", "training", "videos"]);
+    activeView = allowedViews.has(view) ? view : "team";
+    const labels = {
+      team: "Team Builder",
+      characters: "Characters",
+      playstyles: "Playstyle Teams",
+      knowledge: "Knowledge Map",
+      training: "Training Lab",
+      videos: "Videos",
+    };
+    setActiveNav(labels[activeView]);
+    setNavOpen(false);
+    closeCharacterModal();
+    if (characters.length) render();
+    else renderView();
+  },
+};
+
 applyFrameViewMode();
 setMobilePreview(false);
 

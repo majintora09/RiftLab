@@ -1,6 +1,6 @@
-# DBFZ Team Lab Features
+# FG Lab Features
 
-Last updated: 2026-06-18
+Last updated: 2026-06-22
 
 This file tracks implemented and active features. Do not remove implementation details when expanding this doc.
 
@@ -12,6 +12,82 @@ This file tracks implemented and active features. Do not remove implementation d
 - Local JSON data under `public/data/dbfz`.
 - Node scripts for local import/build utilities.
 - No Laravel, PHP, Artisan, live browser scraping, or iframe-based frame data.
+
+## Multi-Game Platform
+
+Status: Active Foundation
+
+Implemented:
+
+- FG Lab game-selection landing page.
+- Shared game registry in `data/games.js`.
+- Clean routes for DBFZ and 2XKO with `file://` hash fallback.
+- Netlify `_redirects` support and matching local-server SPA fallback.
+- Existing DBFZ app preserved as the active first game portal.
+- Legacy DBFZ anchors route to the corresponding DBFZ portal views.
+- 2XKO early-build portal with Characters, Duo Builder, Fuses, Synergies, Routes, and Research Vault sections.
+- Lightweight 2XKO Research Vault JSON structure.
+- Mobile-stacked game cards, roadmap phases, 2XKO navigation, and research records.
+
+Current game status:
+
+- DBFZ: Active.
+- 2XKO: Planning / Early Build.
+
+## Decision Support Contract
+
+Status: Active Product Rule
+
+FG Lab helps players make choices instead of acting as a general fighting-game wiki.
+
+Core player jobs:
+
+- Find a partner for a chosen character.
+- Diagnose what a team lacks and find suitable fixes.
+- Find an easy, technical, defensive, aggressive, or route-focused team.
+- Discover shells and routes by practical goal.
+- Choose a Fuse for a specific 2XKO duo.
+- Understand matchup problems and relevant community tech.
+
+Frame data, move lists, controls, mechanics, and patch notes may support these answers but are not standalone expansion goals.
+
+Implemented data foundation:
+
+- Shared entity contract at `public/data/fg-lab/decision-model.json`.
+- Required decision flow: question, context, recommendation, reasons, tradeoffs, next actions.
+- Shared relationships from Game to Character, Synergy, Route, Matchup, and Community Note.
+- Game config exposes per-game data roots and example player questions.
+- Empty 2XKO collections avoid speculative recommendations while giving reviewed content a stable home.
+
+2XKO data files:
+
+- `public/data/2xko/characters.json`
+- `public/data/2xko/fuses.json`
+- `public/data/2xko/synergies.json`
+- `public/data/2xko/routes.json`
+- `public/data/2xko/matchups.json`
+- `public/data/2xko/community-notes.json`
+- `public/data/2xko/research-vault.json`
+
+## 2XKO Synergy Engine
+
+Status: First Prototype
+
+Answers: "Who works well with this character and why?"
+
+Implemented:
+
+- JSON-backed character selection.
+- Ranked partner recommendation cards.
+- Partner score from 1-10.
+- Short reason, difficulty, and reusable tags.
+- Selected-character strengths and weaknesses.
+- Recommended Fuse and route summaries.
+- Compact notes and an explicit Example Data label.
+- Responsive three-column, two-column, and one-column layouts.
+- Reusable renderer in `synergy-engine.js`.
+
+The prototype uses mock Yasuo, Ahri, Darius, and Ekko records for interface testing. It does not use frame data and does not claim the recommendations are verified.
 
 ## Project Documentation Workflow
 

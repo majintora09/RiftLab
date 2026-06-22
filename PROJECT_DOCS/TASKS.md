@@ -1,6 +1,6 @@
-# DBFZ Team Lab Tasks
+# FG Lab Tasks
 
-Last updated: 2026-06-18
+Last updated: 2026-06-22
 
 This file is the active project work queue. Use it with `TASK_REQUEST.md` before starting implementation.
 
@@ -18,6 +18,10 @@ Current critical work.
 - Add editor validation hints based on `CONTENT_GUIDELINES.md`.
 - Keep Team Builder Strengths, Why It Works, and Synergy panels from clipping content.
 - Preserve the current desktop visual design while improving usability.
+- Keep DBFZ stable as shared FG Lab platform features expand.
+- Expand the completed "Who pairs with my character?" prototype into team-weakness and easy-team decision flows.
+- Keep recommendations, reasoning, tradeoffs, and next actions more prominent than raw reference data.
+- Keep the shared decision contract and 2XKO collections small, modular, and source-backed.
 
 ## Medium Priority
 
@@ -30,9 +34,16 @@ Important but not blocking.
 - Improve Training Lab folder/collapse structure so users do not scroll through every topic at once.
 - Improve grouped filters across characters, assists, synergies, playstyles, content status, and team needs.
 - Improve Dustloop importer slug coverage and move grouping.
-- Improve frame data mobile presentation and move detail readability.
+- Maintain frame data readability where it supports decisions, without expanding FG Lab into a frame-data wiki.
 - Keep DBZ Broly tagged as Grappler.
 - Keep character page clicks separate from Team Builder modal behavior.
+- Add verified 2XKO research records before building recommendations.
+- Replace Synergy Engine mock records with reviewed recommendations before presenting them as gameplay guidance.
+- Populate the completed 2XKO character, Fuse, synergy, route, matchup, and community-note schemas from reviewed sources.
+- Build 2XKO partner and Fuse recommendation logic only after the supporting research is verified.
+- Organize route discovery by player goal, such as damage, ease, consistency, side switch, or tag access.
+- Organize matchup notes around team problems, counterplay choices, and actionable adjustments.
+- Tag community tech by the decision or problem it helps solve.
 
 ## Low Priority
 
@@ -64,3 +75,4 @@ Items that are planned but not actively being worked on.
 - AI Coach.
 - Tournament statistics.
 - Advanced content quality tools for tag, DHC, assist, and transcript validation.
+- Additional fighting game portals after DBFZ and 2XKO foundations are proven.

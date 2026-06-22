@@ -1,9 +1,10 @@
 {
-  "name": "dbfz-team-lab",
+  "name": "fg-lab",
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",
   "scripts": {
+    "start": "node server.js",
     "import-dustloop": "node scripts/import-dustloop.js",
     "build": "node scripts/build-static.js"
   }

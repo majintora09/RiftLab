@@ -2,6 +2,46 @@
 
 All notable project changes should be documented here. Newest entries go first.
 
+## 2026-06-22
+
+### Added
+
+- Added the first 2XKO Synergy Engine at `/games/2xko/synergies`.
+- Added reusable ranked recommendation cards with score, reason, difficulty, and tags.
+- Added mock Yasuo partner recommendations for Ahri, Darius, and Ekko.
+- Added compact strengths, weaknesses, Fuse recommendations, route recommendations, and notes.
+- Added responsive Synergy Engine layouts for desktop, tablet, and mobile.
+- Added a shared decision-support model linking Game, Character, Synergy, Route, Matchup, and Community Note records.
+- Added modular empty 2XKO data collections for characters, Fuses, synergies, routes, matchups, and community tech.
+- Added per-game data roots, collection paths, and example player questions to the shared game config.
+- Added the FG Lab game-selection landing page.
+- Added shared game configuration in `data/games.js`.
+- Added clean DBFZ and 2XKO game routes with direct `file://` hash fallback.
+- Added intentional 2XKO placeholder pages for Characters, Duo Builder, Fuses, Synergies, and Routes.
+- Added the 2XKO Research Vault page and local JSON record structure.
+- Added an FG Lab four-phase roadmap section.
+- Added Netlify SPA redirects and matching local-server route fallback.
+
+### Changed
+
+- Extended the shared decision model with Fuse entities and directional partner recommendation fields.
+- Reframed 2XKO placeholder copy around character decisions, Fuse recommendations, and goal-based route discovery.
+- Established FG Lab as a decision-first companion rather than a fighting-game wiki.
+- Added the required question -> recommendation -> reasoning -> next action product pattern.
+- Defined frame data, move lists, controls, mechanics, and patch notes as supporting references rather than expansion goals.
+- Reframed roadmap and task priorities around partner selection, team weakness diagnosis, Fuse recommendations, goal-based routes, matchup decisions, and actionable community tech.
+- Wrapped the existing DBFZ experience in the DBFZ game portal without removing working features.
+- Updated DBFZ navigation links to game-based routes.
+- Preserved old DBFZ hash links by mapping them to the new portal routes.
+- Updated project vision, roadmap, features, and tasks for multi-game platform direction.
+
+### Notes
+
+- DBFZ remains Active.
+- 2XKO is Planning / Early Build and does not make unverified recommendations yet.
+- New platform files were kept small and separate from the DBFZ engine.
+- Generated a fresh lean Netlify package at `deploy/fg-lab-netlify.zip`.
+
 ## 2026-06-18
 
 ### Added
