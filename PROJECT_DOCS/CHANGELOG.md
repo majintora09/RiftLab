@@ -6,6 +6,8 @@ All notable project changes should be documented here. Newest entries go first.
 
 ### Added
 
+- Added 2XKO intelligence records for Akali, Blitzcrank, Caitlyn, Teemo, Vi, and Warwick.
+- Expanded the shared 2XKO intelligence registry from nine to all 15 supplied roster characters.
 - Added Noa-style decision-first intelligence files for Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Yasuo, Senna, and Thresh.
 - Added shared Identity, Strengths, Weaknesses, Partners, Fuses, Routes, Matchups, Community Tech, and Questions fields.
 - Added explicit TODO placeholders and empty recommendation collections for unverified 2XKO knowledge.
@@ -41,6 +43,7 @@ All notable project changes should be documented here. Newest entries go first.
 
 ### Changed
 
+- Updated schema/build validation to cover the complete 15-file 2XKO roster set.
 - Documented the Research Vault -> review -> character intelligence promotion workflow.
 - Removed the Research Vault from public 2XKO navigation and public portal callouts.
 - Upgraded `public/data/2xko/research-vault.json` to the structured version 2 record format.

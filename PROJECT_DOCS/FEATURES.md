@@ -139,9 +139,9 @@ The vault is removed from public 2XKO navigation. Static hosting cannot provide 
 
 Status: Source Structure Ready
 
-Nine small source records live under `data/games/2xko`:
+Fifteen small source records live under `data/games/2xko`:
 
-- Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Yasuo, Senna, and Thresh.
+- Ahri, Akali, Blitzcrank, Braum, Caitlyn, Darius, Ekko, Illaoi, Jinx, Senna, Teemo, Thresh, Vi, Warwick, and Yasuo.
 
 Each record follows:
 
@@ -154,7 +154,7 @@ Each record follows:
 - Routes and community tech.
 - Decision questions.
 
-Unverified conclusions are TODO-marked and recommendation arrays remain empty. The files contain no move lists, commands, controls, or frame data. `data/games.js` exposes the intelligence root and file IDs for future loaders.
+Unverified conclusions are TODO-marked and recommendation arrays remain empty. The files contain no move lists, commands, controls, or frame data. `data/games.js` exposes the complete 15-character intelligence registry for future loaders.
 
 ## Project Documentation Workflow
 

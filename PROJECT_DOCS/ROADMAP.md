@@ -64,7 +64,7 @@ Use `TASKS.md` as the active project work queue.
 
 ## Completed
 
-- Initial Noa-style 2XKO character intelligence structure for nine characters.
+- Complete initial Noa-style 2XKO character intelligence structure for all 15 supplied roster characters.
 - Shared decision-first schema with explicit TODO placeholders for unverified conclusions.
 - Internal 2XKO Research Vault collection workspace.
 - Local draft persistence, search, source/status/tag filters, and JSON export.

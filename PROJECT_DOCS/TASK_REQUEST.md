@@ -5,32 +5,31 @@ Completed on 2026-06-22.
 
 ## Objective
 
-Create the initial decision-first 2XKO character intelligence records using the Noa/DBFZ reasoning order.
+Complete the initial decision-first 2XKO character intelligence structure for all 15 champions supplied in the current roster list.
 
 ## Scope
 
-- Add one small JSON file for Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Yasuo, Senna, and Thresh.
-- Use the same character intelligence structure in every file.
-- Preserve Identity -> Strengths -> Weaknesses -> Partners -> Fuses -> Routes -> Matchups -> Community Tech.
-- Mark every unverified conclusion as TODO instead of inventing advice.
-- Keep recommendation arrays ready for future reviewed records.
-- Include the files in the existing static build.
+- Preserve the existing shared Noa-style schema.
+- Add Akali, Blitzcrank, Caitlyn, Teemo, Vi, and Warwick records.
+- Keep the existing Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Senna, Thresh, and Yasuo records unchanged in shape.
+- Update the shared 2XKO intelligence file registry.
+- Keep every unverified gameplay conclusion TODO-marked.
+- Confirm all 15 records ship in the static build.
 
 ## Out Of Scope
 
-- No move lists, commands, frame data, controls, or encyclopedia content.
-- No speculative partners, Fuses, routes, or matchup claims.
-- No new public character interface.
-- No DBFZ data changes.
+- No move lists, commands, frame data, controls, or wiki sections.
+- No speculative partners, Fuses, routes, matchup claims, or community tech.
+- No public character interface changes.
 
 ## Success Criteria
 
-- All nine requested files exist under `data/games/2xko`.
-- Every file uses the same keys and value types.
-- TODO content is clearly unverified.
-- No wiki-style fields are introduced.
-- `npm run build` copies the records into `dist`.
+- All 15 requested JSON files exist under `data/games/2xko`.
+- Every file has identical keys and value types.
+- No prohibited wiki-style fields exist.
+- The game config lists all 15 file IDs.
+- `npm run build` copies all records into `dist`.
 
 ## Notes
 
-Research Vault evidence should be reviewed before replacing any TODO value.
+Research Vault verification remains the gate for replacing TODO values.
