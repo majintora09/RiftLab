@@ -1,37 +1,39 @@
 # Task Request
 
 Status:
-Completed on 2026-06-22.
+In progress.
 
 ## Objective
 
-Build the first lightweight FG Lab Synergy Engine so 2XKO can answer: Who works well with this character and why?
+Prepare FG Lab for entirely free static deployment on Cloudflare Pages and GitHub Pages.
 
 ## Scope
 
-- Add mock 2XKO character, partner, Fuse, and route recommendation data.
-- Add a reusable JSON-driven recommendation renderer.
-- Show partner name, score, reason, difficulty, and tags at a glance.
-- Show the selected character's strengths, weaknesses, recommended Fuses, routes, and notes.
-- Integrate the engine into the existing 2XKO Synergies route.
-- Keep the view compact and responsive.
+- Replace the no-op build with a real static export.
+- Write deployable output to `dist`.
+- Generate physical pages for every supported route.
+- Make routing and JSON asset loading work under a configurable GitHub project base path.
+- Preserve direct `file://` support and existing DBFZ behavior.
+- Add Cloudflare Pages and GitHub Pages deployment instructions.
+- Add a free GitHub Pages workflow.
 
 ## Out Of Scope
 
-- No frame data.
-- No wiki layout or long character articles.
-- No claims that mock recommendations are verified.
-- No backend, account, or admin editing work.
-- No DBFZ redesign.
+- No paid hosting.
+- No database or backend.
+- No runtime Node server dependency.
+- No application redesign.
+- No content expansion.
 
 ## Success Criteria
 
-- The 2XKO Synergies page answers why each partner is recommended.
-- Recommendations load from local JSON rather than hardcoded page copy.
-- Components can render another character once real records are added.
-- Desktop and mobile layouts remain usable.
-- JavaScript and JSON validation pass.
+- `npm run build` creates a complete `dist` folder.
+- Every known route has a generated `index.html`.
+- Runtime JavaScript, JSON, portraits, and backgrounds are included.
+- Cloudflare Pages can publish `dist` directly.
+- GitHub Pages can publish `dist` with the repository base path.
+- Static route and asset smoke tests pass.
 
 ## Notes
 
-Mock records are clearly labeled as example data for interface testing.
+`server.js` remains a local development convenience only and is not included in the runtime output.

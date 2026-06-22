@@ -7,6 +7,7 @@
   const twoXkoNav = document.querySelector("#twoXkoNav");
   const twoXkoContent = document.querySelector("#twoXkoContent");
   const twoXkoGame = games.find((game) => game.id === "2xko");
+  const deploymentBase = normalizeBasePath(window.FG_LAB_BASE_PATH || "/");
 
   const dbfzViews = {
     "/games/dbfz": "team",
@@ -64,14 +65,31 @@
       ["Routes", "/games/2xko/routes"],
       ["Research Vault", "/games/2xko/research-vault"],
     ];
-    twoXkoNav.innerHTML = routes.map(([label, route]) => `<a href="${route}" data-route="${route}">${label}</a>`).join("");
+    twoXkoNav.innerHTML = routes.map(([label, route]) => `<a href="${deploymentPath(route)}" data-route="${route}">${label}</a>`).join("");
   }
 
   function currentRoute() {
     const hash = window.location.hash;
     if (legacyHashes[hash]) return legacyHashes[hash];
     if (window.location.protocol === "file:") return hash.startsWith("#/") ? normalizeRoute(hash.slice(1)) : "/";
-    return normalizeRoute(window.location.pathname);
+    return normalizeRoute(stripDeploymentBase(window.location.pathname));
+  }
+
+  function normalizeBasePath(path) {
+    const value = `/${String(path || "/").replace(/^\/+|\/+$/g, "")}/`;
+    return value === "//" ? "/" : value;
+  }
+
+  function stripDeploymentBase(path) {
+    if (deploymentBase === "/") return path;
+    const baseWithoutSlash = deploymentBase.replace(/\/$/, "");
+    return path === baseWithoutSlash ? "/" : path.startsWith(deploymentBase) ? `/${path.slice(deploymentBase.length)}` : path;
+  }
+
+  function deploymentPath(route) {
+    const cleanRoute = normalizeRoute(route);
+    if (cleanRoute === "/") return deploymentBase;
+    return `${deploymentBase}${cleanRoute.replace(/^\//, "")}`;
   }
 
   function normalizeRoute(route) {
@@ -89,7 +107,7 @@
       else window.location.hash = nextRoute;
       return;
     }
-    window.history[replace ? "replaceState" : "pushState"]({}, "", nextRoute);
+    window.history[replace ? "replaceState" : "pushState"]({}, "", deploymentPath(nextRoute));
     renderRoute();
   }
 
@@ -214,7 +232,7 @@
 
   async function loadResearchVault() {
     try {
-      const source = window.location.protocol === "file:" ? "public/data/2xko/research-vault.json" : "/public/data/2xko/research-vault.json";
+      const source = window.FG_LAB_ASSET_PATH?.("public/data/2xko/research-vault.json") || "public/data/2xko/research-vault.json";
       const response = await fetch(source);
       if (!response.ok) return;
       const data = await response.json();
@@ -237,6 +255,7 @@
   window.FG_LAB_PLATFORM = { navigate, renderRoute };
   renderGameCards();
   renderTwoXkoNav();
+  document.querySelectorAll("a[data-route]").forEach((link) => link.setAttribute("href", deploymentPath(link.dataset.route)));
   loadResearchVault();
   window.FG_LAB_SYNERGY_ENGINE?.load(twoXkoGame);
   renderRoute();

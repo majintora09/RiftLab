@@ -403,7 +403,7 @@ async function loadPublicDatabase() {
 
 async function fetchJSON(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(window.FG_LAB_ASSET_PATH?.(url) || url);
     if (!response.ok) return null;
     return response.json();
   } catch {
@@ -3479,8 +3479,7 @@ function normalizeDataPath(path) {
   if (!path) return path;
   if (/^https?:\/\//.test(path)) return path;
   if (location.protocol === "file:") return path.replace(/^\/+/, "");
-  if (path.startsWith("/")) return path;
-  return `/${path}`;
+  return window.FG_LAB_ASSET_PATH?.(path) || (path.startsWith("/") ? path : `/${path}`);
 }
 
 function compareFrameRows(a, b) {

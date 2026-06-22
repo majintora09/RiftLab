@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FG Lab</title>
     <script>
+      const configuredBase = "__FG_LAB_BASE_PATH__";
       const base = document.createElement("base");
-      base.href = window.location.protocol === "file:" ? "./" : "/";
+      base.href = configuredBase.startsWith("__")
+        ? (window.location.protocol === "file:" ? "./" : "/")
+        : configuredBase;
       document.head.append(base);
+      window.FG_LAB_BASE_PATH = configuredBase.startsWith("__") ? "/" : configuredBase;
+      window.FG_LAB_ASSET_PATH = (path) => {
+        const value = String(path || "");
+        if (/^(?:https?:|data:|blob:)/.test(value)) return value;
+        if (window.location.protocol === "file:") return value.replace(/^\/+/, "");
+        if (window.FG_LAB_BASE_PATH !== "/" && value.startsWith(window.FG_LAB_BASE_PATH)) return value;
+        return `${window.FG_LAB_BASE_PATH}${value.replace(/^\/+/, "")}`;
+      };
     </script>
     <link rel="stylesheet" href="styles.css" />
   </head>

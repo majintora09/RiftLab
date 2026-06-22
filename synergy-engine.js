@@ -18,7 +18,8 @@
 
   function dataUrl(file) {
     const root = state.game?.dataRoot || "";
-    return `${window.location.protocol === "file:" ? root.replace(/^\//, "") : root}/${file}`;
+    const path = `${root.replace(/\/$/, "")}/${file}`;
+    return window.FG_LAB_ASSET_PATH?.(path) || (window.location.protocol === "file:" ? path.replace(/^\//, "") : path);
   }
 
   async function load(game) {
