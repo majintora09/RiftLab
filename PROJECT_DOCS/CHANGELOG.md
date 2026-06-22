@@ -6,6 +6,11 @@ All notable project changes should be documented here. Newest entries go first.
 
 ### Added
 
+- Added 105 lightweight 2XKO synergy files covering every unique 15-character pairing.
+- Added a non-destructive roster-driven synergy generator and deterministic pair index.
+- Added browser helpers for canonical pair IDs, one-team loading, and all-pairs-by-character loading.
+- Added automatic missing-pair generation to the static build command.
+- Added the 2XKO synergy data root to shared game configuration.
 - Added 2XKO intelligence records for Akali, Blitzcrank, Caitlyn, Teemo, Vi, and Warwick.
 - Expanded the shared 2XKO intelligence registry from nine to all 15 supplied roster characters.
 - Added Noa-style decision-first intelligence files for Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Yasuo, Senna, and Thresh.
@@ -43,6 +48,8 @@ All notable project changes should be documented here. Newest entries go first.
 
 ### Changed
 
+- Standardized 2XKO synergy filenames using alphabetical character slugs.
+- Kept all generated synergy ratings and difficulty values null with verification false.
 - Updated schema/build validation to cover the complete 15-file 2XKO roster set.
 - Documented the Research Vault -> review -> character intelligence promotion workflow.
 - Removed the Research Vault from public 2XKO navigation and public portal callouts.

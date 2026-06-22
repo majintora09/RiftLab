@@ -1,0 +1,865 @@
+{
+  "version": 1,
+  "game": "2xko",
+  "naming": "alphabetical-character-slugs",
+  "roster": [
+    "ahri",
+    "akali",
+    "blitzcrank",
+    "braum",
+    "caitlyn",
+    "darius",
+    "ekko",
+    "illaoi",
+    "jinx",
+    "senna",
+    "teemo",
+    "thresh",
+    "vi",
+    "warwick",
+    "yasuo"
+  ],
+  "combinationCount": 105,
+  "combinations": [
+    {
+      "id": "ahri-akali",
+      "file": "ahri-akali.json",
+      "team": [
+        "ahri",
+        "akali"
+      ]
+    },
+    {
+      "id": "ahri-blitzcrank",
+      "file": "ahri-blitzcrank.json",
+      "team": [
+        "ahri",
+        "blitzcrank"
+      ]
+    },
+    {
+      "id": "ahri-braum",
+      "file": "ahri-braum.json",
+      "team": [
+        "ahri",
+        "braum"
+      ]
+    },
+    {
+      "id": "ahri-caitlyn",
+      "file": "ahri-caitlyn.json",
+      "team": [
+        "ahri",
+        "caitlyn"
+      ]
+    },
+    {
+      "id": "ahri-darius",
+      "file": "ahri-darius.json",
+      "team": [
+        "ahri",
+        "darius"
+      ]
+    },
+    {
+      "id": "ahri-ekko",
+      "file": "ahri-ekko.json",
+      "team": [
+        "ahri",
+        "ekko"
+      ]
+    },
+    {
+      "id": "ahri-illaoi",
+      "file": "ahri-illaoi.json",
+      "team": [
+        "ahri",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "ahri-jinx",
+      "file": "ahri-jinx.json",
+      "team": [
+        "ahri",
+        "jinx"
+      ]
+    },
+    {
+      "id": "ahri-senna",
+      "file": "ahri-senna.json",
+      "team": [
+        "ahri",
+        "senna"
+      ]
+    },
+    {
+      "id": "ahri-teemo",
+      "file": "ahri-teemo.json",
+      "team": [
+        "ahri",
+        "teemo"
+      ]
+    },
+    {
+      "id": "ahri-thresh",
+      "file": "ahri-thresh.json",
+      "team": [
+        "ahri",
+        "thresh"
+      ]
+    },
+    {
+      "id": "ahri-vi",
+      "file": "ahri-vi.json",
+      "team": [
+        "ahri",
+        "vi"
+      ]
+    },
+    {
+      "id": "ahri-warwick",
+      "file": "ahri-warwick.json",
+      "team": [
+        "ahri",
+        "warwick"
+      ]
+    },
+    {
+      "id": "ahri-yasuo",
+      "file": "ahri-yasuo.json",
+      "team": [
+        "ahri",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "akali-blitzcrank",
+      "file": "akali-blitzcrank.json",
+      "team": [
+        "akali",
+        "blitzcrank"
+      ]
+    },
+    {
+      "id": "akali-braum",
+      "file": "akali-braum.json",
+      "team": [
+        "akali",
+        "braum"
+      ]
+    },
+    {
+      "id": "akali-caitlyn",
+      "file": "akali-caitlyn.json",
+      "team": [
+        "akali",
+        "caitlyn"
+      ]
+    },
+    {
+      "id": "akali-darius",
+      "file": "akali-darius.json",
+      "team": [
+        "akali",
+        "darius"
+      ]
+    },
+    {
+      "id": "akali-ekko",
+      "file": "akali-ekko.json",
+      "team": [
+        "akali",
+        "ekko"
+      ]
+    },
+    {
+      "id": "akali-illaoi",
+      "file": "akali-illaoi.json",
+      "team": [
+        "akali",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "akali-jinx",
+      "file": "akali-jinx.json",
+      "team": [
+        "akali",
+        "jinx"
+      ]
+    },
+    {
+      "id": "akali-senna",
+      "file": "akali-senna.json",
+      "team": [
+        "akali",
+        "senna"
+      ]
+    },
+    {
+      "id": "akali-teemo",
+      "file": "akali-teemo.json",
+      "team": [
+        "akali",
+        "teemo"
+      ]
+    },
+    {
+      "id": "akali-thresh",
+      "file": "akali-thresh.json",
+      "team": [
+        "akali",
+        "thresh"
+      ]
+    },
+    {
+      "id": "akali-vi",
+      "file": "akali-vi.json",
+      "team": [
+        "akali",
+        "vi"
+      ]
+    },
+    {
+      "id": "akali-warwick",
+      "file": "akali-warwick.json",
+      "team": [
+        "akali",
+        "warwick"
+      ]
+    },
+    {
+      "id": "akali-yasuo",
+      "file": "akali-yasuo.json",
+      "team": [
+        "akali",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "blitzcrank-braum",
+      "file": "blitzcrank-braum.json",
+      "team": [
+        "blitzcrank",
+        "braum"
+      ]
+    },
+    {
+      "id": "blitzcrank-caitlyn",
+      "file": "blitzcrank-caitlyn.json",
+      "team": [
+        "blitzcrank",
+        "caitlyn"
+      ]
+    },
+    {
+      "id": "blitzcrank-darius",
+      "file": "blitzcrank-darius.json",
+      "team": [
+        "blitzcrank",
+        "darius"
+      ]
+    },
+    {
+      "id": "blitzcrank-ekko",
+      "file": "blitzcrank-ekko.json",
+      "team": [
+        "blitzcrank",
+        "ekko"
+      ]
+    },
+    {
+      "id": "blitzcrank-illaoi",
+      "file": "blitzcrank-illaoi.json",
+      "team": [
+        "blitzcrank",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "blitzcrank-jinx",
+      "file": "blitzcrank-jinx.json",
+      "team": [
+        "blitzcrank",
+        "jinx"
+      ]
+    },
+    {
+      "id": "blitzcrank-senna",
+      "file": "blitzcrank-senna.json",
+      "team": [
+        "blitzcrank",
+        "senna"
+      ]
+    },
+    {
+      "id": "blitzcrank-teemo",
+      "file": "blitzcrank-teemo.json",
+      "team": [
+        "blitzcrank",
+        "teemo"
+      ]
+    },
+    {
+      "id": "blitzcrank-thresh",
+      "file": "blitzcrank-thresh.json",
+      "team": [
+        "blitzcrank",
+        "thresh"
+      ]
+    },
+    {
+      "id": "blitzcrank-vi",
+      "file": "blitzcrank-vi.json",
+      "team": [
+        "blitzcrank",
+        "vi"
+      ]
+    },
+    {
+      "id": "blitzcrank-warwick",
+      "file": "blitzcrank-warwick.json",
+      "team": [
+        "blitzcrank",
+        "warwick"
+      ]
+    },
+    {
+      "id": "blitzcrank-yasuo",
+      "file": "blitzcrank-yasuo.json",
+      "team": [
+        "blitzcrank",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "braum-caitlyn",
+      "file": "braum-caitlyn.json",
+      "team": [
+        "braum",
+        "caitlyn"
+      ]
+    },
+    {
+      "id": "braum-darius",
+      "file": "braum-darius.json",
+      "team": [
+        "braum",
+        "darius"
+      ]
+    },
+    {
+      "id": "braum-ekko",
+      "file": "braum-ekko.json",
+      "team": [
+        "braum",
+        "ekko"
+      ]
+    },
+    {
+      "id": "braum-illaoi",
+      "file": "braum-illaoi.json",
+      "team": [
+        "braum",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "braum-jinx",
+      "file": "braum-jinx.json",
+      "team": [
+        "braum",
+        "jinx"
+      ]
+    },
+    {
+      "id": "braum-senna",
+      "file": "braum-senna.json",
+      "team": [
+        "braum",
+        "senna"
+      ]
+    },
+    {
+      "id": "braum-teemo",
+      "file": "braum-teemo.json",
+      "team": [
+        "braum",
+        "teemo"
+      ]
+    },
+    {
+      "id": "braum-thresh",
+      "file": "braum-thresh.json",
+      "team": [
+        "braum",
+        "thresh"
+      ]
+    },
+    {
+      "id": "braum-vi",
+      "file": "braum-vi.json",
+      "team": [
+        "braum",
+        "vi"
+      ]
+    },
+    {
+      "id": "braum-warwick",
+      "file": "braum-warwick.json",
+      "team": [
+        "braum",
+        "warwick"
+      ]
+    },
+    {
+      "id": "braum-yasuo",
+      "file": "braum-yasuo.json",
+      "team": [
+        "braum",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "caitlyn-darius",
+      "file": "caitlyn-darius.json",
+      "team": [
+        "caitlyn",
+        "darius"
+      ]
+    },
+    {
+      "id": "caitlyn-ekko",
+      "file": "caitlyn-ekko.json",
+      "team": [
+        "caitlyn",
+        "ekko"
+      ]
+    },
+    {
+      "id": "caitlyn-illaoi",
+      "file": "caitlyn-illaoi.json",
+      "team": [
+        "caitlyn",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "caitlyn-jinx",
+      "file": "caitlyn-jinx.json",
+      "team": [
+        "caitlyn",
+        "jinx"
+      ]
+    },
+    {
+      "id": "caitlyn-senna",
+      "file": "caitlyn-senna.json",
+      "team": [
+        "caitlyn",
+        "senna"
+      ]
+    },
+    {
+      "id": "caitlyn-teemo",
+      "file": "caitlyn-teemo.json",
+      "team": [
+        "caitlyn",
+        "teemo"
+      ]
+    },
+    {
+      "id": "caitlyn-thresh",
+      "file": "caitlyn-thresh.json",
+      "team": [
+        "caitlyn",
+        "thresh"
+      ]
+    },
+    {
+      "id": "caitlyn-vi",
+      "file": "caitlyn-vi.json",
+      "team": [
+        "caitlyn",
+        "vi"
+      ]
+    },
+    {
+      "id": "caitlyn-warwick",
+      "file": "caitlyn-warwick.json",
+      "team": [
+        "caitlyn",
+        "warwick"
+      ]
+    },
+    {
+      "id": "caitlyn-yasuo",
+      "file": "caitlyn-yasuo.json",
+      "team": [
+        "caitlyn",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "darius-ekko",
+      "file": "darius-ekko.json",
+      "team": [
+        "darius",
+        "ekko"
+      ]
+    },
+    {
+      "id": "darius-illaoi",
+      "file": "darius-illaoi.json",
+      "team": [
+        "darius",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "darius-jinx",
+      "file": "darius-jinx.json",
+      "team": [
+        "darius",
+        "jinx"
+      ]
+    },
+    {
+      "id": "darius-senna",
+      "file": "darius-senna.json",
+      "team": [
+        "darius",
+        "senna"
+      ]
+    },
+    {
+      "id": "darius-teemo",
+      "file": "darius-teemo.json",
+      "team": [
+        "darius",
+        "teemo"
+      ]
+    },
+    {
+      "id": "darius-thresh",
+      "file": "darius-thresh.json",
+      "team": [
+        "darius",
+        "thresh"
+      ]
+    },
+    {
+      "id": "darius-vi",
+      "file": "darius-vi.json",
+      "team": [
+        "darius",
+        "vi"
+      ]
+    },
+    {
+      "id": "darius-warwick",
+      "file": "darius-warwick.json",
+      "team": [
+        "darius",
+        "warwick"
+      ]
+    },
+    {
+      "id": "darius-yasuo",
+      "file": "darius-yasuo.json",
+      "team": [
+        "darius",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "ekko-illaoi",
+      "file": "ekko-illaoi.json",
+      "team": [
+        "ekko",
+        "illaoi"
+      ]
+    },
+    {
+      "id": "ekko-jinx",
+      "file": "ekko-jinx.json",
+      "team": [
+        "ekko",
+        "jinx"
+      ]
+    },
+    {
+      "id": "ekko-senna",
+      "file": "ekko-senna.json",
+      "team": [
+        "ekko",
+        "senna"
+      ]
+    },
+    {
+      "id": "ekko-teemo",
+      "file": "ekko-teemo.json",
+      "team": [
+        "ekko",
+        "teemo"
+      ]
+    },
+    {
+      "id": "ekko-thresh",
+      "file": "ekko-thresh.json",
+      "team": [
+        "ekko",
+        "thresh"
+      ]
+    },
+    {
+      "id": "ekko-vi",
+      "file": "ekko-vi.json",
+      "team": [
+        "ekko",
+        "vi"
+      ]
+    },
+    {
+      "id": "ekko-warwick",
+      "file": "ekko-warwick.json",
+      "team": [
+        "ekko",
+        "warwick"
+      ]
+    },
+    {
+      "id": "ekko-yasuo",
+      "file": "ekko-yasuo.json",
+      "team": [
+        "ekko",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "illaoi-jinx",
+      "file": "illaoi-jinx.json",
+      "team": [
+        "illaoi",
+        "jinx"
+      ]
+    },
+    {
+      "id": "illaoi-senna",
+      "file": "illaoi-senna.json",
+      "team": [
+        "illaoi",
+        "senna"
+      ]
+    },
+    {
+      "id": "illaoi-teemo",
+      "file": "illaoi-teemo.json",
+      "team": [
+        "illaoi",
+        "teemo"
+      ]
+    },
+    {
+      "id": "illaoi-thresh",
+      "file": "illaoi-thresh.json",
+      "team": [
+        "illaoi",
+        "thresh"
+      ]
+    },
+    {
+      "id": "illaoi-vi",
+      "file": "illaoi-vi.json",
+      "team": [
+        "illaoi",
+        "vi"
+      ]
+    },
+    {
+      "id": "illaoi-warwick",
+      "file": "illaoi-warwick.json",
+      "team": [
+        "illaoi",
+        "warwick"
+      ]
+    },
+    {
+      "id": "illaoi-yasuo",
+      "file": "illaoi-yasuo.json",
+      "team": [
+        "illaoi",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "jinx-senna",
+      "file": "jinx-senna.json",
+      "team": [
+        "jinx",
+        "senna"
+      ]
+    },
+    {
+      "id": "jinx-teemo",
+      "file": "jinx-teemo.json",
+      "team": [
+        "jinx",
+        "teemo"
+      ]
+    },
+    {
+      "id": "jinx-thresh",
+      "file": "jinx-thresh.json",
+      "team": [
+        "jinx",
+        "thresh"
+      ]
+    },
+    {
+      "id": "jinx-vi",
+      "file": "jinx-vi.json",
+      "team": [
+        "jinx",
+        "vi"
+      ]
+    },
+    {
+      "id": "jinx-warwick",
+      "file": "jinx-warwick.json",
+      "team": [
+        "jinx",
+        "warwick"
+      ]
+    },
+    {
+      "id": "jinx-yasuo",
+      "file": "jinx-yasuo.json",
+      "team": [
+        "jinx",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "senna-teemo",
+      "file": "senna-teemo.json",
+      "team": [
+        "senna",
+        "teemo"
+      ]
+    },
+    {
+      "id": "senna-thresh",
+      "file": "senna-thresh.json",
+      "team": [
+        "senna",
+        "thresh"
+      ]
+    },
+    {
+      "id": "senna-vi",
+      "file": "senna-vi.json",
+      "team": [
+        "senna",
+        "vi"
+      ]
+    },
+    {
+      "id": "senna-warwick",
+      "file": "senna-warwick.json",
+      "team": [
+        "senna",
+        "warwick"
+      ]
+    },
+    {
+      "id": "senna-yasuo",
+      "file": "senna-yasuo.json",
+      "team": [
+        "senna",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "teemo-thresh",
+      "file": "teemo-thresh.json",
+      "team": [
+        "teemo",
+        "thresh"
+      ]
+    },
+    {
+      "id": "teemo-vi",
+      "file": "teemo-vi.json",
+      "team": [
+        "teemo",
+        "vi"
+      ]
+    },
+    {
+      "id": "teemo-warwick",
+      "file": "teemo-warwick.json",
+      "team": [
+        "teemo",
+        "warwick"
+      ]
+    },
+    {
+      "id": "teemo-yasuo",
+      "file": "teemo-yasuo.json",
+      "team": [
+        "teemo",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "thresh-vi",
+      "file": "thresh-vi.json",
+      "team": [
+        "thresh",
+        "vi"
+      ]
+    },
+    {
+      "id": "thresh-warwick",
+      "file": "thresh-warwick.json",
+      "team": [
+        "thresh",
+        "warwick"
+      ]
+    },
+    {
+      "id": "thresh-yasuo",
+      "file": "thresh-yasuo.json",
+      "team": [
+        "thresh",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "vi-warwick",
+      "file": "vi-warwick.json",
+      "team": [
+        "vi",
+        "warwick"
+      ]
+    },
+    {
+      "id": "vi-yasuo",
+      "file": "vi-yasuo.json",
+      "team": [
+        "vi",
+        "yasuo"
+      ]
+    },
+    {
+      "id": "warwick-yasuo",
+      "file": "warwick-yasuo.json",
+      "team": [
+        "warwick",
+        "yasuo"
+      ]
+    }
+  ]
+}

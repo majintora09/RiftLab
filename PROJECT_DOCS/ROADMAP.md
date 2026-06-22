@@ -64,6 +64,8 @@ Use `TASKS.md` as the active project work queue.
 
 ## Completed
 
+- Generated 2XKO Synergy Database covering all 105 unique roster pairings.
+- Non-destructive roster-driven generator, deterministic pair index, and browser loading helpers.
 - Complete initial Noa-style 2XKO character intelligence structure for all 15 supplied roster characters.
 - Shared decision-first schema with explicit TODO placeholders for unverified conclusions.
 - Internal 2XKO Research Vault collection workspace.
@@ -204,6 +206,7 @@ The DBFZ Lab continues evolving from a simple Team Builder into a DBFZ companion
 
 - [x] Decision-support data foundation.
 - [x] Character intelligence source files.
+- [x] Complete placeholder synergy pairing database.
 - [x] Mock character recommendation flow.
 - [x] Ranked duo recommendation prototype.
 - [ ] Fuse explanations.

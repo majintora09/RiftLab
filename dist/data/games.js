@@ -30,6 +30,7 @@ window.FG_LAB_GAMES = [
     dataRoot: "/public/data/2xko",
     intelligenceRoot: "/data/games/2xko",
     intelligenceFiles: ["ahri", "akali", "blitzcrank", "braum", "caitlyn", "darius", "ekko", "illaoi", "jinx", "senna", "teemo", "thresh", "vi", "warwick", "yasuo"],
+    synergyRoot: "/data/games/2xko/synergies",
     decisionPrompts: [
       "Who should I pair with?",
       "What Fuse fits this duo?",

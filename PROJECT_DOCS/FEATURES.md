@@ -156,6 +156,26 @@ Each record follows:
 
 Unverified conclusions are TODO-marked and recommendation arrays remain empty. The files contain no move lists, commands, controls, or frame data. `data/games.js` exposes the complete 15-character intelligence registry for future loaders.
 
+## 2XKO Synergy Database
+
+Status: Structure Complete / Content Unverified
+
+Implemented:
+
+- 105 unique unordered pair records under `data/games/2xko/synergies`.
+- Alphabetically normalized filenames such as `ahri-yasuo.json`.
+- Empty rating and difficulty fields until verification.
+- Arrays for playstyles, strengths, weaknesses, Fuses, routes, notes, and multiple sources.
+- `verified: false` on every generated placeholder.
+- Deterministic `index.json` with roster, naming rule, count, and pair descriptors.
+- Non-destructive generator at `scripts/generate-2xko-synergies.js`.
+- `npm run generate-2xko-synergies` for manual generation.
+- Automatic missing-pair generation before `npm run build`.
+- Browser helper in `data/2xko-synergy-db.js` for pair IDs, one-team loading, and character-wide loading.
+- Shared `synergyRoot` in the game config.
+
+Normal generation preserves existing researched files. The explicit `--overwrite` flag resets pair files and should be used carefully.
+
 ## Project Documentation Workflow
 
 Status: Active

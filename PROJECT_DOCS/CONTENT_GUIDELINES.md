@@ -116,6 +116,21 @@ Rules:
 - Promote evidence from Research Vault only after source and verification review.
 - Never add move lists, frame data, commands, controls, or general encyclopedia sections.
 
+## 2XKO Synergy File Format
+
+Use one file per unique unordered pair.
+
+Rules:
+
+- Normalize filenames alphabetically: `ahri-yasuo.json`, regardless of selection order.
+- Keep `team` as the same two canonical slugs.
+- Leave `rating` and `difficulty` null until verified.
+- Keep playstyles, strengths, weaknesses, Fuses, routes, notes, and sources empty until evidence exists.
+- Store every supporting source as a separate entry in the `sources` array.
+- Keep `verified` false until the complete recommendation has been reviewed.
+- Normal generator runs must never overwrite researched pair files.
+- Do not add move, frame, command, or matchup encyclopedia content.
+
 ## Tags
 Good:
 - Pressure

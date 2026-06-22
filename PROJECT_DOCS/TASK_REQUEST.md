@@ -5,31 +5,34 @@ Completed on 2026-06-22.
 
 ## Objective
 
-Complete the initial decision-first 2XKO character intelligence structure for all 15 champions supplied in the current roster list.
+Generate the modular 2XKO Synergy Database for every unique two-character combination in the 15-character intelligence registry.
 
 ## Scope
 
-- Preserve the existing shared Noa-style schema.
-- Add Akali, Blitzcrank, Caitlyn, Teemo, Vi, and Warwick records.
-- Keep the existing Ahri, Braum, Darius, Ekko, Illaoi, Jinx, Senna, Thresh, and Yasuo records unchanged in shape.
-- Update the shared 2XKO intelligence file registry.
-- Keep every unverified gameplay conclusion TODO-marked.
-- Confirm all 15 records ship in the static build.
+- Add a dependency-free synergy generator driven by `intelligenceFiles` in `data/games.js`.
+- Generate 105 unique unordered team files under `data/games/2xko/synergies`.
+- Use alphabetically normalized slugs for stable filenames.
+- Create a deterministic index manifest.
+- Preserve existing pair files unless an explicit overwrite flag is used.
+- Add browser helpers to resolve, list, and load pair records.
+- Run the generator automatically before static builds.
 
 ## Out Of Scope
 
-- No move lists, commands, frame data, controls, or wiki sections.
-- No speculative partners, Fuses, routes, matchup claims, or community tech.
-- No public character interface changes.
+- No invented ratings, difficulty, matchup conclusions, Fuses, routes, or notes.
+- No wiki, move-list, frame-data, or command content.
+- No new public synergy interface.
+- No automatic verification.
 
 ## Success Criteria
 
-- All 15 requested JSON files exist under `data/games/2xko`.
-- Every file has identical keys and value types.
-- No prohibited wiki-style fields exist.
-- The game config lists all 15 file IDs.
-- `npm run build` copies all records into `dist`.
+- Exactly 105 pair files exist for the 15-character roster.
+- Every pair uses the requested schema and has `rating: null`, `difficulty: null`, `verified: false`.
+- Every pair supports multiple sources through an array.
+- Reversed character order resolves to the same canonical filename.
+- Future Team Builder code can load one pair or all pairs for a character.
+- `npm run build` regenerates missing files and ships the complete database.
 
 ## Notes
 
-Research Vault verification remains the gate for replacing TODO values.
+Normal generation preserves researched files. `--overwrite` is reserved for intentionally resetting placeholders.

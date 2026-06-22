@@ -7,6 +7,7 @@
     "dev": "node server.js",
     "preview": "node server.js dist",
     "import-dustloop": "node scripts/import-dustloop.js",
-    "build": "node scripts/build-static.js"
+    "generate-2xko-synergies": "node scripts/generate-2xko-synergies.js",
+    "build": "node scripts/generate-2xko-synergies.js && node scripts/build-static.js"
   }
 }
