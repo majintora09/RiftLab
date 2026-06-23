@@ -710,7 +710,7 @@ body.platform-page-active {
 .decision-hero {
   min-height: clamp(260px, 38vh, 430px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.34fr);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.34fr);
   align-items: end;
   gap: 26px;
   padding: clamp(26px, 5vw, 60px);
@@ -740,6 +740,24 @@ body.platform-page-active {
   background: rgba(5, 8, 15, 0.55);
 }
 
+.decision-hero aside button {
+  border: 1px solid rgba(114, 221, 255, 0.28);
+  border-left: 2px solid #c277ff;
+  padding: 10px 12px;
+  background: rgba(194, 119, 255, 0.1);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 950;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.decision-hero aside button:hover,
+.decision-hero aside button:focus-visible {
+  border-color: #72ddff;
+  background: rgba(114, 221, 255, 0.14);
+}
+
 .decision-hero aside span,
 .decision-section-heading .eyebrow,
 .decision-bucket h3,
@@ -762,24 +780,34 @@ body.platform-page-active {
 
 .decision-character-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 12px;
+}
+
+.decision-character-grid--featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .decision-character-card {
-  min-height: 178px;
+  min-height: 286px;
   display: grid;
-  align-content: start;
+  grid-template-rows: minmax(140px, 1fr) auto auto auto auto;
   gap: 8px;
   border: 1px solid var(--line);
   border-top: 2px solid #72ddff;
-  padding: 13px;
+  overflow: hidden;
+  padding: 0 13px 13px;
   background:
+    linear-gradient(180deg, rgba(5, 8, 15, 0.1), rgba(5, 8, 15, 0.92) 62%),
     linear-gradient(145deg, rgba(22, 35, 52, 0.96), rgba(11, 13, 21, 0.96));
   color: var(--ink);
   cursor: pointer;
   text-align: left;
   clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+}
+
+.decision-character-card--featured {
+  min-height: 360px;
 }
 
 .decision-character-card:hover,
@@ -788,6 +816,35 @@ body.platform-page-active {
 .decision-page-picker button[aria-pressed="true"] {
   border-color: #72ddff;
   background: linear-gradient(145deg, rgba(32, 72, 105, 0.94), rgba(18, 15, 34, 0.96));
+}
+
+.decision-character-card__art {
+  width: calc(100% + 26px);
+  min-height: 160px;
+  margin: 0 -13px;
+  background:
+    linear-gradient(180deg, rgba(5, 8, 15, 0), rgba(5, 8, 15, 0.75)),
+    var(--champion-art, linear-gradient(135deg, #226fbc, #8c3ec3));
+  background-position: center top;
+  background-size: cover;
+  border-bottom: 1px solid rgba(114, 221, 255, 0.24);
+}
+
+.decision-character-card--featured .decision-character-card__art {
+  min-height: 220px;
+}
+
+.decision-character-card__label {
+  width: max-content;
+  max-width: 100%;
+  margin-top: -28px;
+  border: 1px solid rgba(114, 221, 255, 0.32);
+  padding: 5px 8px;
+  background: rgba(5, 8, 15, 0.84);
+  color: #9ce8ff;
+  font-size: 9px;
+  font-weight: 950;
+  text-transform: uppercase;
 }
 
 .decision-character-card__mark,
@@ -888,15 +945,18 @@ body.platform-page-active {
 
 .decision-profile {
   display: grid;
-  grid-template-columns: minmax(180px, 0.24fr) minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 0.32fr) minmax(0, 1fr);
   gap: clamp(18px, 3vw, 34px);
   align-items: stretch;
   padding: clamp(18px, 4vw, 38px);
 }
 
 .decision-portrait {
-  min-height: 260px;
+  min-height: 420px;
   border: 1px solid rgba(114, 221, 255, 0.3);
+  background-position: center top;
+  background-size: cover;
+  transform: none;
   font-size: clamp(54px, 9vw, 110px);
 }
 
@@ -914,7 +974,7 @@ body.platform-page-active {
 
 .decision-profile-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin: 18px 0;
 }
@@ -935,6 +995,10 @@ body.platform-page-active {
 .decision-profile-meta dd {
   margin: 3px 0 0;
   font-weight: 850;
+}
+
+.decision-profile-meta a {
+  color: #9ce8ff;
 }
 
 .decision-section {
@@ -1104,6 +1168,11 @@ body.platform-page-active {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .decision-character-grid--featured,
+  .decision-profile-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .game-portal-topbar {
     align-items: flex-start;
     flex-wrap: wrap;
@@ -1178,7 +1247,7 @@ body.platform-page-active {
   }
 
   .decision-portrait {
-    min-height: 180px;
+    min-height: 340px;
   }
 
   .decision-page-picker {

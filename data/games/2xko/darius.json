@@ -1,16 +1,55 @@
 {
   "character": "Darius",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Hand of Noxus",
+  "region": "Noxus",
+  "portrait": "/assets/games/2xko/characters/darius.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/darius/",
+  "identity": "Rising from humble origins to become a bringer of true carnage, Darius cleaves through the empire’s enemies. He’s a mid-range fighter with attacks just as brutal and deadly as his axe.",
+  "playstyle": "Striker. Rising from humble origins to become a bringer of true carnage, Darius cleaves through the empire’s enemies. He’s a mid-range fighter with attacks just as brutal and deadly as his axe.",
+  "difficulty": "Beginner Friendly",
+  "archetypes": [
+    "Striker"
+  ],
+  "strengths": [
+    "Direct bruiser gameplan with high-impact close-range offense.",
+    "Easy-to-understand win condition: get in, hit hard, keep advantage.",
+    "Works as a stable damage threat for newer team builders."
+  ],
+  "weaknesses": [
+    "Needs help when opponents avoid his preferred range.",
+    "Route and matchup details should be verified before ranking partners.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Neutral cover to enter close range",
+    "Assist calls that protect heavy commitments",
+    "Partners who cash out after his damage threat"
+  ],
+  "teamProvides": [
+    "Striker team role",
+    "Direct bruiser gameplan with high-impact close-range offense.",
+    "Easy-to-understand win condition: get in, hit hard, keep advantage."
+  ],
+  "learningPriorities": [
+    "Prioritize consistent punish and corner routes.",
+    "Practice converting command pressure into tag offense.",
+    "Review partners that cover his path into close range."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

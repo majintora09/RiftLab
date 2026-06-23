@@ -1,16 +1,55 @@
 {
   "character": "Thresh",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Chain Warden",
+  "region": "Shadow Isles",
+  "portrait": "/assets/games/2xko/characters/thresh.jpg",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/thresh/",
+  "identity": "Wicked and cunning, Thresh is a malevolent specter that delights in tormenting opponents, imprisoning their souls in his lantern for all eternity. He uses his chain to attack from tricky and unexpected angles, while his lantern lets him teleport and summon jailed souls for aid.",
+  "playstyle": "Strategist. Wicked and cunning, Thresh is a malevolent specter that delights in tormenting opponents, imprisoning their souls in his lantern for all eternity. He uses his chain to attack from tricky and unexpected angles, while his lantern lets him teleport and summon jailed souls for aid.",
+  "difficulty": "Advanced",
+  "archetypes": [
+    "Strategist"
+  ],
+  "strengths": [
+    "Control/support identity with hook-style threat and team utility.",
+    "Can force respect through space denial and unusual angles.",
+    "Promising for teams that value positioning tools."
+  ],
+  "weaknesses": [
+    "Newer roster knowledge needs more reviewed footage.",
+    "Partner-specific conclusions are research in progress.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Partners who exploit repositioning",
+    "Lockdown for hook/control threats",
+    "More verified footage before firm recommendations"
+  ],
+  "teamProvides": [
+    "Strategist team role",
+    "Control/support identity with hook-style threat and team utility.",
+    "Can force respect through space denial and unusual angles."
+  ],
+  "learningPriorities": [
+    "Practice hook and lantern-style control routes.",
+    "Study which partners benefit most from his repositioning threat.",
+    "Keep early Season 2 notes separated from verified conclusions."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

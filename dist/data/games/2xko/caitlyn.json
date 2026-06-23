@@ -1,16 +1,55 @@
 {
   "character": "Caitlyn",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Sheriff of Piltover",
+  "region": "Piltover",
+  "portrait": "/assets/games/2xko/characters/caitlyn.jpg",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/caitlyn/",
+  "identity": "Piltover’s finest detective, Caitlyn Kiramman uses her keen eye and analytical mind to bring down the city’s criminals and restore peace to its citizens. She excels at range, deploying a variety of traps to limit enemy movement before taking them out with perfectly-aimed rifle shots.",
+  "playstyle": "Zoner. Piltover’s finest detective, Caitlyn Kiramman uses her keen eye and analytical mind to bring down the city’s criminals and restore peace to its citizens. She excels at range, deploying a variety of traps to limit enemy movement before taking them out with perfectly-aimed rifle shots.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Zoner"
+  ],
+  "strengths": [
+    "Marksman identity with long-range pressure and trap control.",
+    "Can shape neutral around lanes and threat zones.",
+    "Naturally supports patient, space-first team plans."
+  ],
+  "weaknesses": [
+    "Close-range defensive needs require more review.",
+    "Duo routing after far hits is still research in progress.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Frontline protection",
+    "Assist routes from long-range hits",
+    "A partner who benefits from trap or rifle control"
+  ],
+  "teamProvides": [
+    "Zoner team role",
+    "Marksman identity with long-range pressure and trap control.",
+    "Can shape neutral around lanes and threat zones."
+  ],
+  "learningPriorities": [
+    "Practice long-range control into confirms.",
+    "Study trap and rifle spacing before choosing a partner.",
+    "Verify which assists let her convert from screen-control hits."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

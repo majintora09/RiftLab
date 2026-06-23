@@ -1,16 +1,55 @@
 {
   "character": "Ekko",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Boy Who Shattered Time",
+  "region": "Zaun",
+  "portrait": "/assets/games/2xko/characters/ekko.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ekko/",
+  "identity": "A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Z-Drive, he thrives in pressure mixups and burst mobility.",
+  "playstyle": "Mixup. A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Z-Drive, he thrives in pressure mixups and burst mobility.",
+  "difficulty": "Advanced",
+  "archetypes": [
+    "Mixup"
+  ],
+  "strengths": [
+    "Technical mixup character with movement and time-themed pressure.",
+    "Can create layered offense when setup timing is understood.",
+    "Rewards players who like labbing routes and reset structures."
+  ],
+  "weaknesses": [
+    "Execution and setup timing can raise the learning curve.",
+    "Needs reviewed data before making firm partner claims.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Lockdown for clone/setup timing",
+    "Partners who create time to layer mix",
+    "Stable conversions from technical starters"
+  ],
+  "teamProvides": [
+    "Mixup team role",
+    "Technical mixup character with movement and time-themed pressure.",
+    "Can create layered offense when setup timing is understood."
+  ],
+  "learningPriorities": [
+    "Learn time-clone movement and pressure timing.",
+    "Practice tag sequences that preserve ambiguity.",
+    "Review which assists make his setup routes practical."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

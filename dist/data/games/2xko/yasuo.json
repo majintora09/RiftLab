@@ -1,16 +1,55 @@
 {
   "character": "Yasuo",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Unforgiven",
+  "region": "Ionia",
+  "portrait": "/assets/games/2xko/characters/yasuo.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/yasuo/",
+  "identity": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. He excels at mid-range, using the power of the wind to dash through opponents and block projectiles.",
+  "playstyle": "All-Rounder. An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. He excels at mid-range, using the power of the wind to dash through opponents and block projectiles.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "All-Rounder"
+  ],
+  "strengths": [
+    "Mobile swordsman identity with strong momentum once offense starts.",
+    "Wind tools and movement can support pressure-heavy teams.",
+    "Vault observations already show Yasuo pressure after Blitzcrank routing."
+  ],
+  "weaknesses": [
+    "Needs help controlling space before momentum starts.",
+    "Route choices and partner payoffs can become technical.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Neutral cover before momentum starts",
+    "Assist calls that preserve pressure",
+    "Routes that convert into corner or wind pressure"
+  ],
+  "teamProvides": [
+    "All-Rounder team role",
+    "Mobile swordsman identity with strong momentum once offense starts.",
+    "Wind tools and movement can support pressure-heavy teams."
+  ],
+  "learningPriorities": [
+    "Practice wind-based pressure and corner wakeup structures.",
+    "Learn tag routes that preserve screen position.",
+    "Review partners that cover neutral entry before ranking them."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

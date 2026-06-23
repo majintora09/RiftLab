@@ -1,16 +1,55 @@
 {
   "character": "Illaoi",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Kraken Priestess",
+  "region": "Serpent Isles",
+  "portrait": "/assets/games/2xko/characters/illaoi.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/illaoi/",
+  "identity": "The Truth-Bearer of Nagakabouros, Illaoi wields a massive totem to test the will of her enemies and summon spectral tentacles to fight by her side. She's a high-damage lockdown bruiser who overwhelms enemies with pressure as immense as her faith.",
+  "playstyle": "Bruiser. The Truth-Bearer of Nagakabouros, Illaoi wields a massive totem to test the will of her enemies and summon spectral tentacles to fight by her side. She's a high-damage lockdown bruiser who overwhelms enemies with pressure as immense as her faith.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Bruiser"
+  ],
+  "strengths": [
+    "Setplay bruiser identity built around tentacle control.",
+    "Strong when she makes the opponent fight in prepared space.",
+    "Can reward teams that value sustained pressure over pure speed."
+  ],
+  "weaknesses": [
+    "May need help starting offense before setplay is established.",
+    "Partner requirements and defensive gaps need more footage.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Lockdown that keeps opponents near tentacles",
+    "Neutral cover before setplay starts",
+    "Partners who convert from prepared-space hits"
+  ],
+  "teamProvides": [
+    "Bruiser team role",
+    "Setplay bruiser identity built around tentacle control.",
+    "Strong when she makes the opponent fight in prepared space."
+  ],
+  "learningPriorities": [
+    "Learn tentacle placement and when to fight around it.",
+    "Practice pressure sequences that keep the opponent near active threats.",
+    "Review partners that hold opponents in her preferred zones."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

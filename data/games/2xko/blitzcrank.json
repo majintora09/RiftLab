@@ -1,16 +1,55 @@
 {
   "character": "Blitzcrank",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Great Steam Golem",
+  "region": "Zaun",
+  "portrait": "/assets/games/2xko/characters/blitzcrank.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/blitzcrank/",
+  "identity": "Though this big, metal golem was originally made for waste disposal, Blitzcrank now uses their mechanical powers to help people in other ways. Using their rocket fists to pull opponents close, Blitz follows up with potent grabs and energy bursts.",
+  "playstyle": "Grappler. Though this big, metal golem was originally made for waste disposal, Blitzcrank now uses their mechanical powers to help people in other ways. Using their rocket fists to pull opponents close, Blitz follows up with potent grabs and energy bursts.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Grappler"
+  ],
+  "strengths": [
+    "Large-body control character with disruptive grab threat.",
+    "Can force opponents to respect long-range engagement attempts.",
+    "Useful for teams that want a simple way to threaten neutral mistakes."
+  ],
+  "weaknesses": [
+    "Whiffed commitment and recovery risks need matchup review.",
+    "Can need partner help to approach safely after opponents slow the pace.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Fast point characters who capitalize on pull threat",
+    "Coverage when hook or grab attempts are blocked",
+    "Routes that turn disruption into stable pressure"
+  ],
+  "teamProvides": [
+    "Grappler team role",
+    "Large-body control character with disruptive grab threat.",
+    "Can force opponents to respect long-range engagement attempts."
+  ],
+  "learningPriorities": [
+    "Build gameplans around hook threat and space denial.",
+    "Practice tag routes after grabs or anti-air conversions.",
+    "Track which partners convert best after pull interactions."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

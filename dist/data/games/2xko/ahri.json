@@ -1,16 +1,54 @@
 {
   "character": "Ahri",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Nine-Tailed Fox",
+  "region": "Ionia",
+  "portrait": "/assets/games/2xko/characters/ahri.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ahri/",
+  "identity": "Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence. She’s a highly mobile mage with tons of pressure tools at her disposal.",
+  "playstyle": "Rushdown. Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence. She’s a highly mobile mage with tons of pressure tools at her disposal.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Rushdown"
+  ],
+  "strengths": [
+    "Mobile offense built around orb control and multi-angle pressure.",
+    "Can threaten movement, whiff punishment, and pressure resets.",
+    "Official kit emphasizes mobility and magical zoning tools."
+  ],
+  "weaknesses": [
+    "Partner-dependent pressure and route stability still need review.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Safe approach cover",
+    "Lockdown for orb pressure",
+    "Route stability after mobile confirms"
+  ],
+  "teamProvides": [
+    "Rushdown team role",
+    "Mobile offense built around orb control and multi-angle pressure.",
+    "Can threaten movement, whiff punishment, and pressure resets."
+  ],
+  "learningPriorities": [
+    "Control orb positions before overextending.",
+    "Practice approach routes that keep Spirit Rush available as a threat.",
+    "Review assist calls that let her start pressure safely."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

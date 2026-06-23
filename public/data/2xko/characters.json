@@ -1,22 +1,516 @@
 {
-  "version": 1,
-  "updatedAt": "2026-06-22",
-  "status": "mock",
+  "version": 2,
+  "updatedAt": "2026-06-23",
+  "status": "official-import",
   "characters": [
+    {
+      "id": "ahri",
+      "gameId": "2xko",
+      "name": "Ahri",
+      "title": "The Nine-Tailed Fox",
+      "region": "Ionia",
+      "overview": "Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence. She’s a highly mobile mage with tons of pressure tools at her disposal.",
+      "portrait": "/assets/games/2xko/characters/ahri.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ahri/",
+      "archetypes": [
+        "Rushdown"
+      ],
+      "strengths": [
+        "Mobile offense built around orb control and multi-angle pressure.",
+        "Can threaten movement, whiff punishment, and pressure resets.",
+        "Official kit emphasizes mobility and magical zoning tools."
+      ],
+      "weaknesses": [
+        "Partner-dependent pressure and route stability still need review.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Control orb positions before overextending.",
+        "Practice approach routes that keep Spirit Rush available as a threat.",
+        "Review assist calls that let her start pressure safely."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "akali",
+      "gameId": "2xko",
+      "name": "Akali",
+      "title": "The Rogue Assassin",
+      "region": "Ionia",
+      "overview": "Akali is a fast, rebellious assassin who executes enemies with cold steel. She uses her kunai, kama, and shurikens to cut down opponents, and deploys smoke bombs to slip past any defense.",
+      "portrait": "/assets/games/2xko/characters/akali.jpg",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/akali/",
+      "archetypes": [
+        "Rushdown"
+      ],
+      "strengths": [
+        "Fast rushdown identity with shroud-enhanced specials.",
+        "Can use Twilight Shroud movement to slip past defenses.",
+        "Air and ground specials give several approach angles."
+      ],
+      "weaknesses": [
+        "Requires shroud awareness and clean routing to keep pressure coherent.",
+        "Risk profile of smoke setups needs more reviewed match data.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Learn Twilight Shroud states and when grounded specials become empowered.",
+        "Practice shroud movement that crosses through opponents.",
+        "Confirm which assists protect shroud entry in match footage."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "blitzcrank",
+      "gameId": "2xko",
+      "name": "Blitzcrank",
+      "title": "The Great Steam Golem",
+      "region": "Zaun",
+      "overview": "Though this big, metal golem was originally made for waste disposal, Blitzcrank now uses their mechanical powers to help people in other ways. Using their rocket fists to pull opponents close, Blitz follows up with potent grabs and energy bursts.",
+      "portrait": "/assets/games/2xko/characters/blitzcrank.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/blitzcrank/",
+      "archetypes": [
+        "Grappler"
+      ],
+      "strengths": [
+        "Large-body control character with disruptive grab threat.",
+        "Can force opponents to respect long-range engagement attempts.",
+        "Useful for teams that want a simple way to threaten neutral mistakes."
+      ],
+      "weaknesses": [
+        "Whiffed commitment and recovery risks need matchup review.",
+        "Can need partner help to approach safely after opponents slow the pace.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Build gameplans around hook threat and space denial.",
+        "Practice tag routes after grabs or anti-air conversions.",
+        "Track which partners convert best after pull interactions."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "braum",
+      "gameId": "2xko",
+      "name": "Braum",
+      "title": "The Heart of the Freljord",
+      "region": "Freljord",
+      "overview": "Braum roams the frostbitten wilds of the Freljord, lending his shield to those in need. He deploys defensive utility, close-range attacks, and an army of poros to protect his allies and freeze enemies in their tracks.",
+      "portrait": "/assets/games/2xko/characters/braum.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/braum/",
+      "archetypes": [
+        "Bruiser"
+      ],
+      "strengths": [
+        "Defensive protector identity with sturdy space control.",
+        "Can make aggressive partners safer by covering approaches.",
+        "Straightforward team value: durability, protection, and control."
+      ],
+      "weaknesses": [
+        "May need a partner who supplies speed or layered mix.",
+        "Offense-specific conclusions still need verified match data.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Use shield and defensive calls to stabilize neutral.",
+        "Practice corner carry routes that cash out after armored control.",
+        "Review teams that turn protection into forward pressure."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "caitlyn",
+      "gameId": "2xko",
+      "name": "Caitlyn",
+      "title": "The Sheriff of Piltover",
+      "region": "Piltover",
+      "overview": "Piltover’s finest detective, Caitlyn Kiramman uses her keen eye and analytical mind to bring down the city’s criminals and restore peace to its citizens. She excels at range, deploying a variety of traps to limit enemy movement before taking them out with perfectly-aimed rifle shots.",
+      "portrait": "/assets/games/2xko/characters/caitlyn.jpg",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/caitlyn/",
+      "archetypes": [
+        "Zoner"
+      ],
+      "strengths": [
+        "Marksman identity with long-range pressure and trap control.",
+        "Can shape neutral around lanes and threat zones.",
+        "Naturally supports patient, space-first team plans."
+      ],
+      "weaknesses": [
+        "Close-range defensive needs require more review.",
+        "Duo routing after far hits is still research in progress.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice long-range control into confirms.",
+        "Study trap and rifle spacing before choosing a partner.",
+        "Verify which assists let her convert from screen-control hits."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "darius",
+      "gameId": "2xko",
+      "name": "Darius",
+      "title": "The Hand of Noxus",
+      "region": "Noxus",
+      "overview": "Rising from humble origins to become a bringer of true carnage, Darius cleaves through the empire’s enemies. He’s a mid-range fighter with attacks just as brutal and deadly as his axe.",
+      "portrait": "/assets/games/2xko/characters/darius.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/darius/",
+      "archetypes": [
+        "Striker"
+      ],
+      "strengths": [
+        "Direct bruiser gameplan with high-impact close-range offense.",
+        "Easy-to-understand win condition: get in, hit hard, keep advantage.",
+        "Works as a stable damage threat for newer team builders."
+      ],
+      "weaknesses": [
+        "Needs help when opponents avoid his preferred range.",
+        "Route and matchup details should be verified before ranking partners.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Prioritize consistent punish and corner routes.",
+        "Practice converting command pressure into tag offense.",
+        "Review partners that cover his path into close range."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "ekko",
+      "gameId": "2xko",
+      "name": "Ekko",
+      "title": "The Boy Who Shattered Time",
+      "region": "Zaun",
+      "overview": "A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Z-Drive, he thrives in pressure mixups and burst mobility.",
+      "portrait": "/assets/games/2xko/characters/ekko.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ekko/",
+      "archetypes": [
+        "Mixup"
+      ],
+      "strengths": [
+        "Technical mixup character with movement and time-themed pressure.",
+        "Can create layered offense when setup timing is understood.",
+        "Rewards players who like labbing routes and reset structures."
+      ],
+      "weaknesses": [
+        "Execution and setup timing can raise the learning curve.",
+        "Needs reviewed data before making firm partner claims.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Learn time-clone movement and pressure timing.",
+        "Practice tag sequences that preserve ambiguity.",
+        "Review which assists make his setup routes practical."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "illaoi",
+      "gameId": "2xko",
+      "name": "Illaoi",
+      "title": "The Kraken Priestess",
+      "region": "Serpent Isles",
+      "overview": "The Truth-Bearer of Nagakabouros, Illaoi wields a massive totem to test the will of her enemies and summon spectral tentacles to fight by her side. She's a high-damage lockdown bruiser who overwhelms enemies with pressure as immense as her faith.",
+      "portrait": "/assets/games/2xko/characters/illaoi.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/illaoi/",
+      "archetypes": [
+        "Bruiser"
+      ],
+      "strengths": [
+        "Setplay bruiser identity built around tentacle control.",
+        "Strong when she makes the opponent fight in prepared space.",
+        "Can reward teams that value sustained pressure over pure speed."
+      ],
+      "weaknesses": [
+        "May need help starting offense before setplay is established.",
+        "Partner requirements and defensive gaps need more footage.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Learn tentacle placement and when to fight around it.",
+        "Practice pressure sequences that keep the opponent near active threats.",
+        "Review partners that hold opponents in her preferred zones."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "jinx",
+      "gameId": "2xko",
+      "name": "Jinx",
+      "title": "The Loose Cannon",
+      "region": "Zaun",
+      "overview": "With an arsenal of custom guns, traps, and explosives, Jinx unleashes mayhem wherever she goes. She excels at zoning enemies, overwhelming them with colorful destruction from afar.",
+      "portrait": "/assets/games/2xko/characters/jinx.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/jinx/",
+      "archetypes": [
+        "Zoner"
+      ],
+      "strengths": [
+        "Chaotic keepaway and pressure identity with explosive tools.",
+        "Can make neutral uncomfortable through varied projectile threats.",
+        "Fits teams that want ranged disruption and high momentum swings."
+      ],
+      "weaknesses": [
+        "Needs protection when opponents bypass her preferred range.",
+        "Exact defensive problem points need reviewed matchup footage.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice projectile and weapon control at multiple ranges.",
+        "Learn confirms from explosive screen-control hits.",
+        "Review assist coverage that lets her safely reload pressure."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "senna",
+      "gameId": "2xko",
+      "name": "Senna",
+      "title": "The Redeemer",
+      "region": "Runeterra",
+      "overview": "A champion of the light cursed by darkness, Senna blasts foes with her vaunted relic cannon before rushing them down as a shadowy wraith. With two forms to choose from, she’s highly capable of redeeming any corrupted soul.",
+      "portrait": "/assets/games/2xko/characters/senna.jpg",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/senna/",
+      "archetypes": [
+        "Hybrid"
+      ],
+      "strengths": [
+        "Long-range marksman/support identity with lane control.",
+        "Can contribute screen presence to teams that want patient neutral.",
+        "Provides ranged threat and utility while research develops."
+      ],
+      "weaknesses": [
+        "Season 2 team conclusions are still developing.",
+        "Close-range pressure answers need verification.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Learn how her range controls lanes and protects tags.",
+        "Practice assist calls that convert from long-range pressure.",
+        "Verify route priorities from current Season 2 footage."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "teemo",
+      "gameId": "2xko",
+      "name": "Teemo",
+      "title": "The Swift Scout",
+      "region": "Bandle City",
+      "overview": "A proud Bandle Scout, Teemo never misses an opportunity to earn a merit badge. Armed with his trusty scout utensils, this yordle is a deceptive ranged fighter with a knapsack full of tricks.",
+      "portrait": "/assets/games/2xko/characters/teemo.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/teemo/",
+      "archetypes": [
+        "Trap"
+      ],
+      "strengths": [
+        "Setplay and nuisance control through traps and projectiles.",
+        "Can cover partner movement and make approaches less predictable.",
+        "Current vault observations already show utility with Ahri pressure."
+      ],
+      "weaknesses": [
+        "Needs review for consistency under pressure.",
+        "Team value can depend on whether the partner capitalizes on trap coverage.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice trap placement and projectile timing.",
+        "Study how pebbles or traps cover partner approaches.",
+        "Track which observations graduate from vault notes to verified synergy."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "thresh",
+      "gameId": "2xko",
+      "name": "Thresh",
+      "title": "The Chain Warden",
+      "region": "Shadow Isles",
+      "overview": "Wicked and cunning, Thresh is a malevolent specter that delights in tormenting opponents, imprisoning their souls in his lantern for all eternity. He uses his chain to attack from tricky and unexpected angles, while his lantern lets him teleport and summon jailed souls for aid.",
+      "portrait": "/assets/games/2xko/characters/thresh.jpg",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/thresh/",
+      "archetypes": [
+        "Strategist"
+      ],
+      "strengths": [
+        "Control/support identity with hook-style threat and team utility.",
+        "Can force respect through space denial and unusual angles.",
+        "Promising for teams that value positioning tools."
+      ],
+      "weaknesses": [
+        "Newer roster knowledge needs more reviewed footage.",
+        "Partner-specific conclusions are research in progress.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice hook and lantern-style control routes.",
+        "Study which partners benefit most from his repositioning threat.",
+        "Keep early Season 2 notes separated from verified conclusions."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "vi",
+      "gameId": "2xko",
+      "name": "Vi",
+      "title": "The Piltover Enforcer",
+      "region": "Zaun",
+      "overview": "Vi is an impulsive power-puncher who lives to throw hands. Armed with hextech gauntlets and slick boxing footwork, she excels at closing the distance and clobbering foes with haymakers.",
+      "portrait": "/assets/games/2xko/characters/vi.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/vi/",
+      "archetypes": [
+        "Rushdown"
+      ],
+      "strengths": [
+        "Forward-moving brawler identity with explosive close-range offense.",
+        "Clear gameplan for players who like direct pressure.",
+        "Can anchor simple duo plans around threat, damage, and momentum."
+      ],
+      "weaknesses": [
+        "Needs help against opponents who deny entry.",
+        "Exact assist preferences need verified match review.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice armored/forward movement confirms.",
+        "Learn simple tag routes after close-range hits.",
+        "Review partners that help her enter without spending too many resources."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
+    {
+      "id": "warwick",
+      "gameId": "2xko",
+      "name": "Warwick",
+      "title": "The Uncaged Wrath of Zaun",
+      "region": "Zaun",
+      "overview": "An infamous and vicious beast from the depths of Zaun, Warwick’s howl strikes fear into the heart of his opponents. Using powerful teeth and claws, and a relentless rushdown approach, Warwick mauls opponents with varied and unpredictable angles of attack.",
+      "portrait": "/assets/games/2xko/characters/warwick.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/warwick/",
+      "archetypes": [
+        "Rushdown"
+      ],
+      "strengths": [
+        "Aggressive hunter identity built around pursuit and close-range threat.",
+        "Can punish hesitation and force scramble-heavy decisions.",
+        "Useful for players who want momentum and pressure."
+      ],
+      "weaknesses": [
+        "Needs controlled entries when opponents play keepaway.",
+        "Partner conclusions are still research in progress.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice pursuit routes and scramble conversion.",
+        "Study how his offense changes with resources and team cover.",
+        "Verify current Season 0/1 footage before labeling partners."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    },
     {
       "id": "yasuo",
       "gameId": "2xko",
       "name": "Yasuo",
-      "overview": "A momentum-focused point character who benefits from partners that stabilize the approach or amplify a clean opening.",
-      "strengths": ["Pressure after gaining momentum", "Flexible duo offense", "Strong payoff from coordinated tags"],
-      "weaknesses": ["Needs help controlling space", "Route choices can become technical"],
-      "recommendedPartnerIds": ["ahri", "darius", "ekko"],
-      "recommendedFuseIds": ["freestyle", "double-down"],
-      "recommendedRouteIds": ["safe-tag-confirm", "corner-carry-route"],
-      "notes": ["Example content for testing the recommendation interface."]
-    },
-    { "id": "ahri", "gameId": "2xko", "name": "Ahri" },
-    { "id": "darius", "gameId": "2xko", "name": "Darius" },
-    { "id": "ekko", "gameId": "2xko", "name": "Ekko" }
+      "title": "The Unforgiven",
+      "region": "Ionia",
+      "overview": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. He excels at mid-range, using the power of the wind to dash through opponents and block projectiles.",
+      "portrait": "/assets/games/2xko/characters/yasuo.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/yasuo/",
+      "archetypes": [
+        "All-Rounder"
+      ],
+      "strengths": [
+        "Mobile swordsman identity with strong momentum once offense starts.",
+        "Wind tools and movement can support pressure-heavy teams.",
+        "Vault observations already show Yasuo pressure after Blitzcrank routing."
+      ],
+      "weaknesses": [
+        "Needs help controlling space before momentum starts.",
+        "Route choices and partner payoffs can become technical.",
+        "Research In Progress"
+      ],
+      "learningPriorities": [
+        "Practice wind-based pressure and corner wakeup structures.",
+        "Learn tag routes that preserve screen position.",
+        "Review partners that cover neutral entry before ranking them."
+      ],
+      "recommendedPartnerIds": [],
+      "recommendedFuseIds": [],
+      "recommendedRouteIds": [],
+      "notes": [
+        "Official 2XKO champion page imported. Competitive conclusions remain marked as research in progress until verified."
+      ]
+    }
   ]
 }

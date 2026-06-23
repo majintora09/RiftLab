@@ -217,24 +217,34 @@
       return;
     }
 
+    const popularStarts = ["yasuo", "ahri", "vi"]
+      .map((id) => twoXkoDecisionState.characters.find((character) => character.id === id))
+      .filter(Boolean);
+    const remainingCharacters = twoXkoDecisionState.characters.filter((character) => !popularStarts.some((item) => item.id === character.id));
+
     twoXkoContent.innerHTML = `
       <section class="two-xko-decision-home" aria-labelledby="twoXkoQuestion">
         <header class="decision-hero">
           <div>
-            <p class="eyebrow">Start with your character</p>
+            <p class="eyebrow">Popular Starts</p>
             <h1 id="twoXkoQuestion">I play...</h1>
-            <p>Pick a champion and FG Lab will show what they do, what their team needs, who to research as a partner, and what to study next.</p>
+            <p>Pick your champion first. FG Lab opens with their official identity, practical learning priorities, team needs, and current research status.</p>
           </div>
           <aside>
-            <span>Player questions</span>
-            <strong>Who do I pair with?</strong>
-            <strong>What Fuse fits?</strong>
-            <strong>What routes first?</strong>
+            <span>Popular Starts</span>
+            ${popularStarts.map((character) => `<button type="button" data-route="/games/2xko/characters/${escapeHtml(character.id)}">I play ${escapeHtml(character.name)}</button>`).join("")}
           </aside>
         </header>
 
-        <section class="decision-character-grid" aria-label="2XKO champion selector">
-          ${twoXkoDecisionState.characters.map((character) => characterSelectCardMarkup(character)).join("")}
+        <section class="decision-character-grid decision-character-grid--featured" aria-label="Popular 2XKO starts">
+          ${popularStarts.map((character) => characterSelectCardMarkup(character, true)).join("")}
+        </section>
+
+        <section class="decision-section decision-roster-section" aria-label="2XKO champion selector">
+          <div class="decision-section-heading"><p class="eyebrow">Champion Grid</p><h2>Choose Your Starting Point</h2></div>
+          <div class="decision-character-grid">
+            ${remainingCharacters.map((character) => characterSelectCardMarkup(character)).join("")}
+          </div>
         </section>
 
         <section class="decision-question-grid" aria-label="FG Lab answer types">
@@ -267,6 +277,9 @@
     const strengths = cleanList(publicCharacter.strengths || character.strengths);
     const weaknesses = cleanList(publicCharacter.weaknesses || character.weaknesses);
     const archetypes = cleanList(character.archetypes);
+    const partnerWants = cleanList(character.partnerWants);
+    const teamProvides = cleanList(character.teamProvides);
+    const learningPriorities = cleanList(publicCharacter.learningPriorities || character.learningPriorities);
     const characterObservations = observationsForCharacter(character);
     const partnerBuckets = partnerBucketsForCharacter(character);
     const fuseBuckets = fuseBucketsForCharacter(character, publicCharacter);
@@ -278,31 +291,42 @@
         <nav class="decision-page-picker" aria-label="Change 2XKO character">
           ${twoXkoDecisionState.characters.map((item) => `
             <button type="button" data-route="/games/2xko/characters/${escapeHtml(item.id)}" aria-pressed="${item.id === character.id}">
-              <span>${escapeHtml(initials(item.name))}</span>${escapeHtml(item.name)}
+              <span style="${portraitStyle(item)}"></span>${escapeHtml(item.name)}
             </button>
           `).join("")}
         </nav>
 
         <section class="decision-profile" aria-labelledby="decisionProfileTitle">
-          <div class="decision-portrait" aria-hidden="true">${escapeHtml(initials(character.name))}</div>
+          <div class="decision-portrait" style="${portraitStyle(character)}" aria-hidden="true"></div>
           <div>
-            <p class="eyebrow">Who is this character?</p>
+            <p class="eyebrow">${escapeHtml(character.title || publicCharacter.title || "Champion Profile")}</p>
             <h1 id="decisionProfileTitle">${escapeHtml(character.name)}</h1>
             <p>${escapeHtml(overview)}</p>
             <dl class="decision-profile-meta">
               <div><dt>Playstyle</dt><dd>${escapeHtml(cleanText(character.playstyle) || "Research in progress")}</dd></div>
               <div><dt>Difficulty</dt><dd>${escapeHtml(cleanText(character.difficulty) || "Research in progress")}</dd></div>
+              <div><dt>Region</dt><dd>${escapeHtml(cleanText(character.region || publicCharacter.region) || "Research in progress")}</dd></div>
+              <div><dt>Source</dt><dd>${character.sourceUrl ? `<a href="${escapeHtml(character.sourceUrl)}" target="_blank" rel="noreferrer">Official 2XKO page</a>` : "Research in progress"}</dd></div>
             </dl>
             ${chipListMarkup(archetypes.length ? archetypes : ["Researching"])}
+          </div>
+        </section>
+
+        <section class="decision-section" aria-labelledby="identityTitle">
+          <div class="decision-section-heading"><p class="eyebrow">Real Content</p><h2 id="identityTitle">Identity And Learning Priorities</h2></div>
+          <div class="decision-need-grid">
+            ${needCardMarkup("Strengths", strengths.length ? strengths : ["Research In Progress"])}
+            ${needCardMarkup("Weaknesses", weaknesses.length ? weaknesses : ["Research In Progress"])}
+            ${needCardMarkup("Learning Priorities", learningPriorities.length ? learningPriorities : ["Research In Progress"])}
           </div>
         </section>
 
         <section class="decision-section decision-needs" aria-labelledby="needsTitle">
           <div class="decision-section-heading"><p class="eyebrow">Decision check</p><h2 id="needsTitle">What does this character want?</h2></div>
           <div class="decision-need-grid">
-            ${needCardMarkup("Needs", weaknesses.length ? weaknesses : ["Collect more observations about what a partner must solve."])}
-            ${needCardMarkup("Likes", likedToolsForCharacter(character, partnerBuckets, characterObservations))}
-            ${needCardMarkup("Doesn't Need", ["Not verified yet. Mark this after reviewed match data shows what support is unnecessary."])}
+            ${needCardMarkup("From a partner", partnerWants.length ? partnerWants : ["Research In Progress"])}
+            ${needCardMarkup("Provides to a team", teamProvides.length ? teamProvides : ["Research In Progress"])}
+            ${needCardMarkup("Current research leads", likedToolsForCharacter(character, partnerBuckets, characterObservations))}
           </div>
         </section>
 
@@ -419,12 +443,19 @@
     return {
       id,
       name: data.character || titleCase(id),
+      title: data.title || "",
+      region: data.region || "",
+      portrait: data.portrait || "",
+      sourceUrl: data.sourceUrl || "",
       identity: data.identity || "",
       playstyle: data.playstyle || "",
       difficulty: data.difficulty || "",
       strengths: data.strengths || [],
       weaknesses: data.weaknesses || [],
       archetypes: data.archetypes || [],
+      partnerWants: data.partnerWants || [],
+      teamProvides: data.teamProvides || [],
+      learningPriorities: data.learningPriorities || [],
       recommendedPartners: data.recommendedPartners || [],
       recommendedFuses: data.recommendedFuses || [],
       routes: data.routes || [],
@@ -448,12 +479,13 @@
     };
   }
 
-  function characterSelectCardMarkup(character) {
+  function characterSelectCardMarkup(character, featured = false) {
     const observations = observationsForCharacter(character).length;
     const archetypes = cleanList(character.archetypes).slice(0, 3);
     return `
-      <button class="decision-character-card" type="button" data-route="/games/2xko/characters/${escapeHtml(character.id)}">
-        <span class="decision-character-card__mark">${escapeHtml(initials(character.name))}</span>
+      <button class="decision-character-card ${featured ? "decision-character-card--featured" : ""}" type="button" data-route="/games/2xko/characters/${escapeHtml(character.id)}" style="${portraitVars(character)}">
+        <span class="decision-character-card__art" aria-hidden="true"></span>
+        <span class="decision-character-card__label">I play ${escapeHtml(character.name)}</span>
         <strong>${escapeHtml(character.name)}</strong>
         <small>${escapeHtml(cleanText(character.playstyle) || "Research in progress")}</small>
         ${chipListMarkup(archetypes)}
@@ -545,6 +577,25 @@
     if (cleaned.length) return cleaned;
     const strengths = cleanList(character.strengths).slice(0, 3);
     return strengths.length ? strengths : ["Partner preferences are still being researched."];
+  }
+
+  function portraitFor(character) {
+    const publicCharacter = twoXkoDecisionState.publicCharacters.find((item) => item.id === character.id) || {};
+    return cleanText(character.portrait) || cleanText(publicCharacter.portrait) || "";
+  }
+
+  function portraitVars(character) {
+    const portrait = portraitFor(character);
+    return portrait ? `--champion-art:url(${escapeHtml(assetPath(portrait))})` : "";
+  }
+
+  function portraitStyle(character) {
+    const portrait = portraitFor(character);
+    return portrait ? `background-image:url(${escapeHtml(assetPath(portrait))})` : "";
+  }
+
+  function assetPath(path) {
+    return window.FG_LAB_ASSET_PATH?.(path) || path;
   }
 
   function extractCharacterIds(text) {

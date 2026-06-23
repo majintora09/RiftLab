@@ -1,16 +1,55 @@
 {
   "character": "Jinx",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Loose Cannon",
+  "region": "Zaun",
+  "portrait": "/assets/games/2xko/characters/jinx.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/jinx/",
+  "identity": "With an arsenal of custom guns, traps, and explosives, Jinx unleashes mayhem wherever she goes. She excels at zoning enemies, overwhelming them with colorful destruction from afar.",
+  "playstyle": "Zoner. With an arsenal of custom guns, traps, and explosives, Jinx unleashes mayhem wherever she goes. She excels at zoning enemies, overwhelming them with colorful destruction from afar.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Zoner"
+  ],
+  "strengths": [
+    "Chaotic keepaway and pressure identity with explosive tools.",
+    "Can make neutral uncomfortable through varied projectile threats.",
+    "Fits teams that want ranged disruption and high momentum swings."
+  ],
+  "weaknesses": [
+    "Needs protection when opponents bypass her preferred range.",
+    "Exact defensive problem points need reviewed matchup footage.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Protection against rushdown",
+    "Partners who exploit projectile disruption",
+    "Assist cover for explosive screen control"
+  ],
+  "teamProvides": [
+    "Zoner team role",
+    "Chaotic keepaway and pressure identity with explosive tools.",
+    "Can make neutral uncomfortable through varied projectile threats."
+  ],
+  "learningPriorities": [
+    "Practice projectile and weapon control at multiple ranges.",
+    "Learn confirms from explosive screen-control hits.",
+    "Review assist coverage that lets her safely reload pressure."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }

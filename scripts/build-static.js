@@ -32,6 +32,7 @@ fs.mkdirSync(output, { recursive: true });
 copyFiles(["styles.css", "research-vault.css", "app.js", "platform.js", "synergy-engine.js", "research-vault.js", "_redirects"]);
 copyTree("data", "data", (source) => !source.endsWith(".md"));
 copyTree("assets/backgrounds", "assets/backgrounds");
+copyTree("assets/games", "assets/games");
 copyFiles(["assets/manifest.js"]);
 copyTree("public/characters/portraits", "public/characters/portraits");
 copyTree("public/data", "public/data", (source) => !source.includes(`${path.sep}Impro${path.sep}`) && !source.endsWith(".pdf"));

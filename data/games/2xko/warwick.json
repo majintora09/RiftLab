@@ -1,16 +1,55 @@
 {
   "character": "Warwick",
-  "playstyle": "TODO: Verify the decision-relevant playstyle from reviewed sources.",
-  "difficulty": "TODO: Verify practical learning difficulty.",
-  "identity": "TODO: Define what this pick contributes to a duo and what support it needs.",
-  "strengths": ["TODO: Add verified strengths that affect team-building decisions."],
-  "weaknesses": ["TODO: Add verified weaknesses that a partner or Fuse should solve."],
-  "archetypes": ["TODO: Add verified playstyle and team-role tags."],
+  "title": "The Uncaged Wrath of Zaun",
+  "region": "Zaun",
+  "portrait": "/assets/games/2xko/characters/warwick.png",
+  "sourceUrl": "https://2xko.riotgames.com/en-us/champions/warwick/",
+  "identity": "An infamous and vicious beast from the depths of Zaun, Warwick’s howl strikes fear into the heart of his opponents. Using powerful teeth and claws, and a relentless rushdown approach, Warwick mauls opponents with varied and unpredictable angles of attack.",
+  "playstyle": "Rushdown. An infamous and vicious beast from the depths of Zaun, Warwick’s howl strikes fear into the heart of his opponents. Using powerful teeth and claws, and a relentless rushdown approach, Warwick mauls opponents with varied and unpredictable angles of attack.",
+  "difficulty": "Intermediate",
+  "archetypes": [
+    "Rushdown"
+  ],
+  "strengths": [
+    "Aggressive hunter identity built around pursuit and close-range threat.",
+    "Can punish hesitation and force scramble-heavy decisions.",
+    "Useful for players who want momentum and pressure."
+  ],
+  "weaknesses": [
+    "Needs controlled entries when opponents play keepaway.",
+    "Partner conclusions are still research in progress.",
+    "Research In Progress"
+  ],
+  "partnerWants": [
+    "Assist cover for pursuit",
+    "Control tools against keepaway",
+    "Partners who stabilize scrambles"
+  ],
+  "teamProvides": [
+    "Rushdown team role",
+    "Aggressive hunter identity built around pursuit and close-range threat.",
+    "Can punish hesitation and force scramble-heavy decisions."
+  ],
+  "learningPriorities": [
+    "Practice pursuit routes and scramble conversion.",
+    "Study how his offense changes with resources and team cover.",
+    "Verify current Season 0/1 footage before labeling partners."
+  ],
   "recommendedPartners": [],
   "recommendedFuses": [],
-  "synergyNotes": ["TODO: Explain what kinds of partners make this gameplan more stable."],
-  "matchupNotes": ["TODO: Record actionable matchup problems and team-level adjustments."],
+  "synergyNotes": [
+    "Research In Progress"
+  ],
+  "matchupNotes": [
+    "Research In Progress"
+  ],
   "routes": [],
-  "communityTech": ["TODO: Add source-backed tech after Research Vault review."],
-  "questions": ["Who should I pair with this character?", "What fuse works best?", "What should I learn first?"]
+  "communityTech": [
+    "Research In Progress"
+  ],
+  "questions": [
+    "Who should I pair with this character?",
+    "What fuse works best?",
+    "What should I learn first?"
+  ]
 }
