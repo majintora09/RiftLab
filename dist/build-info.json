@@ -18,6 +18,7 @@
     "/games/2xko/synergies",
     "/games/2xko/routes",
     "/games/2xko/research-vault",
+    "/games/2xko/knowledge-sources",
     "/games/2xko/characters/ahri",
     "/games/2xko/characters/akali",
     "/games/2xko/characters/blitzcrank",
@@ -34,5 +35,5 @@
     "/games/2xko/characters/warwick",
     "/games/2xko/characters/yasuo"
   ],
-  "generatedAt": "2026-06-23T04:16:34.090Z"
+  "generatedAt": "2026-06-24T00:34:44.230Z"
 }

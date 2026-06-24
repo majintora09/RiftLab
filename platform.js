@@ -81,6 +81,7 @@
       ["Fuses", "/games/2xko/fuses"],
       ["Synergy Lab", "/games/2xko/synergies"],
       ["Routes", "/games/2xko/routes"],
+      ["Knowledge Sources", "/games/2xko/knowledge-sources"],
     ];
     twoXkoNav.innerHTML = routes.map(([label, route]) => `<a href="${deploymentPath(route)}" data-route="${route}">${label}</a>`).join("");
   }
@@ -176,6 +177,11 @@
 
     if (section === "research-vault") {
       window.FG_LAB_RESEARCH_VAULT?.render(twoXkoContent, page);
+      return;
+    }
+
+    if (section === "knowledge-sources") {
+      window.FG_LAB_2XKO_KNOWLEDGE?.render(twoXkoContent, page);
       return;
     }
 
@@ -321,6 +327,8 @@
           </div>
         </section>
 
+        ${sourceBackedCharacterKnowledgeMarkup(character)}
+
         <section class="decision-section decision-needs" aria-labelledby="needsTitle">
           <div class="decision-section-heading"><p class="eyebrow">Decision check</p><h2 id="needsTitle">What does this character want?</h2></div>
           <div class="decision-need-grid">
@@ -421,6 +429,8 @@
       twoXkoDecisionState.fuses = fuses.fuses || [];
       twoXkoDecisionState.routes = routes.routes || [];
       twoXkoDecisionState.observations = (researchVault.records || []).map(normalizeObservation);
+      window.FG_LAB_2XKO_KNOWLEDGE?.setCharacters(twoXkoDecisionState.characters);
+      window.FG_LAB_2XKO_KNOWLEDGE?.load(twoXkoGame, twoXkoDecisionState.characters);
       twoXkoDecisionState.loaded = true;
       twoXkoDecisionState.error = "";
     } catch (error) {
@@ -579,6 +589,60 @@
     return strengths.length ? strengths : ["Partner preferences are still being researched."];
   }
 
+  function sourceBackedCharacterKnowledgeMarkup(character) {
+    const grouped = window.FG_LAB_2XKO_KNOWLEDGE?.groupedCharacterKnowledge?.(character.id);
+    if (!grouped) {
+      return `
+        <section class="decision-section character-knowledge-stack" aria-labelledby="sourceKnowledgeTitle">
+          <div class="decision-section-heading"><p class="eyebrow">Source-backed Knowledge</p><h2 id="sourceKnowledgeTitle">Knowledge Pages</h2></div>
+          <p class="empty-state">Knowledge Sources are still loading.</p>
+        </section>
+      `;
+    }
+    const sections = [
+      ["Overview", grouped.overview],
+      ["Recommended Partners", grouped.partners],
+      ["Common Teams", grouped.teams],
+      ["Neutral Notes", grouped.neutral],
+      ["Combo Notes", grouped.combo],
+      ["Matchup Notes", grouped.matchup],
+      ["Sources", (grouped.sources || []).map((source) => ({
+        kind: "source",
+        title: source.title || "Source title pending",
+        body: source.url || "No URL stored",
+        sourceRefs: [source],
+      }))],
+    ];
+    return `
+      <section class="decision-section character-knowledge-stack" aria-labelledby="sourceKnowledgeTitle">
+        <div class="decision-section-heading"><p class="eyebrow">Source-backed Knowledge</p><h2 id="sourceKnowledgeTitle">Character Knowledge Pages</h2></div>
+        <div class="character-knowledge-grid">
+          ${sections.map(([title, notes]) => `
+            <section>
+              <h3>${escapeHtml(title)}</h3>
+              ${notes?.length ? notes.slice(0, 5).map(sourceBackedNoteMarkup).join("") : `<p>Research In Progress</p>`}
+            </section>
+          `).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function sourceBackedNoteMarkup(note) {
+    const source = note.sourceRefs?.[0] || {};
+    return `
+      <details class="source-backed-note">
+        <summary>${escapeHtml(note.title || "Source-backed note")}</summary>
+        <p>${escapeHtml(note.body || "No note body stored.")}</p>
+        <dl>
+          <div><dt>Source title</dt><dd>${escapeHtml(source.title || "Source title pending")}</dd></div>
+          <div><dt>Source URL</dt><dd>${source.url ? `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">Open source</a>` : "No URL stored"}</dd></div>
+          <div><dt>Date added</dt><dd>${escapeHtml(source.dateAdded || note.createdAt || "Date pending")}</dd></div>
+        </dl>
+      </details>
+    `;
+  }
+
   function portraitFor(character) {
     const publicCharacter = twoXkoDecisionState.publicCharacters.find((item) => item.id === character.id) || {};
     return cleanText(character.portrait) || cleanText(publicCharacter.portrait) || "";
@@ -705,5 +769,8 @@
   window.FG_LAB_RESEARCH_VAULT?.load(twoXkoGame);
   window.FG_LAB_SYNERGY_ENGINE?.load(twoXkoGame);
   loadTwoXkoDecisionData(twoXkoGame);
+  document.addEventListener("fg-lab:2xko-knowledge-updated", () => {
+    if (currentRoute().startsWith("/games/2xko")) renderTwoXkoPage(currentRoute());
+  });
   renderRoute();
 })();

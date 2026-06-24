@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-24",
+  "schema": {
+    "sources": "Raw source records from manual entry, transcripts, community notes, Discord exports, Reddit exports, or tournament reports.",
+    "extractedKnowledge": "Source-backed knowledge extracted from raw sources. Notes are stored separately from transcripts and keep sourceRefs for attribution."
+  },
+  "sources": [],
+  "extractedKnowledge": []
+}

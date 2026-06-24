@@ -23,13 +23,14 @@ const routes = [
   "/games/2xko/synergies",
   "/games/2xko/routes",
   "/games/2xko/research-vault",
+  "/games/2xko/knowledge-sources",
   ...twoXkoCharacters.map((id) => `/games/2xko/characters/${id}`),
 ];
 
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 
-copyFiles(["styles.css", "research-vault.css", "app.js", "platform.js", "synergy-engine.js", "research-vault.js", "_redirects"]);
+copyFiles(["styles.css", "research-vault.css", "app.js", "platform.js", "synergy-engine.js", "research-vault.js", "knowledge-ingestion.js", "_redirects"]);
 copyTree("data", "data", (source) => !source.endsWith(".md"));
 copyTree("assets/backgrounds", "assets/backgrounds");
 copyTree("assets/games", "assets/games");

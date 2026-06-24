@@ -1156,6 +1156,301 @@ body.platform-page-active {
   text-transform: uppercase;
 }
 
+.knowledge-ingestion,
+.knowledge-ingestion-status {
+  display: grid;
+  gap: 18px;
+}
+
+.knowledge-ingestion-hero,
+.knowledge-panel,
+.knowledge-source-form,
+.character-knowledge-stack {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(114, 221, 255, 0.08), transparent 45%),
+    rgba(11, 15, 24, 0.94);
+}
+
+.knowledge-ingestion-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.28fr);
+  gap: 22px;
+  align-items: end;
+  padding: clamp(22px, 4vw, 44px);
+  border-left: 4px solid #72ddff;
+}
+
+.knowledge-ingestion-hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(42px, 8vw, 92px);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.knowledge-ingestion-hero p {
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.knowledge-ingestion-hero dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.knowledge-ingestion-hero dl div,
+.knowledge-workflow article,
+.knowledge-panel,
+.knowledge-source-form,
+.character-knowledge-grid > section {
+  border: 1px solid rgba(114, 221, 255, 0.18);
+  background: rgba(18, 23, 33, 0.88);
+}
+
+.knowledge-ingestion-hero dl div {
+  padding: 12px;
+}
+
+.knowledge-ingestion-hero dt,
+.knowledge-workflow span,
+.knowledge-panel-heading .eyebrow,
+.knowledge-source-grid label span,
+.knowledge-filters label span,
+.knowledge-note summary span,
+.knowledge-source-card span,
+.knowledge-source-attribution dt,
+.source-backed-note dt {
+  color: #9ce8ff;
+  font-size: 9px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.knowledge-ingestion-hero dd {
+  margin: 2px 0 0;
+  color: #72ddff;
+  font-size: 34px;
+  font-weight: 950;
+}
+
+.knowledge-workflow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.knowledge-workflow article {
+  min-height: 74px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 13px;
+}
+
+.knowledge-workflow strong {
+  text-transform: uppercase;
+}
+
+.knowledge-source-form {
+  padding: 0;
+}
+
+.knowledge-source-form summary {
+  padding: 16px;
+  color: #f4fbff;
+  font-weight: 950;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.knowledge-source-grid,
+.knowledge-filters,
+.knowledge-dashboard-grid,
+.knowledge-pair-picker,
+.character-knowledge-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.knowledge-source-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0 16px 16px;
+}
+
+.knowledge-source-grid label,
+.knowledge-filters label,
+.knowledge-panel-heading,
+.knowledge-form-actions {
+  display: grid;
+  gap: 7px;
+}
+
+.knowledge-source-grid input,
+.knowledge-source-grid select,
+.knowledge-source-grid textarea,
+.knowledge-filters input,
+.knowledge-filters select,
+.knowledge-pair-picker select {
+  width: 100%;
+  border: 1px solid var(--line);
+  padding: 11px 12px;
+  background: rgba(4, 8, 14, 0.88);
+  color: var(--ink);
+}
+
+.knowledge-source-grid textarea {
+  resize: vertical;
+}
+
+.knowledge-source-grid .wide-field,
+.knowledge-form-actions {
+  grid-column: 1 / -1;
+}
+
+.knowledge-form-actions {
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.knowledge-form-actions p,
+.knowledge-message,
+.knowledge-note p,
+.knowledge-source-card p,
+.knowledge-synergy-grid p,
+.source-backed-note p,
+.character-knowledge-grid > section > p {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.knowledge-dashboard-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.32fr);
+}
+
+.knowledge-panel {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.knowledge-panel--wide {
+  min-width: 0;
+}
+
+.knowledge-panel-heading {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+}
+
+.knowledge-panel-heading h2,
+.character-knowledge-grid h3,
+.knowledge-synergy-grid h3 {
+  text-transform: uppercase;
+}
+
+.knowledge-filters {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.knowledge-results,
+.knowledge-source-list {
+  display: grid;
+  gap: 10px;
+}
+
+.knowledge-note,
+.source-backed-note {
+  border: 1px solid rgba(114, 221, 255, 0.18);
+  background: rgba(4, 8, 14, 0.58);
+}
+
+.knowledge-note summary,
+.source-backed-note summary {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.knowledge-note > p,
+.source-backed-note > p,
+.knowledge-source-attribution,
+.source-backed-note dl {
+  margin: 0;
+  padding: 0 12px 12px;
+}
+
+.knowledge-source-attribution,
+.source-backed-note dl {
+  display: grid;
+  gap: 8px;
+}
+
+.knowledge-source-attribution dd,
+.source-backed-note dd {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
+.knowledge-source-attribution a,
+.source-backed-note a {
+  color: #9ce8ff;
+}
+
+.knowledge-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 12px 12px;
+}
+
+.knowledge-chip-list span {
+  border: 1px solid rgba(194, 119, 255, 0.3);
+  padding: 4px 7px;
+  color: #d8b8ff;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.knowledge-source-card {
+  display: grid;
+  gap: 7px;
+  border-left: 3px solid #72ddff;
+  padding: 12px;
+  background: rgba(4, 8, 14, 0.58);
+}
+
+.knowledge-pair-picker {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.knowledge-synergy-grid,
+.character-knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.knowledge-synergy-grid section,
+.character-knowledge-grid > section {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  padding: 13px;
+}
+
+.knowledge-pair-label {
+  padding-inline: 12px;
+  color: #cda5ff;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 @media (max-width: 900px) {
   .platform-phase-grid,
   .portal-feature-grid,
@@ -1169,8 +1464,15 @@ body.platform-page-active {
   }
 
   .decision-character-grid--featured,
-  .decision-profile-meta {
+  .decision-profile-meta,
+  .knowledge-workflow,
+  .knowledge-filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .knowledge-ingestion-hero,
+  .knowledge-dashboard-grid {
+    grid-template-columns: 1fr;
   }
 
   .game-portal-topbar {
@@ -1210,6 +1512,12 @@ body.platform-page-active {
   .platform-phase-grid,
   .portal-feature-grid,
   .research-vault-list,
+  .knowledge-source-grid,
+  .knowledge-workflow,
+  .knowledge-filters,
+  .knowledge-pair-picker,
+  .knowledge-panel-heading,
+  .knowledge-form-actions,
   .synergy-traits,
   .synergy-card-grid,
   .synergy-support-grid,

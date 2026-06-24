@@ -46,6 +46,7 @@ window.FG_LAB_GAMES = [
       matchups: "matchups.json",
       communityNotes: "community-notes.json",
       researchVault: "research-vault.json",
+      knowledgeStore: "knowledge-store.json",
     },
     pages: {
       overview: {
@@ -77,6 +78,11 @@ window.FG_LAB_GAMES = [
         title: "What Routes First?",
         eyebrow: "Route Decisions",
         summary: "Find route priorities by goal, difficulty, duo, Fuse, and the situation the player needs to solve.",
+      },
+      "knowledge-sources": {
+        title: "Knowledge Sources",
+        eyebrow: "Admin Ingestion",
+        summary: "Import transcripts and written sources, generate source-backed knowledge drafts, and keep raw evidence separate from extracted notes.",
       },
       "research-vault": {
         title: "2XKO Research Vault",
