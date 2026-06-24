@@ -1,23 +1,47 @@
 {
-  "version": 1,
-  "updatedAt": "2026-06-22",
-  "status": "mock",
+  "version": 2,
+  "updatedAt": "2026-06-24",
+  "status": "research-in-progress",
   "fuses": [
+    {
+      "id": "2x-assist",
+      "gameId": "2xko",
+      "name": "2X Assist",
+      "reason": "Research In Progress",
+      "difficulty": "Research In Progress",
+      "tags": ["Assist Economy", "Team Utility"]
+    },
     {
       "id": "freestyle",
       "gameId": "2xko",
       "name": "Freestyle",
-      "reason": "Supports flexible tag sequencing when the duo's main goal is sustained offense.",
-      "difficulty": "Intermediate",
+      "reason": "Research In Progress",
+      "difficulty": "Research In Progress",
       "tags": ["Pressure", "Tag Routes"]
     },
     {
       "id": "double-down",
       "gameId": "2xko",
       "name": "Double Down",
-      "reason": "A direct option for players prioritizing damage and a simpler conversion plan.",
-      "difficulty": "Beginner Friendly",
-      "tags": ["Damage", "Beginner Friendly"]
+      "reason": "Research In Progress",
+      "difficulty": "Research In Progress",
+      "tags": ["Damage", "Route Payoff"]
+    },
+    {
+      "id": "fury",
+      "gameId": "2xko",
+      "name": "Fury",
+      "reason": "Research In Progress",
+      "difficulty": "Research In Progress",
+      "tags": ["Comeback", "Pressure"]
+    },
+    {
+      "id": "pulse",
+      "gameId": "2xko",
+      "name": "Pulse",
+      "reason": "Research In Progress",
+      "difficulty": "Research In Progress",
+      "tags": ["Accessibility", "Consistency"]
     }
   ]
 }

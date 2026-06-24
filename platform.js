@@ -18,6 +18,7 @@
     fuses: [],
     routes: [],
     observations: [],
+    selectedPair: ["ahri", "teemo"],
   };
 
   const dbfzViews = {
@@ -195,8 +196,18 @@
       return;
     }
 
-    if (section === "synergies" && window.FG_LAB_SYNERGY_ENGINE) {
-      window.FG_LAB_SYNERGY_ENGINE.render(twoXkoContent, page);
+    if (section === "fuses") {
+      renderTwoXkoFuses(page);
+      return;
+    }
+
+    if (section === "synergies") {
+      renderTwoXkoSynergyLab(page);
+      return;
+    }
+
+    if (section === "routes") {
+      renderTwoXkoRoutes(page);
       return;
     }
 
@@ -214,6 +225,153 @@
         <p>${page.summary}</p>
       </header>
       <section class="portal-feature-grid">${featureCards}</section>
+    `;
+  }
+
+  function renderTwoXkoFuses(page) {
+    if (!twoXkoDecisionState.loaded) {
+      twoXkoContent.innerHTML = decisionStatusMarkup(twoXkoDecisionState.error || "Loading Fuse research...");
+      return;
+    }
+    const fuseResearch = twoXkoDecisionState.observations.filter((item) => item.extractionTargets.includes("Fuse Notes") || item.tags.some((tag) => /fuse/i.test(tag)));
+    const fuseNotes = window.FG_LAB_2XKO_KNOWLEDGE?.combinedStore?.().extractedKnowledge?.filter((note) => note.kind === "fuse-discussion") || [];
+    const fuses = twoXkoDecisionState.fuses.length ? twoXkoDecisionState.fuses : [];
+    twoXkoContent.innerHTML = `
+      <section class="two-xko-tool-page">
+        ${toolHeroMarkup(page, "Fuse Decisions", "Choose a Fuse by what your duo needs, then attach evidence before treating it as a recommendation.", [
+          ["Fuse Notes", fuseResearch.length + fuseNotes.length],
+          ["Stored Fuses", fuses.length],
+          ["Verified Picks", fuses.filter((item) => item.verified).length],
+        ])}
+        <section class="tool-dashboard-grid">
+          <article class="tool-panel tool-panel--wide">
+            <div class="tool-panel-heading"><p class="eyebrow">Fuse Matrix</p><h2>Current Fuse Records</h2></div>
+            <div class="fuse-card-grid">
+              ${fuses.length ? fuses.map(fuseCardMarkup).join("") : emptyToolCard("No Fuse records yet", "Import official Fuse details or transcript notes through Knowledge Sources.")}
+            </div>
+          </article>
+          <article class="tool-panel">
+            <div class="tool-panel-heading"><p class="eyebrow">Decision Checklist</p><h2>Pick By Team Need</h2></div>
+            <div class="tool-checklist">
+              ${["Does the duo need safer neutral entry?", "Does the duo need route consistency?", "Does the duo need defensive stability?", "Does the duo need higher damage payoff?", "Is the Fuse claim backed by a source?"].map((item) => `<label><input type="checkbox" disabled /> <span>${escapeHtml(item)}</span></label>`).join("")}
+            </div>
+          </article>
+        </section>
+        <section class="tool-panel tool-panel--wide">
+          <div class="tool-panel-heading"><p class="eyebrow">Source-backed Fuse Discussions</p><h2>Evidence Queue</h2></div>
+          <div class="tool-note-grid">
+            ${fuseNotes.length ? fuseNotes.map(sourceBackedNoteMarkup).join("") : fuseResearch.length ? fuseResearch.map(observationToolCardMarkup).join("") : emptyToolCard("Research In Progress", "Fuse-specific transcript notes and reviewed observations will appear here.")}
+          </div>
+        </section>
+      </section>
+    `;
+  }
+
+  function renderTwoXkoSynergyLab(page) {
+    if (!twoXkoDecisionState.loaded) {
+      twoXkoContent.innerHTML = decisionStatusMarkup(twoXkoDecisionState.error || "Loading Synergy Lab...");
+      return;
+    }
+    const [firstId, secondId] = normalizedSelectedPair();
+    const first = findTwoXkoCharacter(firstId);
+    const second = findTwoXkoCharacter(secondId);
+    const pairNotes = window.FG_LAB_2XKO_KNOWLEDGE?.recordsForPair?.(firstId, secondId) || [];
+    const observations = observationsForPair(first, second);
+    const officialRecords = twoXkoDecisionState.synergies.filter((item) => {
+      const ids = [item.characterId, item.partnerId].sort().join("|");
+      return ids === [firstId, secondId].sort().join("|");
+    });
+    twoXkoContent.innerHTML = `
+      <section class="two-xko-tool-page">
+        ${toolHeroMarkup(page, "Synergy Lab", "Inspect a pair as a research file: what is known, what is only observed, and what still needs proof.", [
+          ["Pair Notes", pairNotes.length],
+          ["Observations", observations.length],
+          ["Verified Synergies", officialRecords.filter((item) => item.verified).length],
+        ])}
+        <section class="tool-panel tool-panel--wide">
+          <div class="tool-panel-heading"><p class="eyebrow">Champion Pair</p><h2>${escapeHtml(pairName(first, second))}</h2></div>
+          <div class="synergy-pair-picker">
+            ${characterSelectControl("pairA", firstId)}
+            ${characterSelectControl("pairB", secondId)}
+          </div>
+          <div class="synergy-pair-profile">
+            ${pairCharacterCard(first)}
+            ${pairCharacterCard(second)}
+          </div>
+        </section>
+        <section class="tool-dashboard-grid">
+          <article class="tool-panel tool-panel--wide">
+            <div class="tool-panel-heading"><p class="eyebrow">Pair File</p><h2>Strengths, Gaps, Win Condition</h2></div>
+            <div class="synergy-file-grid">
+              ${synergyFieldMarkup("Strengths", pairNotes, observations, ["strength", "neutral-synergy"])}
+              ${synergyFieldMarkup("Weaknesses", pairNotes, observations, ["weakness", "defensive-synergy"])}
+              ${synergyFieldMarkup("Win Condition", pairNotes, observations, ["win-condition"])}
+              ${synergyFieldMarkup("Recommended Fuse", pairNotes, observations, ["recommended-fuse", "fuse"])}
+              ${synergyFieldMarkup("Combo Synergy", pairNotes, observations, ["combo-synergy", "route"])}
+              ${synergyFieldMarkup("Neutral Synergy", pairNotes, observations, ["neutral-synergy", "neutral"])}
+              ${synergyFieldMarkup("Defensive Synergy", pairNotes, observations, ["defensive-synergy", "defense"])}
+            </div>
+          </article>
+          <article class="tool-panel">
+            <div class="tool-panel-heading"><p class="eyebrow">Research Status</p><h2>Before Publishing</h2></div>
+            <div class="tool-checklist">
+              ${["At least one source attached", "Route or neutral claim reviewed", "Fuse claim separated from guesswork", "Weakness recorded", "Win condition stated"].map((item) => `<label><input type="checkbox" disabled /> <span>${escapeHtml(item)}</span></label>`).join("")}
+            </div>
+          </article>
+        </section>
+      </section>
+    `;
+  }
+
+  function renderTwoXkoRoutes(page) {
+    if (!twoXkoDecisionState.loaded) {
+      twoXkoContent.innerHTML = decisionStatusMarkup(twoXkoDecisionState.error || "Loading route research...");
+      return;
+    }
+    const routeObservations = twoXkoDecisionState.observations.filter((item) => item.extractionTargets.includes("Route Entries") || item.tags.some((tag) => /route|oki|corner|combo/i.test(tag)));
+    const routeNotes = window.FG_LAB_2XKO_KNOWLEDGE?.combinedStore?.().extractedKnowledge?.filter((note) => note.kind === "combo-concept") || [];
+    const characterRows = twoXkoDecisionState.characters.map((character) => ({
+      character,
+      observations: observationsForCharacter(character).filter((item) => routeObservations.includes(item)),
+      sourceNotes: routeNotes.filter((note) => note.characters?.includes(character.id)),
+    }));
+    twoXkoContent.innerHTML = `
+      <section class="two-xko-tool-page">
+        ${toolHeroMarkup(page, "Route Decisions", "Track practical route learning by goal, character, source, and verification stage instead of dumping combo notation.", [
+          ["Route Observations", routeObservations.length],
+          ["Combo Notes", routeNotes.length],
+          ["Verified Routes", twoXkoDecisionState.routes.filter((item) => item.verified).length],
+        ])}
+        <section class="tool-dashboard-grid">
+          <article class="tool-panel tool-panel--wide">
+            <div class="tool-panel-heading"><p class="eyebrow">Learning Queue</p><h2>What To Learn First</h2></div>
+            <div class="route-lane-grid">
+              ${routeLaneMarkup("Confirm", "Basic hit into stable damage or tag.", routeObservations, ["route", "conversion"])}
+              ${routeLaneMarkup("Corner Carry", "Move the opponent to stronger screen position.", routeObservations, ["corner"])}
+              ${routeLaneMarkup("Tag Route", "Bring the partner in while keeping pressure or oki.", routeObservations, ["tag routes", "tag"])}
+              ${routeLaneMarkup("Oki / Setup", "End in a repeatable post-knockdown situation.", routeObservations, ["oki", "pressure"])}
+            </div>
+          </article>
+          <article class="tool-panel">
+            <div class="tool-panel-heading"><p class="eyebrow">Route Rules</p><h2>Publishing Standard</h2></div>
+            <div class="tool-checklist">
+              ${["Name the starter or situation", "Name the character pair if tag-based", "Attach source and timestamp", "Mark patch version", "Separate observation from recommendation"].map((item) => `<label><input type="checkbox" disabled /> <span>${escapeHtml(item)}</span></label>`).join("")}
+            </div>
+          </article>
+        </section>
+        <section class="tool-panel tool-panel--wide">
+          <div class="tool-panel-heading"><p class="eyebrow">Character Route Coverage</p><h2>Current Research Map</h2></div>
+          <div class="route-coverage-grid">
+            ${characterRows.map(routeCoverageCardMarkup).join("")}
+          </div>
+        </section>
+        <section class="tool-panel tool-panel--wide">
+          <div class="tool-panel-heading"><p class="eyebrow">Source-backed Combo Concepts</p><h2>Transcript Extractions</h2></div>
+          <div class="tool-note-grid">
+            ${routeNotes.length ? routeNotes.map(sourceBackedNoteMarkup).join("") : emptyToolCard("Research In Progress", "Combo and route concepts extracted from transcripts will appear here.")}
+          </div>
+        </section>
+      </section>
     `;
   }
 
@@ -383,6 +541,153 @@
             ${characterObservations.length ? characterObservations.slice(0, 4).map(observationMarkup).join("") : `<article><h3>No observations yet</h3><p>Capture VOD, Discord, stream, or tournament notes in the Research Vault before turning them into recommendations.</p></article>`}
           </div>
         </section>
+      </article>
+    `;
+  }
+
+  function toolHeroMarkup(page, fallbackTitle, copy, stats) {
+    return `
+      <header class="tool-hero">
+        <div>
+          <p class="eyebrow">${escapeHtml(page?.eyebrow || "2XKO Lab")}</p>
+          <h1>${escapeHtml(page?.title || fallbackTitle)}</h1>
+          <p>${escapeHtml(page?.summary || copy)}</p>
+        </div>
+        <dl>
+          ${stats.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}
+        </dl>
+      </header>
+    `;
+  }
+
+  function fuseCardMarkup(fuse) {
+    const relatedNotes = (window.FG_LAB_2XKO_KNOWLEDGE?.combinedStore?.().extractedKnowledge || []).filter((note) => {
+      const haystack = `${note.title} ${note.body} ${(note.tags || []).join(" ")}`.toLowerCase();
+      return haystack.includes(String(fuse.name || fuse.id).toLowerCase()) || note.kind === "fuse-discussion";
+    }).slice(0, 2);
+    return `
+      <article class="fuse-card">
+        <header>
+          <span>${escapeHtml(fuse.verified ? "Verified" : "Research Candidate")}</span>
+          <h3>${escapeHtml(fuse.name || titleCase(fuse.id))}</h3>
+        </header>
+        <p>${escapeHtml(fuse.reason || "Research In Progress")}</p>
+        ${chipListMarkup(fuse.tags || [])}
+        <div class="fuse-card__notes">
+          ${relatedNotes.length ? relatedNotes.map((note) => `<p>${escapeHtml(note.title)}</p>`).join("") : `<p>Source-backed details pending.</p>`}
+        </div>
+      </article>
+    `;
+  }
+
+  function emptyToolCard(title, copy) {
+    return `<article class="tool-empty-card"><strong>${escapeHtml(title)}</strong><p>${escapeHtml(copy)}</p></article>`;
+  }
+
+  function observationToolCardMarkup(observation) {
+    return `
+      <article class="tool-observation-card">
+        <span>${escapeHtml(observation.confidence || "Research")}</span>
+        <h3>${escapeHtml(observation.match)}</h3>
+        <p>${escapeHtml(observation.observation)}</p>
+        ${chipListMarkup(observation.tags || [])}
+        ${observation.sourceLink ? `<a href="${escapeHtml(observation.sourceLink)}" target="_blank" rel="noreferrer">Open source</a>` : ""}
+      </article>
+    `;
+  }
+
+  function normalizedSelectedPair() {
+    const ids = twoXkoDecisionState.characters.map((character) => character.id);
+    let [first, second] = twoXkoDecisionState.selectedPair;
+    if (!ids.includes(first)) first = ids[0] || "";
+    if (!ids.includes(second) || second === first) second = ids.find((id) => id !== first) || "";
+    twoXkoDecisionState.selectedPair = [first, second];
+    return twoXkoDecisionState.selectedPair;
+  }
+
+  function findTwoXkoCharacter(id) {
+    return twoXkoDecisionState.characters.find((character) => character.id === id) || null;
+  }
+
+  function characterSelectControl(key, selected) {
+    return `
+      <label>
+        <span>${key === "pairA" ? "First Champion" : "Second Champion"}</span>
+        <select data-two-xko-pair="${escapeHtml(key)}">
+          ${twoXkoDecisionState.characters.map((character) => `<option value="${escapeHtml(character.id)}"${character.id === selected ? " selected" : ""}>${escapeHtml(character.name)}</option>`).join("")}
+        </select>
+      </label>
+    `;
+  }
+
+  function pairName(first, second) {
+    return `${first?.name || "Champion"} + ${second?.name || "Champion"}`;
+  }
+
+  function pairCharacterCard(character) {
+    if (!character) return emptyToolCard("Pick a champion", "Select two different champions to inspect pair notes.");
+    return `
+      <article class="synergy-pair-character" style="${portraitVars(character)}">
+        <span class="synergy-pair-character__art" aria-hidden="true"></span>
+        <div>
+          <strong>${escapeHtml(character.name)}</strong>
+          <p>${escapeHtml(cleanText(character.playstyle) || "Research in progress")}</p>
+          ${chipListMarkup(character.archetypes || [])}
+        </div>
+      </article>
+    `;
+  }
+
+  function observationsForPair(first, second) {
+    if (!first || !second) return [];
+    return twoXkoDecisionState.observations.filter((observation) => {
+      const haystack = [observation.match, ...observation.teams, observation.observation, ...observation.tags].join(" ").toLowerCase();
+      return matchesCharacter(haystack, first) && matchesCharacter(haystack, second);
+    });
+  }
+
+  function synergyFieldMarkup(title, pairNotes, observations, needles) {
+    const normalizedNeedles = needles.map((item) => item.toLowerCase());
+    const matchingNotes = pairNotes.filter((note) => {
+      const haystack = `${note.kind} ${note.synergyField} ${(note.tags || []).join(" ")} ${note.title} ${note.body}`.toLowerCase();
+      return normalizedNeedles.some((needle) => haystack.includes(needle));
+    });
+    const matchingObservations = observations.filter((observation) => {
+      const haystack = `${observation.observation} ${(observation.tags || []).join(" ")} ${(observation.extractionTargets || []).join(" ")}`.toLowerCase();
+      return normalizedNeedles.some((needle) => haystack.includes(needle));
+    });
+    return `
+      <section>
+        <h3>${escapeHtml(title)}</h3>
+        ${matchingNotes.length ? matchingNotes.slice(0, 2).map(sourceBackedNoteMarkup).join("") : matchingObservations.length ? matchingObservations.slice(0, 2).map(observationToolCardMarkup).join("") : `<p>Research In Progress</p>`}
+      </section>
+    `;
+  }
+
+  function routeLaneMarkup(title, copy, observations, needles) {
+    const normalizedNeedles = needles.map((item) => item.toLowerCase());
+    const matches = observations.filter((observation) => {
+      const haystack = `${observation.observation} ${(observation.tags || []).join(" ")} ${(observation.extractionTargets || []).join(" ")}`.toLowerCase();
+      return normalizedNeedles.some((needle) => haystack.includes(needle));
+    });
+    return `
+      <section class="route-lane">
+        <header><span>${matches.length}</span><h3>${escapeHtml(title)}</h3></header>
+        <p>${escapeHtml(copy)}</p>
+        <div>${matches.length ? matches.slice(0, 3).map(observationToolCardMarkup).join("") : `<p>Research In Progress</p>`}</div>
+      </section>
+    `;
+  }
+
+  function routeCoverageCardMarkup(row) {
+    const count = row.observations.length + row.sourceNotes.length;
+    return `
+      <article class="route-coverage-card" style="${portraitVars(row.character)}">
+        <span class="route-coverage-card__art" aria-hidden="true"></span>
+        <div>
+          <strong>${escapeHtml(row.character.name)}</strong>
+          <p>${count} route note${count === 1 ? "" : "s"}</p>
+        </div>
       </article>
     `;
   }
@@ -758,6 +1063,18 @@
     if (!target) return;
     event.preventDefault();
     navigate(target.dataset.route || target.getAttribute("href"));
+  });
+  document.addEventListener("change", (event) => {
+    const key = event.target.dataset.twoXkoPair;
+    if (!key) return;
+    if (key === "pairA") twoXkoDecisionState.selectedPair[0] = event.target.value;
+    if (key === "pairB") twoXkoDecisionState.selectedPair[1] = event.target.value;
+    if (twoXkoDecisionState.selectedPair[0] === twoXkoDecisionState.selectedPair[1]) {
+      const replacement = twoXkoDecisionState.characters.find((character) => character.id !== event.target.value)?.id || "";
+      if (key === "pairA") twoXkoDecisionState.selectedPair[1] = replacement;
+      else twoXkoDecisionState.selectedPair[0] = replacement;
+    }
+    renderTwoXkoPage("/games/2xko/synergies");
   });
   window.addEventListener("popstate", renderRoute);
   window.addEventListener("hashchange", renderRoute);
