@@ -1348,14 +1348,35 @@ function assistMarkup(assist) {
 function renderPositions(positions) {
   characterPositions.innerHTML = ["point", "mid", "anchor"]
     .map((position) => {
+      const details = positionNoteParts(positions[position]);
       return `
         <div class="position-card">
-          <strong>${position}</strong>
-          <p>${positions[position] || "Position notes pending."}</p>
+          <div class="position-card-header">
+            <strong>${position}</strong>
+            <span>${details.status}</span>
+          </div>
+          <p>${details.body}</p>
         </div>
       `;
     })
     .join("");
+}
+
+function positionNoteParts(value) {
+  const text = cleanNoteText(value || "Research In Progress");
+  const match = text.match(/^([^:]{2,32}):\s*(.+)$/);
+  if (!match) return { status: "Research", body: text };
+  return {
+    status: match[1],
+    body: formatPositionBody(match[2]),
+  };
+}
+
+function formatPositionBody(value) {
+  return cleanNoteText(value)
+    .replace(/^(Yes|No|Maybe|Situational|Strong|Weak|Pending)\s+(?=[A-Z])/i, "$1. ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function renderFrameTable(rows) {
@@ -2331,12 +2352,17 @@ function characterResultCard(character) {
 }
 
 function relationshipResultCard(relationship) {
+  const tags = relationshipFilterTags(relationship).slice(0, 6);
   return `
-    <article class="result-card">
-      <strong>${relationship.characterA} ↔ ${relationship.characterB}</strong>
+    <article class="result-card synergy-result-card">
+      <header>
+        <span>${relationship.characterA}</span>
+        <b>+</b>
+        <span>${relationship.characterB}</span>
+      </header>
       <p>${relationship.notes || "Relationship notes pending."}</p>
-      <div class="tag-list">${(relationship.tags || []).map((tag) => graphPill("tag", tag)).join("")}</div>
-      ${relationship.videoUrl ? `<p><a href="${relationship.videoUrl}">Video link</a></p>` : ""}
+      <div class="tag-list">${tags.map((tag) => graphPill("tag", tag)).join("")}</div>
+      ${relationship.videoUrl ? `<a class="synergy-source-link" href="${relationship.videoUrl}">Source video</a>` : ""}
     </article>
   `;
 }
