@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fg-lab.local/schemas/research-source.json",
+  "title": "FG Lab Research Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "game", "title", "transcript_file", "topics", "date_added", "status"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "game": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "creator": { "type": "string" },
+    "youtube_link": { "type": "string" },
+    "transcript_file": { "type": "string", "minLength": 1 },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "date_added": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "processing", "processed", "failed", "archived"]
+    }
+  }
+}

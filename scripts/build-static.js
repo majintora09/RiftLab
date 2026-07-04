@@ -32,7 +32,7 @@ fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 
 copyFiles(["styles.css", "research-vault.css", "app.js", "platform.js", "synergy-engine.js", "research-vault.js", "knowledge-ingestion.js", "tournament-evidence.js", "_redirects"]);
-copyTree("data", "data", (source) => !source.endsWith(".md") && !isLocalTwoXkoResearchNote(source));
+copyTree("data", "data", (source) => !source.endsWith(".md") && !isPrivateResearchAsset(source));
 copyTree("assets/backgrounds", "assets/backgrounds");
 copyTree("assets/games", "assets/games");
 copyFiles(["assets/manifest.js"]);
@@ -92,8 +92,15 @@ function copyDirectory(source, destination, include) {
   }
 }
 
-function isLocalTwoXkoResearchNote(source) {
-  return source.includes(`${path.sep}data${path.sep}games${path.sep}2xko${path.sep}research${path.sep}`) && source.endsWith(".txt");
+function isPrivateResearchAsset(source) {
+  const isResearch = source.includes(`${path.sep}data${path.sep}games${path.sep}`) && source.includes(`${path.sep}research${path.sep}`);
+  if (!isResearch) return false;
+  return source.includes(`${path.sep}.vs${path.sep}`)
+    || source.includes(`${path.sep}transcripts${path.sep}`)
+    || source.includes(`${path.sep}imports${path.sep}`)
+    || source.endsWith(".txt")
+    || source.endsWith(".pdf")
+    || source.endsWith(".sqlite");
 }
 
 function writeFile(relativePath, content) {

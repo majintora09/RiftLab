@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "game": "street-fighter",
+  "statuses": [
+    "pending",
+    "processing",
+    "processed",
+    "failed"
+  ],
+  "queue": []
+}

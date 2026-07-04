@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fg-lab.local/schemas/research-observation.json",
+  "title": "FG Lab Cross-Game Research Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "game", "source", "timestamp", "characters", "team", "type", "observation", "possible_conclusion", "confidence", "review_status"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "game": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "source_title": { "type": "string" },
+    "source_link": { "type": "string" },
+    "transcript": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "characters": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "team": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Synergy", "Route", "Matchup", "Fuse", "Tech", "Neutral", "Pressure", "Combo", "Defense"]
+    },
+    "observation": { "type": "string", "minLength": 1 },
+    "possible_conclusion": { "type": "string" },
+    "confidence": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["needs-review", "verified", "rejected"]
+    },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "verified_at": { "type": "string" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fg-lab.local/schemas/import-queue-entry.json",
+  "title": "FG Lab Research Import Queue Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "game", "transcript", "status"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "game": { "type": "string", "minLength": 1 },
+    "source_id": { "type": "string" },
+    "transcript": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "processing", "processed", "failed"]
+    },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "error": { "type": "string" }
+  }
+}

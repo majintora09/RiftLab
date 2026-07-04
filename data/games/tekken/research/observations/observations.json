@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "game": "tekken",
+  "observation_types": [
+    "Synergy",
+    "Route",
+    "Matchup",
+    "Fuse",
+    "Tech",
+    "Neutral",
+    "Pressure",
+    "Combo",
+    "Defense"
+  ],
+  "observations": []
+}

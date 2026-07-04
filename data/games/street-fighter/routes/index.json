@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "game": "street-fighter",
+  "routes": [],
+  "update_rule": "Verified information is append-only. Conflicts create research meta notes."
+}

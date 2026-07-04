@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "game": "guilty-gear",
+  "statuses": [
+    "pending",
+    "processing",
+    "processed",
+    "failed"
+  ],
+  "queue": []
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "game": "tekken",
+  "statuses": [
+    "pending",
+    "processing",
+    "processed",
+    "failed"
+  ],
+  "queue": []
+}

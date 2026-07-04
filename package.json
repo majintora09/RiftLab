@@ -8,6 +8,10 @@
     "preview": "node server.js dist",
     "import-dustloop": "node scripts/import-dustloop.js",
     "generate-2xko-synergies": "node scripts/generate-2xko-synergies.js",
+    "research:init": "node scripts/fg-research.js init",
+    "research:enqueue": "node scripts/fg-research.js enqueue",
+    "research:process": "node scripts/fg-research.js process",
+    "research:verify": "node scripts/fg-research.js verify",
     "build": "node scripts/generate-2xko-synergies.js && node scripts/build-static.js"
   }
 }

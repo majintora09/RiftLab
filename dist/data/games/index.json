@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "id": "2xko",
+      "title": "2xko",
+      "status": "research-ready"
+    },
+    {
+      "id": "dbfz",
+      "title": "Dbfz",
+      "status": "research-ready"
+    },
+    {
+      "id": "guilty-gear",
+      "title": "Guilty Gear",
+      "status": "research-ready"
+    },
+    {
+      "id": "street-fighter",
+      "title": "Street Fighter",
+      "status": "research-ready"
+    },
+    {
+      "id": "tekken",
+      "title": "Tekken",
+      "status": "research-ready"
+    }
+  ]
+}

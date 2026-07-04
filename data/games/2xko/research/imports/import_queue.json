@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "game": "2xko",
+  "statuses": [
+    "pending",
+    "processing",
+    "processed",
+    "failed"
+  ],
+  "queue": []
+}

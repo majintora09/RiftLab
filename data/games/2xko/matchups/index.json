@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "game": "2xko",
+  "matchups": [],
+  "update_rule": "Verified information is append-only. Conflicts create research meta notes."
+}

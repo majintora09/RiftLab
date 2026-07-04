@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fg-lab.local/schemas/meta-note.json",
+  "title": "FG Lab Research Meta Note",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "game", "type", "status", "summary", "created_at"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "game": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": ["conflict", "missing-source", "review-note", "import-error"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "resolved", "archived"]
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "incoming_observation": { "type": "string" },
+    "verified_observation": { "type": "string" },
+    "created_at": { "type": "string" },
+    "resolved_at": { "type": "string" }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "game": "2xko",
+  "characters": [
+    {
+      "id": "ahri",
+      "name": "Ahri",
+      "file": "../ahri.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "akali",
+      "name": "Akali",
+      "file": "../akali.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "blitzcrank",
+      "name": "Blitzcrank",
+      "file": "../blitzcrank.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "braum",
+      "name": "Braum",
+      "file": "../braum.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "caitlyn",
+      "name": "Caitlyn",
+      "file": "../caitlyn.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "darius",
+      "name": "Darius",
+      "file": "../darius.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "ekko",
+      "name": "Ekko",
+      "file": "../ekko.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "illaoi",
+      "name": "Illaoi",
+      "file": "../illaoi.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "file": "../jinx.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "senna",
+      "name": "Senna",
+      "file": "../senna.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "teemo",
+      "name": "Teemo",
+      "file": "../teemo.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "thresh",
+      "name": "Thresh",
+      "file": "../thresh.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "vi",
+      "name": "Vi",
+      "file": "../vi.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "file": "../warwick.json",
+      "status": "legacy-reference"
+    },
+    {
+      "id": "yasuo",
+      "name": "Yasuo",
+      "file": "../yasuo.json",
+      "status": "legacy-reference"
+    }
+  ]
+}
