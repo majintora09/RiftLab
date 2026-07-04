@@ -797,7 +797,9 @@ function formattedNoteMarkup(value) {
 function structuredFieldsMarkup(fields) {
   const rows = fields
     .map((field) => {
-      const values = arrayFrom(field.values).map((item) => cleanNoteText(cleanCharacterCopy(item, field.characterName))).filter(Boolean);
+      const values = arrayFrom(field.values)
+        .map((item) => field.cleanAssistText ? cleanAssistFieldText(item) : cleanNoteText(cleanCharacterCopy(item, field.characterName)))
+        .filter(Boolean);
       if (!values.length && !field.tags?.length) return "";
       if (field.type === "tags") {
         const tags = cleanTagList(field.tags || values);
@@ -812,6 +814,16 @@ function structuredFieldsMarkup(fields) {
     .filter(Boolean)
     .join("");
   return rows ? `<div class="structured-note">${rows}</div>` : `<p>Notes pending.</p>`;
+}
+
+function cleanAssistFieldText(value) {
+  const cleaned = cleanNoteText(value)
+    .replace(/This pick\.?\s*/gi, " ")
+    .replace(/This character\.?\s*/gi, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;!?])/g, "$1")
+    .trim();
+  return cleaned ? `${cleaned[0].toUpperCase()}${cleaned.slice(1)}` : "";
 }
 
 function dhcNoteMarkup(page, character, fallback = "") {
@@ -1326,9 +1338,9 @@ function assistMarkup(assist) {
   const provides = arrayFrom(assist.provides).length ? assist.provides : assist.summary && !/^assist details pending/i.test(assist.summary) ? [assist.summary] : [];
   const tags = cleanTagList(assist.tags || []);
   return structuredFieldsMarkup([
-    { label: "Provides", values: provides },
-    { label: "Best For", values: [...arrayFrom(assist.bestFor), ...arrayFrom(assist.bestPartners)] },
-    { label: "Why", values: [...arrayFrom(assist.why), ...arrayFrom(assist.drawbacks).map((item) => `Drawback: ${item}`)] },
+    { label: "Provides", values: provides, cleanAssistText: true },
+    { label: "Best For", values: [...arrayFrom(assist.bestFor), ...arrayFrom(assist.bestPartners)], cleanAssistText: true },
+    { label: "Why", values: [...arrayFrom(assist.why), ...arrayFrom(assist.drawbacks).map((item) => `Drawback: ${item}`)], cleanAssistText: true },
     { label: "Tags", values: tags, tags, type: "tags" },
   ]);
 }
@@ -3347,12 +3359,16 @@ function synergiesForCharacter(character) {
 
 function mergeAssists(base, override) {
   return ["A", "B", "C"].reduce((merged, slot) => {
-    merged[slot] = { ...(base[slot] || {}), ...(override[slot] || {}) };
-    merged[slot].provides = [...arrayFrom(base[slot]?.provides), ...arrayFrom(override[slot]?.provides)];
-    merged[slot].bestFor = [...arrayFrom(base[slot]?.bestFor), ...arrayFrom(override[slot]?.bestFor)];
-    merged[slot].why = [...arrayFrom(base[slot]?.why), ...arrayFrom(override[slot]?.why)];
-    merged[slot].drawbacks = [...arrayFrom(base[slot]?.drawbacks), ...arrayFrom(override[slot]?.drawbacks)];
-    merged[slot].tags = cleanTagList([...(base[slot]?.tags || []), ...(override[slot]?.tags || [])]);
+    const baseSlot = base[slot] || {};
+    const overrideSlot = override[slot] || {};
+    const overrideHasStructuredNotes = ["provides", "bestFor", "bestPartners", "why", "drawbacks"].some((key) => arrayFrom(overrideSlot[key]).length);
+    merged[slot] = { ...baseSlot, ...overrideSlot };
+    merged[slot].provides = overrideHasStructuredNotes ? arrayFrom(overrideSlot.provides) : [...arrayFrom(baseSlot.provides), ...arrayFrom(overrideSlot.provides)];
+    merged[slot].bestFor = overrideHasStructuredNotes ? arrayFrom(overrideSlot.bestFor) : [...arrayFrom(baseSlot.bestFor), ...arrayFrom(overrideSlot.bestFor)];
+    merged[slot].bestPartners = overrideHasStructuredNotes ? arrayFrom(overrideSlot.bestPartners) : [...arrayFrom(baseSlot.bestPartners), ...arrayFrom(overrideSlot.bestPartners)];
+    merged[slot].why = overrideHasStructuredNotes ? arrayFrom(overrideSlot.why) : [...arrayFrom(baseSlot.why), ...arrayFrom(overrideSlot.why)];
+    merged[slot].drawbacks = overrideHasStructuredNotes ? arrayFrom(overrideSlot.drawbacks) : [...arrayFrom(baseSlot.drawbacks), ...arrayFrom(overrideSlot.drawbacks)];
+    merged[slot].tags = cleanTagList([...(baseSlot.tags || []), ...(overrideSlot.tags || [])]);
     return merged;
   }, {});
 }
