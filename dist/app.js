@@ -1352,10 +1352,22 @@ function renderPositions(positions) {
       return `
         <div class="position-card">
           <div class="position-card-header">
-            <strong>${position}</strong>
+            <div>
+              <strong>${position}</strong>
+              <small>${positionRoleText(position)}</small>
+            </div>
             <span>${details.status}</span>
           </div>
-          <p>${details.body}</p>
+          <dl class="position-breakdown">
+            <div>
+              <dt>Fit</dt>
+              <dd>${details.fit}</dd>
+            </div>
+            <div>
+              <dt>Reason</dt>
+              <dd>${details.body}</dd>
+            </div>
+          </dl>
         </div>
       `;
     })
@@ -1365,18 +1377,36 @@ function renderPositions(positions) {
 function positionNoteParts(value) {
   const text = cleanNoteText(value || "Research In Progress");
   const match = text.match(/^([^:]{2,32}):\s*(.+)$/);
-  if (!match) return { status: "Research", body: text };
+  if (!match) return { status: "Research", fit: "Pending", body: text };
+  const detail = splitPositionFit(match[2]);
   return {
     status: match[1],
-    body: formatPositionBody(match[2]),
+    fit: detail.fit,
+    body: detail.body,
   };
 }
 
-function formatPositionBody(value) {
-  return cleanNoteText(value)
-    .replace(/^(Yes|No|Maybe|Situational|Strong|Weak|Pending)\s+(?=[A-Z])/i, "$1. ")
-    .replace(/\s+/g, " ")
-    .trim();
+function splitPositionFit(value) {
+  const text = cleanNoteText(value);
+  const match = text.match(/^(Yes|No|Maybe|Situational|Strong|Weak|Pending)\b\.?\s*(.*)$/i);
+  if (!match) return { fit: "Needs Review", body: text || "Research In Progress" };
+  return {
+    fit: sentenceCase(match[1]),
+    body: cleanNoteText(match[2]) || "Research In Progress",
+  };
+}
+
+function positionRoleText(position) {
+  return {
+    point: "Starts the team plan",
+    mid: "Supports and stabilizes",
+    anchor: "Closes without help",
+  }[position] || "Team slot";
+}
+
+function sentenceCase(value) {
+  const text = cleanNoteText(value).toLowerCase();
+  return text ? `${text[0].toUpperCase()}${text.slice(1)}` : "";
 }
 
 function renderFrameTable(rows) {
