@@ -167,12 +167,15 @@ function processGame(game) {
       for (const observation of extracted) {
         const conflict = findConflict(observation, verified.verified_observations);
         if (conflict) meta.notes.push(conflictNote(game, observation, conflict));
-        if (!observations.observations.some((item) => observationKey(item) === observationKey(observation))) {
+        const existingIndex = observations.observations.findIndex((item) => item.id === observation.id);
+        if (existingIndex >= 0) observations.observations[existingIndex] = observation;
+        else if (!observations.observations.some((item) => observationKey(item) === observationKey(observation))) {
           observations.observations.push(observation);
         }
       }
       entry.status = "processed";
       entry.error = "";
+      if (source.id) source.status = "processed";
       processed += 1;
     } catch (error) {
       entry.status = "failed";
@@ -182,6 +185,7 @@ function processGame(game) {
     }
   }
   writeJson(queuePath, queue);
+  writeJson(sourcePath, sources);
   writeJson(observationPath, observations);
   writeJson(metaPath, meta);
   return processed;
@@ -193,10 +197,15 @@ function extractObservations({ game, transcript, entry, source, characterRegistr
     .map((chunk) => chunk.trim())
     .filter((chunk) => chunk.length >= 24);
   const observations = [];
+  let activeCharacters = [];
   chunks.forEach((chunk, index) => {
     const type = detectType(chunk);
     const timestamp = extractTimestamp(chunk);
     const characters = detectCharacters(chunk, characterRegistry);
+    const headingCharacters = detectHeadingCharacters(chunk, characterRegistry);
+    if (headingCharacters.length) activeCharacters = headingCharacters;
+    else if (characters.length) activeCharacters = characters;
+    const relatedCharacters = characters.length ? characters : activeCharacters;
     observations.push({
       id: `${game}-${slugify(entry.source_id || entry.transcript)}-${String(index + 1).padStart(3, "0")}`,
       game,
@@ -205,8 +214,8 @@ function extractObservations({ game, transcript, entry, source, characterRegistr
       source_link: source.youtube_link || "",
       transcript: entry.transcript,
       timestamp,
-      characters,
-      team: detectTeam(chunk, characters),
+      characters: relatedCharacters,
+      team: detectTeam(chunk, relatedCharacters),
       type,
       observation: cleanObservation(chunk),
       possible_conclusion: "Research In Progress",
@@ -242,8 +251,39 @@ function extractTimestamp(text) {
 function detectCharacters(text, registry) {
   const value = text.toLowerCase();
   return registry
-    .filter((character) => value.includes(character.name.toLowerCase()) || new RegExp(`(^|[^a-z0-9])${escapeRegExp(character.id)}([^a-z0-9]|$)`).test(value))
+    .filter((character) => {
+      const aliases = characterAliases(character).filter((alias) => alias.length > 3);
+      const idMatchAllowed = character.id.length > 3;
+      return aliases.some((alias) => value.includes(alias))
+        || (idMatchAllowed && new RegExp(`(^|[^a-z0-9])${escapeRegExp(character.id)}([^a-z0-9]|$)`).test(value));
+    })
     .map((character) => character.id);
+}
+
+function detectHeadingCharacters(text, registry) {
+  const heading = String(text || "").split(/\n|\./)[0].trim().toLowerCase();
+  if (!heading || heading.length > 72) return [];
+  return registry
+    .filter((character) => characterAliases(character).some((alias) => heading === alias || heading.startsWith(`${alias} `)))
+    .map((character) => character.id);
+}
+
+function characterAliases(character) {
+  const base = [character.id, character.name || ""];
+  const expanded = [];
+  for (const item of base) {
+    const normalized = String(item || "").toLowerCase().replace(/[_-]+/g, " ").trim();
+    if (!normalized) continue;
+    expanded.push(normalized);
+    expanded.push(normalized.replace(/\bssj\b/g, "super saiyan"));
+    expanded.push(normalized.replace(/\bssj4\b/g, "super saiyan 4"));
+    expanded.push(normalized.replace(/\bdbs\b/g, "super").replace(/\bdbz\b/g, "z"));
+    expanded.push(normalized.replace(/\badult gohan\b/g, "a gohan"));
+    expanded.push(normalized.replace(/\bteen gohan\b/g, "team gohan"));
+    expanded.push(normalized.replace(/\bfrieza\b/g, "freeza"));
+    expanded.push(normalized.replace(/\bandroid\b/g, "a"));
+  }
+  return [...new Set(expanded.filter(Boolean))];
 }
 
 function detectTeam(text, characters) {

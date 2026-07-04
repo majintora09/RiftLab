@@ -1,5 +1,21 @@
 {
   "schemaVersion": 1,
   "game": "dbfz",
-  "sources": []
+  "sources": [
+    {
+      "id": "new-all-characters-transcript",
+      "game": "dbfz",
+      "title": "New All Characters Transcript",
+      "creator": "",
+      "youtube_link": "",
+      "transcript_file": "new all characters transcript.txt",
+      "topics": [
+        "characters",
+        "dbfz",
+        "research"
+      ],
+      "date_added": "2026-07-04",
+      "status": "processed"
+    }
+  ]
 }

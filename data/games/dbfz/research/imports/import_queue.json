@@ -7,5 +7,16 @@
     "processed",
     "failed"
   ],
-  "queue": []
+  "queue": [
+    {
+      "id": "dbfz-new-all-characters-transcript",
+      "game": "dbfz",
+      "source_id": "new-all-characters-transcript",
+      "transcript": "new all characters transcript.txt",
+      "status": "processed",
+      "created_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "error": ""
+    }
+  ]
 }
