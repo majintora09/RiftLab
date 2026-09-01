@@ -1,0 +1,20 @@
+Instead of using the selected fighter part on the right, make a pop up window when clicking on a character portrait, may it be on the locked fighters or the roster. Have all the fighter information withing this window including edit buttons, allowing each character's info to be reevaluated. For the stars explaining their strengths, maybe don't display the empty ones. Too small to tell apart from the full ones. Maybe don't repeat the character's name all the time in the descriptions, given that we know who this is about... Make a color description for the general roster. They all have their color for a reason right? so there should be a description to it. And also maybe at a later point we can make multi colored portrait based on the char filters and/or tags.
+
+Creating a new tab with playstyle teams.
+ppl who may know FGC's but not dbfZ can go off of their playstyle 
+"hmm im a neutral based player, I like footsies, what team can I play off that/what characters fit that style"
+
+Add why put a character on a team and why avoid it in a team on the character tab.
+
+Make a new tab called Training Lab merging synergies and guides tabs (and replacing these aka delete these tabs) while removing Assists, Synergies, TODs/Combos and matchups from the characters tab.
+This tab is all about explaining teams, why things work or dont to a deeper level. selecting specific characters based on their tags and filters should be fairly detailed on the info it gives. That's the whole point. Imagine the team builder is more on the casual side, while the training lab is well, the depth of the team builder if you feel me.
+
+Need an AI to go trough Noa's pdf and have thing filled out for every character. Not as in the characters tab style but Infos in general. I love that style of explaining he has on the pdf or questioning why things are or are not good. Want to keep things neutral, not demotivating anyone from their teams. Just showing the goods and bads.
+
+Idea to have a place on the website likely part of the training lab, maybe a sub tab for the characters guide, not sure what's better but for each character having a sub tab of sorts called Movie Room where automatically, the website will look and propose (or we ourselves put up links) videos / twitter clips with #s and other forms of mentions of said character or and shell. Thinking about it on a deeper level too. If a shell is known like fusions, maybe have sets people can or should watch to learn and understand the depth the shell may or may not have.
+
+
+
+
+
+

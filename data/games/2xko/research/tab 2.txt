@@ -1,0 +1,675 @@
+tab 2
+
+
+One of the best things about 2x KO so
+far is that it seems like no matter what
+character you want to play, you can
+build a pretty strong team around it for
+now. We'll see how balancing goes down
+the line, but right now it seems like
+there's a lot of strong combinations,
+which could seem overwhelming, but I
+want to make it easy for you, and just
+give you an idea of what kind of
+character you might want to play, what
+kind of teams you might want to make,
+and just in general some of the
+strengths these characters offer each
+other as teammates. Okay, so we're going
+General Advice
+to start with two copout answers for
+building a team. One, play who you love.
+Like, I I mean this genuinely. If you
+open the screen and you think Ekko is
+the coolest character I've ever seen and
+uh I watched Arcane, I love Vi. I mean,
+they're both from Arcane. Whatever. You
+can make this team work. And I'll talk
+about like things you're going to look
+for later. The second copout answer is
+just copy one of the better players,
+right? If you open Sonic Fox's stream,
+Super Noon, Left, and whatever, you're
+going to see that people are using
+different teams. I mean, some of them
+are kind of similar, and you can just
+copy what they do and what makes them
+strong. That's a pretty easy way to
+learn team games in general. I imagine
+the longer this game goes, the more
+that'll be the case where people are
+just copying other good teams. That
+tends to be the case in a lot of team
+games. So, you know, you open uh Sonic
+Fox stream, they're playing Echo Jinx. I
+think it's they're both really cool
+characters. It's a really strong team.
+You can just copy paste them. But let's
+say you want to build your own team
+around a character you like, right? So,
+Ahri
+that's what I did. I like Ari. One, she
+she's beautiful. Okay. Okay. we don't
+have to beat around the bush. But two,
+she's like the kind of um function that
+I like in fighting game characters. My
+first fighting game like that I took
+seriously was Street Fighter 4 where I
+played Yan. I play Cammy in Street
+Fighter 6. Now I play Millia in Guilty
+Gear. I like the characters that move
+fast and they can change their
+trajectory. I like approaching in the
+air, having different options in the
+air. Ari is pretty much the only like
+airborne character in this game. Eko a
+little bit, but not so much. So I picked
+Ari. And then from building your team
+from there, you have so so many options.
+So, like here here's the first thing I
+actually want to mention is that don't
+Juggernaut and Sidekick Fuses
+be afraid if you only like one character
+is just to try out juggernaut and
+sidekick. These let you focus on one
+character. Sidekick lets you experiment
+with other assists. That's 100% fine.
+You're not like putting yourself at a
+disadvantage because these fuses right
+now are both like good. They're both
+legitimately strong. We'll see how Riot
+handles them down the line. But
+especially right now, if you just have
+one character and you your team around
+that, all I care about is playing Ari,
+then just choose these two. It's not a
+big deal. But let's say I pick Ari and I
+Why I chose my team / Blitzcrank and Ahri Utility
+want to kind of make sure my second
+character buffs her the most, right? So,
+I went with Blitzcrank and I'll tell you
+why specifically, but I also want to
+show you that you can do so many
+different things with so many
+characters. So, the first thing to think
+about about when you're making your team
+is that what do you like want your win
+condition to be, right? Do you want to
+mix people? Do you want to have really
+strong neutral? Do you want to really
+add damage? Things like that, right? So,
+the reason I picked Blitzcrank was very
+simple is that he gives Ari a rest,
+right? I'm sure you've heard about this
+by now, but essentially what it lets Ari
+do an entirely full combo. At the end of
+it, Blitzcrank will pull them back down.
+They stand up in Ari's face and I can go
+for a high low. And that I wanted to
+build my team around just that one thing
+and then I can figure things out from
+there. And yeah, with Ari and Blitz off
+a 2L, I can do something like this.
+[Music]
+And I'm just going to save the state
+here so we can not have to do that combo
+80 times for the video. And right here
+already gets this restand where Blitz uh
+Blitz pulls Jinx into me. As you can
+see, I'm plus 53, which lets me do
+whatever I want. So, I'm going to
+restore the safe state. We'll do
+something like double high off the
+restart. We'll do something like a cross
+up. We can do something like a cross up
+into call blitz into, you know,
+whatever. Like this whole situation for
+me, I really really liked it. Like I
+like it reminds me of playing Millie and
+Guilty Gear where like you you get your
+one hit and then you're trying to mix
+them up to, you know, secure the round
+from there. So, I wanted to build my
+team around that. So, Blitzcrank
+specifically filled that purpose for me.
+Vi / Synergy and Strategy with other characters
+Now, I picked that team because that's
+how I want to play Ari. But let's say
+you don't want to play Blitz, right? You
+want to play Ari. She's fast, she's hot.
+You want to play another character
+that's also pretty fast. Okay, you can
+play Ekko. I mean, Ekko is an easy
+example because that team was used a lot
+in old beta. We'll just go with Vi,
+right? I'm going to think of something
+on the fly. Well, not really on the fly,
+but I already kind of know a strength
+that this character has. And it's worth
+noting, by the way, you should always
+assume, think about how different fuses
+interact with your characters as well. I
+like using double down with Blitz
+because I like the HCing into Blitzcrank
+because his his super one gives him um
+his full steam. So I I play neutral with
+Ari. I have Blitzcrank assist behind it.
+But if I ever need to do a super into
+super, I can bring in Blitzcrank, who
+will have full steam, which gives him an
+armored command grab. I'll have Ari
+assist behind it. And I like that as
+like a win condition, so I could play
+around that, right? But you don't have
+to take double down. So here's an
+example. I'm gonna play Ahri, but I
+don't like Blitzcrank, so I'm trying new
+other characters. So what does Vi do to
+help Ari? Well, if you've played any
+Ahri, again, maybe you played some
+juggernaut or you just tried with other
+characters. You might feel like she has
+some other weaknesses. Like for example,
+her throw doesn't feel great because her
+OTG takes way too long. A lot of
+characters get a combo here. She doesn't
+because this takes six hours. Well, Vi
+has a great OTG assist. So, even just
+doing this, I now get combos off of my
+throw. So, maybe, so maybe you're
+messing around with other characters.
+You notice some of them have really good
+OTG assist. And now you you've built
+your AI team differently than mine. I
+care a lot about the post hit mixup. You
+care a lot about playing strike throw
+now, right? Your AR is better on block
+because this is a much scarier option as
+long as you actually play around it.
+Another thing that would make your AI
+much better on block. Whereas the thing
+with my Blitzcrank strategy is that I
+have to get a hit first for it to
+matter. Whereas this helps you mix
+people up on block because throw is a
+better option. Another thing that Ari
+does to help people mix up on block very
+well, which is why I pick freestyle
+assist is she has this move her S2 that
+has 1 hour of block stun, right? So if I
+pick a character who can cross up even
+in a corner, you can get stuff like
+this.
+And I'm plus 12 here, right? And I did
+it very slow. And I I built this
+sandwich situation where I'm between two
+characters. I have freestyle assist so I
+can do some other stuff
+and I can switch back and try to go for
+high lows, whatever. Like these are
+terrible setups, but you get the point.
+Like just seeing this in motion. I've
+built a team around Ahri specifically
+that covers up one of her weaknesses,
+which is her lack of throw combos. It
+kind of buffs one of her strengths,
+which is having a very
+high block stun move, which I can now go
+for high lows with Vi, right? Vi can do
+an instant high here.
+something like this. Switch back to Ari,
+whatever. Like, I'm sure you can find
+cooler stuff. But this is what I mean by
+you want to really consider what you
+want to build your strategy around, what
+weaknesses you want to show up from your
+character, what strengths you want to
+show up from others. Let's say it's the
+opposite. You care more about Vi. Is
+Arya a good pick for you? Honestly, I
+don't know if if she would be, but one
+thing that Vi does really well, she gets
+to skip neutral with this lariat, right?
+It's very strong. So, you might want to
+pick an assist that lets you do this and
+actually combo off of it. I think Ari
+does, but it's a little difficult to
+time like this. That's strong, right?
+And and if I make theirs block
+everything with that same timing, I can
+keep my vibe plus so I can go for more
+whatever. Do you know what I mean? So
+let in both of these cases, I stuck with
+the one character I really want to play
+and I got used to what their strengths
+and weaknesses are and you can build a
+team from there depending on what other
+characters do. Now, you're going to have
+to learn a bit what other characters do,
+which I'm going to talk about in a
+second for some of them. Yeah, very,
+very easy examples here, right? One of
+my strengths skip neutral with this
+move, but not very high reward, not plus
+on block. Well, now we can be with just
+a simple assist like Ari. If you, let's
+say, you really want to play a character
+Blitzcrank
+like Blitzcrank, one thing that you'll
+notice with him is that he doesn't
+really get a combo off his command grab,
+which feels bad. Now, there is a lot of
+ways to get a combo off Blitzcrank's
+command grab, but you know, I was
+watching Broki earlier today and I was
+already thinking about making this
+video, so this was a great clip. He does
+his command grab.
+Paul's Jinxen who has a very quick otg
+goes back to Blitzcrank full combo and
+he gets to keep Blitzcrank in to kind of
+continue this stuff right with the full
+steam. And that's like if you want if
+you want to play Blitz specifically,
+this is something you might look for.
+What character can I do? What character
+can I use that'll allow me to combo my
+command grab and keep my pressure going?
+Do I need freestyle or not? You might
+not need freestyle. you might just do
+the VI thing I did earlier with um Ari,
+but that's a good example, right? Okay,
+Ekko Yasuo Jinx
+so I've talked a lot about the kind of
+theory behind it, but so let's talk
+about what some characters are actually
+offering to your team. We've already
+talked about Ari a little bit, a little
+bit of Vi. The first two, the first
+three characters I'm going to group are
+Yaso, Ekko, and Jinx. And these are a
+little bit of copout answers, but if
+you're interested in playing them and
+you want them to do something to your
+team, just play them. They're all good.
+Like they they all do so much. Yaso in
+particular just adds a lot of damage and
+he has a cross up which lets him
+sandwich very well. Right? So let's use
+my example of Ahri. I don't know why
+this gave I don't know why they gave
+this guy a grounded cross up that combos
+but you know I think of Chip and Guilty
+Gear Strive and like his Alpha Blade is
+strong but it's like so bad at comboing
+even with meter which makes it feel
+balanced to a bit and then this guy just
+does this for fun. But anyway, so let's
+say I do something like this. I crossed
+up. I can go high low. I can go I could
+switch back into Yaso. You know what I
+mean? This is very simple.
+Switch back into Yaso if I had uh
+freestyle whatever. Right. So Yaso just
+allows you to get very disgusting mixups
+because he crosses people up very
+easily. He has very high access to good
+DHCs because he can do two supers. If
+you want to play Yaso in any capacity,
+you're not sure if he'll fit your team,
+probably pick him as your point
+character and your character's assist
+will probably do something to help him
+out a bit. He's just a really strong
+character. I don't think there's much to
+really think about here. Also, his
+assist crosses up even on block, right?
+So, let's say I'm just doing something
+like this.
+If I took double down, I can do the same
+thing where I swap back to Ari now,
+right? So, as long as you're doing a
+true block string into Yasuo's assist,
+you'll always have the damage pressure
+for free. On top of that, Yaso is just a
+good character in neutral, very high
+damage. You can't go wrong adding. Ekko
+is also similar in that he has a very
+quick assist which will let you I like
+to call it rage baiting, but it's not
+literally that. But like Super Non does
+this a bunch where he'll jump with
+Darius and do like the low pull and then
+you see Darius do this like super slow
+move in the air. You want to go up there
+and hit him and then Ekko's assist is so
+fast that he just covers it quickly.
+All right, so let's say let's say we
+were playing neutral and I did this and
+you notice this is a habit I have. So
+you want to come up here and stop me.
+Well, if I just call out Ekko's assist,
+he comes out super quick. And then if
+you like try to challenge me at the
+wrong time, even if I do something like
+a troll like this move, which isn't very
+strong for some reason. Or let's say I'm
+just trying to, you know, doing stuff in
+the air, literally trying to rage bait
+you into like getting mad that I'm
+wasting your time. Well, if I if I
+quickly call Ekko, you're going to eat a
+whole combo, right? If if you're not
+ready to actually go up there and
+challenge Ari. So Ekko's very quick
+assist just helps him in general like
+win your neutral for you by like pretty
+much doing anything calling Ekko assist
+because it's so quick and then tagging
+into him if it hits. Even if they block
+it, you can tag into him. So he's just
+good at rounding up your neutral as his
+assist. But I think what he's better at
+is that if he's on point, if your
+character has any kind of lock down, you
+can get disgusting mixups with them,
+right? So even by just doing something
+super basic like calling Ari assist, I
+can get behind them. A really nice
+sandwich pressure where I can go into
+Ari for like the high. I can go into
+like Ari for the high or I could switch
+back to Ekko who has his own like
+disgusting mixups with overheads and you
+know all of his clone stuff. So Ekko
+Ekko is really good at taking advantage
+of other high blocks and assists or even
+just high blocks attacks from the other
+characters. So just like we talked about
+with Ari before,
+I went behind him on plus 18. If I
+freestyle, I can go I can even go back.
+Right. So now I'm behind them with the
+clone. I can go back to the clone to do
+some disgusting high lows, m left,
+rights, whatever. So Ekko takes
+advantage of other characters super
+well. And his very quick assist might
+not seem like anything crazy, but it's
+very good for quickly tagging your
+opponent into converting. So if either
+of those things is something that your
+other character you want to play can
+take advantage of, consider Ekko as your
+second character. All right, I'm going
+to try to go through the rest pretty
+Blitzcrank Again
+quick. Blitzcrank we already talked
+about. He has a good assist where he
+pulls people in which can lead to very
+good block strings, very good restands.
+Um, if you want to play Blitz yourself,
+try to think of characters that might be
+able to help him get his command grab
+combo. Even the rage baiting thing I was
+talking about is not bad because if
+Blitzcrank does his little spinny move
+in the air, you just call echo assist
+for someone who's like waiting for Blitz
+Jinx
+to come down, you might just tag them.
+Jinx, I mentioned earlier, I'm not going
+to go too much into her, but she has an
+amazing neutral assist. It's just her
+her rocket. It'll help you if if you
+just need better neutral, you can
+already pick her. But she has so so much
+tech where she gets the craziest
+knockdown oki with her traps. She has
+really good DHC's. Um Jinx is like a
+technical character, but if if she seems
+interesting to you at all, just pick
+her. I promise you, your character
+Braum
+probably does a lot with her. I think
+Braum does a lot for a lot of
+characters, but one of the easiest ones,
+one very easy one is if you have a very
+quick assist, like the Echo one we
+talked about, you can just pull up Braum
+shield, use that assist, and if they
+ever like did something wrong into that
+shield, you'll very easily just win
+neutral for free, swap into your other
+character. Another one is that Braum has
+one of the better neutral skips in the
+game, and you can get very easy combos
+off this, similar to what we talked
+about with Vi
+where you just call your assist behind
+it. I think Braum is a character who's
+kind of being slept on right now. A lot
+of people don't even want to try him.
+But he has very easy things to add to
+your team if you're not sure what you
+want out of a teammate, his back assist
+as well just kind of helps you when
+neutral for free because they cannot go
+through that. Yeah. So, if you need if
+you need added neutral, like you're
+having trouble dealing with projectiles,
+maybe Brahms's assist too might help a
+Vi
+lot. We talked about Vaia a little bit,
+so I don't want to go too much into her,
+but I think Vi Vi is more of a character
+that you want to build around rather
+than adding her to your team. That being
+said, you can do both, right? Like I
+mentioned with Ari earlier, if I want to
+play Ari specifically, I I can think of
+what does Ari do to help Vai, which was
+Darius
+the stuff we showed earlier. I think
+both the Darius assists are pretty good.
+He has similar to Ekko, but it's a bit
+slower. So you you would use it
+similarly, but you would just have to
+call it a bit earlier where if I'm just
+doing something that's annoying, I can
+just call my Darius assist and you get a
+full combo no matter where it hits. It's
+very easy to convert off, which is quite
+nice. It also has a lot of block stun
+for some reason. So as you can see here,
+I'm plus 18. I can just run up and go or
+I can just call Darius, switch into him
+and then do do some stuff from here.
+Right. Darius's other assist kind of
+pulls them back a little bit. So maybe
+this can help you do some tricky stuff
+with Ari. I could do something like this
+maybe where it brings them up just a
+little bit. So I can cross them up with
+a very fast high. It's hard to react to.
+But overall, I think Darius, he's just
+like a safe character to add to your
+team. He himself is very simple with
+good buttons, good neutral, very like
+long reaching lows, which is very nice
+to have because people dash back a lot
+and people retreat and guard a lot. It's
+very nice to have this move and and his
+sweep, which you can gatling into to
+catch people doing um retreating guards
+or back dashes. He's just a nice
+character to add to your team in
+general. Maybe your character helps him
+a lot. So, like I was talking about with
+the super noon example where he jumps
+and does this a lot and when people see
+this, they think they have to go up
+there and punish it. You call a very
+quick assist. You kind, you know, rage
+baited them to I don't know. I don't
+know why I love using that word in this
+regard of like baiting people to do
+something just so your assist clips
+them. He's very good at that. Same with
+his jump in like this. And yeah, so if
+you're considering using Darius, just
+there's not that much you I don't think
+there's that much specifically he's
+going to like super patch up for your
+team, but he's just a solid option,
+right? His assists are good. Not the
+best, but they're both good. His neutral
+is good. His damage is good. His DHC is
+good. He can sides swap for you if
+you're picking um double down assist and
+you have like an awkward combo where you
+sides swap by accident, you want to
+switch back, he can do that for you cuz
+one of his supers does that. Overall,
+Illaoi
+very good.
+Okay, so Illaoi is a character I think
+is being slept on quite a bit. To me,
+she might end up being one of the better
+characters in the game. For one, she has
+a massive assist, which is this. I can
+back dash full screen, do this, and it
+just covers up so much space. So, like
+it's a very good neutral winning assist.
+You can call it early cover your jump if
+you don't want to get too H. Like it
+it's just a very very strong assist.
+Super super long range. You can't go
+wrong with it. It's like I think this
+and Jinx Rocket are like the I want to
+back dash and win neutral for free
+because they just cover your entry if
+you use them.
+They're very good. They cover your jumps
+if people are sitting there trying to 28
+you while you do this because now they
+can't 28 you because they're going to
+either block or get hit, right? Um so
+this is just very good. The other thing
+about her assist her assist um one is
+that she spawns the tentacle for you
+which can actually like shure up a lot
+of characters weaknesses, right? So
+earlier I talked about how Ari's throws
+might feel bad. Well, if I just like
+let's say I did a block string where I
+called Illaoi. Now this tentacle stays
+here and my my throw will combo. Even
+though Illaoi is gone, the tentacle
+stays out there. I can do a very simple
+sequence where I'm super super plus
+here, right? Right. I'm plus 20. Ari is
+a fast character. I can run up throw
+and you get a full combo off it, right?
+Whatever your combo is. Because even
+though I gone, that tentacle stays,
+which is pretty sick. It's also worth
+noting that Illaoi can do this while
+she's on point. So, you're probably
+going to get some crazy mixups down the
+line where you get some like high low
+here, call out your other character,
+handshake tag to them for some like cool
+cool mixup, and then Illaoi's tentacle
+at state even though you swapped that
+will give you um some crazy pickups,
+right? So, I think I has a high high
+potential if you want to lab out how
+your character can make use of her
+tentacles. Very very strong. And yeah,
+Overview / Recap
+that's pretty much it. But I want to
+make it clear that that's not
+everything. Like it's it's very the one
+of the like greatest things about team
+games is that you really can like make a
+personalized team to an extent where me
+and you both want to play Ari, but we're
+not doing it for the same reason. I want
+to play Ari, but I really want to make
+sure I'm a point Ari player who has the
+greatest neutral ever. So I use Jinx as
+my assist because we talked about her
+long range rocket and then these
+character and then from there you you've
+kind of started your strategy and you go
+from there. you also find out, oh, they
+have amazing synergy with some DHC's or
+or Jinx has some crazy strings with long
+long block stun where I can call in Arya
+and do some high lows, right? But for
+me, I picked Blitz because I really like
+the restand. I really like the mixups
+his pullin gives. So, just pick the
+character you want to see the most and
+consider the things I showed what other
+character kind of enable or get or take
+advantage of the most and just choose
+any character you think might fit. I
+don't think you can go wrong. There's so
+much depth to like block strings, assist
+calls, handshake tagging. If you're
+going to pick freestyle or 2x assist,
+consider that as well, right? Maybe
+you're not too sure how Jinx fits in
+your comp, but you just pick 2x assist
+and you realize having two of these
+giant um rockets that go full stream
+just help you win neutral for free and
+then you you labed so much with Ari
+herself that that's enough, right? I
+hope I kind of helped make some of the
+characters more interesting to you. But
+I don't think you can go wrong in a lot
+of scenarios unless you're picking two
+characters who are like kind of not
+selfish, but like they're kind of
+allrounders who don't take advantage of
+the other person. Like I don't know if
+Darius and V is a good team, but both
+these characters to me seem like they
+take more advantage of what another
+character can help them do and kind of
+uh round out the comp that way. I'm sure
+they're still a fine team. stuff you can
+consider. But like if you really want to
+play VI, maybe you want to consider
+which character helps me get my mixups
+better, which character gives me more,
+which character helps me get behind them
+better and for sandwich pressures or
+which character helps me combo off my
+overhead. I mean, maybe Darius can
+anyway, but you get the point. So yeah,
+really play around with it. Really think
+about what do I want my strategy to be?
+What assists can help me do that or what
+characters can help me bring in my Ari
+to get that going? Things I talked about
+earlier like with the Illaoi pickups, I
+can now get better throw combos with
+Ari, which is something that might be
+hard for things like that. Anyway, at
+this point, I'm just yapping. I hope you
+learned something. For more 2x content,
+please let me know below what you'd like
+to see. I appreciate like, comment,
+subscription, and yeah, let me know if
+there's any other 2x stuff you want to
+see. I hope you enjoy building a team
+because it's actually really fun. And
+yeah, as I mentioned in the beginning,
+worst case scenario, just copy what some
+of the best players are doing because
+that's never a bad thing to do in
+fighting games.

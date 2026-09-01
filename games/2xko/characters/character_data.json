@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "characters": [
+    {
+      "id": "ahri",
+      "name": "Ahri",
+      "title": "The Nine-Tailed Fox",
+      "region": "Ionia",
+      "description": "Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence.",
+      "portrait": "/assets/games/2xko/characters/ahri.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ahri/",
+      "archetypes": ["Rushdown"],
+      "strengths": [
+        "Mobile offense built around orb control and multi-angle pressure.",
+        "Can threaten movement, whiff punishment, and pressure resets.",
+        "Official kit emphasizes mobility and magical zoning tools."
+      ],
+      "weaknesses": [
+        "Partner-dependent",
+        "Lacks hard CC and can be easily burst down."
+      ]
+    },
+    {
+      "id": "blitzcrank",
+      "name": "Blitzcrank",
+      "title": "The Mountain's Might",
+      "region": "Bilgewater",
+      "description": "Blitzcrank is a hulking, earthbound giant who can throw his massive hammer to control and disable enemies.",
+      "portrait": "/assets/games/2xko/characters/blitzcrank.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/blitzcrand/",
+      "archetypes": ["Tank", "Disabler"],
+      "strengths": [
+        "High sustain and crowd control",
+        "Can initiate or disrupt enemy formations"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to burst damage"
+      ]
+    },
+    {
+      "id": "braum",
+      "name": "Braum",
+      "title": "The Mountain's Might",
+      "region": "Bilgewater",
+      "description": "Braum is a hulking, earthbound giant who can throw his massive hammer to control and disable enemies.",
+      "portrait": "/assets/games/2xko/characters/braum.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/braum/",
+      "archetypes": ["Tank", "Disabler"],
+      "strengths": [
+        "High sustain and crowd control",
+        "Can initiate or disrupt enemy formations"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to burst damage"
+      ]
+    },
+    {
+      "id": "darius",
+      "name": "Darius",
+      "title": "The Bloodthirsty",
+      "region": "Noxian",
+      "description": "Darius is a ruthless Noxian warrior who wields a massive cleaver to crush his enemies.",
+      "portrait": "/assets/games/2xko/characters/darius.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/darius/",
+      "archetypes": ["Burst", "Damage Dealer"],
+      "strengths": [
+        "High burst damage",
+        "Can quickly eliminate enemies"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to crowd control"
+      ]
+    },
+    {
+      "id": "ekko",
+      "name": "Ekko",
+      "title": "The Time Traveler",
+      "region": "Shurima",
+      "description": "Ekko is a time-traveling warrior who can rewind time to undo his mistakes and gain an advantage in battle.",
+      "portrait": "/assets/games/2xko/characters/ekko.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/ekko/",
+      "archetypes": ["Rushdown", "Disabler"],
+      "strengths": [
+        "Can rewind time to undo mistakes",
+        "High mobility and repositioning"
+      ],
+      "weaknesses": [
+        "Time rewind has a cooldown",
+        "Vulnerable to burst damage"
+      ]
+    },
+    {
+      "id": "illaoi",
+      "name": "Illaoi",
+      "title": "The Sea Witch",
+      "region": "Zaun",
+      "description": "Illaoi is a sea witch who wields a massive trident to control and disable enemies.",
+      "portrait": "/assets/games/2xko/characters/illaoi.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/illaoi/",
+      "archetypes": ["Disabler", "Control"],
+      "strengths": [
+        "High crowd control",
+        "Can control enemy movement"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to burst damage"
+      ]
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "title": "The Christmas Terror",
+      "region": "Bilgewater",
+      "description": "Jinx is a mischievous and dangerous criminal who wields a massive cannon to destroy everything in her path.",
+      "portrait": "/assets/games/2xko/characters/jinx.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/jinx/",
+      "archetypes": ["Burst", "Damage Dealer"],
+      "strengths": [
+        "High burst damage",
+        "Can quickly eliminate enemies"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to crowd control"
+      ]
+    },
+    {
+      "id": "vi",
+      "name": "Vi",
+      "title": "The Iron Will",
+      "region": "Bilgewater",
+      "description": "Vi is a skilled and determined blacksmith who wields a massive hammer to crush her enemies.",
+      "portrait": "/assets/games/2xko/characters/vi.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/vi/",
+      "archetypes": ["Tank", "Disabler"],
+      "strengths": [
+        "High sustain and crowd control",
+        "Can initiate or disrupt enemy formations"
+      ],
+      "weaknesses": [
+        "Low mobility",
+        "Vulnerable to burst damage"
+      ]
+    },
+    {
+      "id": "yasuo",
+      "name": "Yasuo",
+      "title": "The Wind Serpent",
+      "region": "Shurima",
+      "description": "Yasuo is a skilled and determined warrior who wields a massive blade to cut through his enemies.",
+      "portrait": "/assets/games/2xko/characters/yasuo.png",
+      "sourceUrl": "https://2xko.riotgames.com/en-us/champions/yasuo/",
+      "archetypes": ["Rushdown", "Damage Dealer"],
+      "strengths": [
+        "High mobility and repositioning",
+        "Can quickly eliminate enemies"
+      ],
+      "weaknesses": [
+        "Low sustain",
+        "Vulnerable to crowd control"
+      ]
+    }
+  ]
+}
