@@ -1,12 +1,12 @@
 {
   "project_id": "riftlab",
   "project_root": "C:\\Users\\Tora\\Documents\\DBFZ TEAM BUILDER",
-  "scanned_at": "2026-09-01T04:34:07",
+  "scanned_at": "2026-09-01T04:45:32",
   "framework": {
     "framework": "Node",
     "language": "JavaScript"
   },
-  "file_count": 303,
+  "file_count": 311,
   "files": [
     {
       "path": "admin-panel.md",
@@ -674,6 +674,20 @@
       "preview": "const curated = {\n  \"dbs-broly\": {\n    name: \"DBS Broly\",\n    aliases: [\"sbroly\", \"s broly\", \"super broly\"],\n    color: \"#7fd36b\",\n    status: \"polished\",\n    roles: [\"Mid\", \"Anchor\", \"Damage\"],\n    archetype: \"Strike-throw bruiser with giant reward, meter build, and great DHC value.\",\n    strengths: [\n      \"Huge damage and meter build, especially through long routes and auto-combo routing.\",\n      \"Level 3 powers him up with damage, armor-break state, and passive ki generation.\",\n      \"Long buttons, armor on key tools, command grabs, and strong strike-throw pressure.\",\n      \"B assist covers a valuable diagonal-up angle that many teams appreciate.\",\n    ],\n    weaknesses: [\n      \"Not a true high-low monster; his main threat is strike-throw and frame-trap fear.\",\n      \"Some neutral tools are committal or predictable if repeated.\",\n      \"He wants a meter plan so he can enter after DHC into level 3 and snowball.\",\n    ],\n    wants: [\"neutral cover\", \"fast lockdown\", \"meter plan\", \"defensive cover\"],\n    metrics: { damage: 10, neutral: 7, mix: 7, support: 7, ease: 5 },\n  },\n  \"android-18\": {\n    name: \"Android 18\",\n    aliases: [\"18\", \"a18\"],\n    color: \"#7dd3fc\",\n    status: \"polished\",\n    roles: [\"Mid\", \"Support\", \"Mix\"],\n    archetype: \"Support/mix character built around 17 calls, barrier safety, and elite level 3 positioning.\",\n    strengths: [\n      \"One of the best level 3 mix situations because the spacing works from basically anywhere.\",\n      \"Barrier assist protects risky movement and lets rushdown characters force awkward decisions.\",\n      \"17 calls add neutral cover, combo routes, lockdown, and layered pressure.\",\n      \"Strong lows and j.M left-right pressure make her assist-backed mix very scary.\",\n    ],\n    weaknesses: [\n      \"Some 17 call pressure is timing-specific and can get loose if the assist spacing is wrong.\",\n      \"Barrier is powerful but punishable if it becomes predictable.\",\n      \"B assist has modest blockstun, so tight mix is easi"
     },
     {
+      "path": "characters.html",
+      "name": "characters.html",
+      "size": 1725,
+      "modified": 1788230728.9659681,
+      "tags": [
+        "fighter",
+        "picker",
+        "style"
+      ],
+      "imports": [],
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Marvel Tokon Characters</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"index.html\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Marvel Tokon Characters</h2>\n      <ul>\n        <li><a href=\"\">Deadpool</a></li>\n        <li><a href=\"\">Loki</a></li>\n        <li><a href=\"\">Carnage</a></li>\n        <li><a href=\"\">Phoenix Cyclops</a></li>\n        <li><a href=\"\">Blade</a></li>\n        <li><a href=\"\">Magneto</a></li>\n        <li><a href=\"\">Hulk</a></li>\n        <li><a href=\"\">Black Panther</a></li>\n        <li><a href=\"\">Spider-Man</a></li>\n        <li><a href=\"\">Ms. Marvel</a></li>\n        <li><a href=\"\">Ghost Rider</a></li>\n        <li><a href=\"\">Wolverine</a></li>\n        <li><a href=\"\">Storm</a></li>\n        <li><a href=\"\">Peni Parker</a></li>\n        <li><a href=\"\">Captain America</a></li>\n        <li><a href=\"\">Iron Man</a></li>\n        <li><a href=\"\">Doctor Doom</n>\n        <li><a href=\"\">Green Goblin</a></li>\n        <li><a href=\"\">Star-Lord</a></li>\n        <li><a href=\"\">Phoenix</a></li>\n      </ul>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
+    },
+    {
       "path": "CLOUDFLARE_PAGES.md",
       "name": "CLOUDFLARE_PAGES.md",
       "size": 1617,
@@ -699,6 +713,20 @@
       "preview": "# Community Intelligence Roadmap\n\nFuture feature for improving DBFZ Team Lab from Discord discussions.\n\n## Input Sources\n\n- Discord screenshots\n- Discord chat logs\n- Character discussion threads\n- Team-building conversations\n\n## Extraction Goals\n\nThe system should detect and extract:\n\n- Character names\n- Team compositions\n- Synergy discussions\n- Strengths and weaknesses\n- Matchup opinions\n- Repeated community opinions\n\n## Output Shape\n\nEach import should create concise findings per character and per team composition.\n\nExample:\n\n```text\nCharacter:\nJanemba\n\nCommunity Findings:\n- Strong neutral assist.\n- Frequently paired with Android 18.\n- Often recommended for pressure teams.\n\nAI Summary:\nCommunity feedback suggests Janemba is valued primarily for assist utility, pressure support, and conversion potential.\n```\n\n## Storage Targets\n\n- Per-character community notes\n- Per-team composition findings\n- Common partner recommendations\n- Common warnings or matchup concerns\n- Source references for later review\n\n## Product Goal\n\nUse real community discussion to continuously improve character pages, team recommendations, synergy explanations, and matchup notes.\n\n## Feature Backlog From Community Feedback\n\n### Synergy Tags\n\nAdd searchable tags for characters, assists, and team concepts.\n\nExamples:\n\n- long blockstun\n- level 1 DHC synergy\n- neutral assist\n- pressure support\n- meter hungry\n- strong anchor\n- barrier safety\n- high-low setup\n- conversion assist\n\nTags should be usable as filters and should also explain why a partner is recommended.\n\n### Character Pages\n\nBuild a dedicated character page/view for each fighter.\n\nEach page should include:\n\n- polished summary\n- roles and tags\n- wants from a team\n- best partners\n- good partners\n- works but needs care\n- assist notes\n- team examples\n- community findings\n- frame-data links or imported frame-data summaries\n\n### Dustloop / Frame Data Workflow\n\nDustloop likely has much of the frame data needed, but the site should not depend on live"
     },
     {
+      "path": "contact.html",
+      "name": "contact.html",
+      "size": 1133,
+      "modified": 1788230728.9761374,
+      "tags": [
+        "fighter",
+        "picker",
+        "style"
+      ],
+      "imports": [],
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Contact</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"index.html\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Contact Us</h2>\n      <p>If you have any questions or need assistance, please feel free to reach out to us.</p>\n      <ul>\n        <li>Email: <a href=\"mailto:contact@riftlab.com\">contact@riftlab.com</a></li>\n        <li>Phone: (123) 456-7890</li>\n        <li>Address: 123 RiftLab Street, Digital City, DC 20001</li>\n      </ul>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
+    },
+    {
       "path": "DEPLOY.md",
       "name": "DEPLOY.md",
       "size": 1757,
@@ -721,24 +749,32 @@
       "preview": "## 🧑‍ Fighter Analysis\n\n### 1. **[Character Name]**\n- **Role:** [Opens/Stabilizes/Anchors/Cashes Out]\n- **Strengths:** [Key strengths or archetype]\n- **Wants:** [Partner needs or support required]\n- **Contribution:** [Team contribution line]\n\n### 2. **[Character Name]**\n- **Role:** [Opens/Stabilizes/Anchors/Cashes Out]\n- **Strengths:** [Key strengths or archetype]\n- **Wants:** [Partner needs or support required]\n- **Contribution:** [Team contribution line]\n\n### 3. **[Character Name]**\n- **Role:** [Opens/Stabilizes/Anchors/Cashes Out]\n- **Strengths:** [Key strengths or archetype]\n- **Wants:** [Partner needs or support required]\n- **Contribution:** [Team contribution line]"
     },
     {
-      "path": "index.html",
-      "name": "index.html",
-      "size": 36699,
-      "modified": 1782938980.0386121,
+      "path": "guides.html",
+      "name": "guides.html",
+      "size": 1089,
+      "modified": 1788230728.971028,
       "tags": [
         "fighter",
-        "mobile",
         "picker",
-        "state",
         "style"
       ],
       "imports": [],
-      "exports": [
-        "base",
-        "configuredBase",
-        "value"
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Guides</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"index.html\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Guides and Resources</h2>\n      <ul>\n        <li><a href=\"\">Character Roster</a></li>\n        <li><a href=\"\">Team Breakdowns</a></li>\n        <li><a href=\"\">Gameplay Tips</a></li>\n        <li><a href=\"\">Tier Lists</a></li>\n        <li><a href=\"\">News and Updates</a></li>\n      </ul>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
+    },
+    {
+      "path": "index.html",
+      "name": "index.html",
+      "size": 1028,
+      "modified": 1788230728.950436,
+      "tags": [
+        "fighter",
+        "picker",
+        "style"
       ],
-      "preview": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <title>FG Lab</title>\n    <script>\n      const configuredBase = \"__FG_LAB_BASE_PATH__\";\n      const base = document.createElement(\"base\");\n      base.href = configuredBase.startsWith(\"__\")\n        ? (window.location.protocol === \"file:\" ? \"./\" : \"/\")\n        : configuredBase;\n      document.head.append(base);\n      window.FG_LAB_BASE_PATH = configuredBase.startsWith(\"__\") ? \"/\" : configuredBase;\n      window.FG_LAB_ASSET_PATH = (path) => {\n        const value = String(path || \"\");\n        if (/^(?:https?:|data:|blob:)/.test(value)) return value;\n        if (window.location.protocol === \"file:\") return value.replace(/^\\/+/, \"\");\n        if (window.FG_LAB_BASE_PATH !== \"/\" && value.startsWith(window.FG_LAB_BASE_PATH)) return value;\n        return `${window.FG_LAB_BASE_PATH}${value.replace(/^\\/+/, \"\")}`;\n      };\n    </script>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <link rel=\"stylesheet\" href=\"research-vault.css\" />\n  </head>\n  <body>\n    <main id=\"platformHome\" class=\"platform-shell platform-home\">\n      <header class=\"platform-topbar\">\n        <a class=\"platform-brand\" href=\"/\" data-route=\"/\">\n          <strong>FG</strong>\n          <span>Lab</span>\n        </a>\n        <a href=\"/roadmap\" data-route=\"/roadmap\">Roadmap</a>\n      </header>\n      <section class=\"platform-hero\">\n        <div>\n          <p class=\"eyebrow\">Fighting Game Knowledge Platform</p>\n          <h1>Choose Your Lab</h1>\n          <p>Build teams quickly, then study the system behind them. Each game keeps its own tools, data, and visual identity.</p>\n        </div>\n      </section>\n      <section class=\"platform-game-section\" aria-labelledby=\"gameSelectTitle\">\n        <header>\n          <p class=\"eyebrow\">Game Select</p>\n          <h2 id=\"gameSelectTitle\">Enter A Lab</h2>\n        </header>\n        <div id=\"gameCardGrid\" class=\"platform-game-"
+      "imports": [],
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Marvel Tokon: Fighting Souls</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Welcome to RiftLab</h2>\n      <p>Explore the world of Marvel Tokon: Fighting Souls, the groundbreaking tag team fighting game developed in collaboration by PlayStation Studios, Arc System Works, and Marvel Games.</p>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
     },
     {
       "path": "knowledge-ingestion.js",
@@ -830,6 +866,20 @@
         "values"
       ],
       "preview": "(() => {\n  const storageKey = \"fg-lab:2xko-knowledge-store:v1\";\n  const sourceTypes = [\"YouTube Video\", \"Transcript Text\", \"Community Notes\", \"Tournament Notes\", \"Manual Notes\"];\n  const knowledgeKinds = [\n    [\"character-summary\", \"Character summaries\"],\n    [\"synergy-note\", \"Synergy notes\"],\n    [\"team-recommendation\", \"Team recommendations\"],\n    [\"neutral-concept\", \"Neutral concepts\"],\n    [\"combo-concept\", \"Combo concepts\"],\n    [\"fuse-discussion\", \"Fuse discussions\"],\n    [\"matchup-discussion\", \"Matchup discussions\"],\n  ];\n  const synergyFields = [\n    [\"strength\", \"Strengths\"],\n    [\"weakness\", \"Weaknesses\"],\n    [\"win-condition\", \"Win Condition\"],\n    [\"recommended-fuse\", \"Recommended Fuse\"],\n    [\"combo-synergy\", \"Combo Synergy\"],\n    [\"neutral-synergy\", \"Neutral Synergy\"],\n    [\"defensive-synergy\", \"Defensive Synergy\"],\n  ];\n  const state = {\n    container: null,\n    page: null,\n    seed: { sources: [], extractedKnowledge: [] },\n    local: { sources: [], extractedKnowledge: [] },\n    characters: [],\n    loaded: false,\n    error: \"\",\n    filters: { query: \"\", character: \"all\", kind: \"all\", sourceType: \"all\" },\n    selectedPair: [],\n  };\n\n  const escapeHtml = (value) => String(value ?? \"\")\n    .replaceAll(\"&\", \"&amp;\")\n    .replaceAll(\"<\", \"&lt;\")\n    .replaceAll(\">\", \"&gt;\")\n    .replaceAll('\"', \"&quot;\")\n    .replaceAll(\"'\", \"&#039;\");\n\n  async function load(game, characters = []) {\n    state.characters = characters;\n    state.local = loadLocalStore();\n    try {\n      const root = String(game?.dataRoot || \"/public/data/2xko\").replace(/\\/$/, \"\");\n      const file = game?.dataFiles?.knowledgeStore || \"knowledge-store.json\";\n      const source = window.FG_LAB_ASSET_PATH?.(`${root}/${file}`) || `${root}/${file}`;\n      const response = await fetch(source);\n      if (!response.ok) throw new Error(`Knowledge store returned HTTP ${response.status}.`);\n      const data = await response.json();\n      state.seed = normalizeStore(data);\n    } catch (error) {\n      st"
+    },
+    {
+      "path": "news.html",
+      "name": "news.html",
+      "size": 996,
+      "modified": 1788230728.9730396,
+      "tags": [
+        "fighter",
+        "picker",
+        "style"
+      ],
+      "imports": [],
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - News</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"index.html\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Latest News</h2>\n      <ul>\n        <li><a href=\"\">New Character Release</a></li>\n        <li><a href=\"\">Game Update v1.2</a></li>\n        <li><a href=\"\">Community Spotlight</a></li>\n      </ul>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
     },
     {
       "path": "package-lock.json",
@@ -1174,18 +1224,14 @@
     {
       "path": "styles.css",
       "name": "styles.css",
-      "size": 118140,
-      "modified": 1783179335.7399476,
+      "size": 917,
+      "modified": 1788230728.9629252,
       "tags": [
-        "fighter",
-        "mobile",
-        "picker",
-        "state",
         "style"
       ],
       "imports": [],
       "exports": [],
-      "preview": ":root {\n  color-scheme: dark;\n  --hero-image: linear-gradient(135deg, #19130f, #0b1115);\n  --bg: #090b0e;\n  --panel: rgba(18, 19, 24, 0.82);\n  --panel-solid: #15171d;\n  --ink: #f6f2e8;\n  --muted: #a8aeb7;\n  --line: rgba(255, 255, 255, 0.13);\n  --gold: #ffd166;\n  --orange: #ff6b35;\n  --blue: #58c7f3;\n  --green: #83d483;\n  --pink: #e55d75;\n  --damage: #ff6b35;\n  --neutral: #58c7f3;\n  --mix: #ffd166;\n  --support: #83d483;\n  --shadow: rgba(0, 0, 0, 0.52);\n}\n\n* {\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  height: 100%;\n  overflow-x: hidden;\n}\n\nbody {\n  margin: 0;\n  background:\n    radial-gradient(circle at 18% 14%, rgba(255, 177, 40, 0.13), transparent 22rem),\n    radial-gradient(circle at 88% 18%, rgba(136, 83, 255, 0.18), transparent 22rem),\n    linear-gradient(135deg, #05070a, #101018 52%, #070b10);\n  color: var(--ink);\n  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n  overflow: hidden;\n}\n\n.platform-shell[hidden],\n.app-shell[hidden] {\n  display: none !important;\n}\n\nbody.platform-page-active {\n  height: auto;\n  min-height: 100%;\n  overflow: auto;\n}\n\n.platform-shell {\n  min-height: 100dvh;\n  display: grid;\n  align-content: start;\n  gap: 24px;\n  padding: 0 clamp(16px, 4vw, 64px) 56px;\n  background:\n    linear-gradient(180deg, rgba(4, 7, 12, 0.32), rgba(4, 7, 12, 0.92)),\n    repeating-linear-gradient(112deg, transparent 0 15px, rgba(255, 255, 255, 0.025) 16px 17px),\n    #080b11;\n}\n\n.platform-topbar,\n.game-portal-topbar {\n  min-height: 66px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 20px;\n  border-bottom: 1px solid var(--line);\n}\n\n.platform-topbar > a:last-child,\n.game-portal-nav a {\n  color: var(--muted);\n  font-size: 12px;\n  font-weight: 900;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n\n.platform-topbar > a:last-child:hover,\n.game-portal-nav a:hover,\n.game-portal-nav a[aria-current=\"page\"] {\n  color: var(--gold);\n}\n\n.platform-brand,\n.brand-button {\n  border: 0;\n"
+      "preview": "body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 0;\n  background-color: #f4f4f4;\n}\n\nheader {\n  background-color: #333;\n  color: #fff;\n  padding: 10px 20px;\n}\n\nheader h1 {\n  margin: 0;\n}\n\nnav ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  justify-content: space-around;\n}\n\nnav ul li a {\n  color: #fff;\n  text-decoration: none;\n  padding: 10px 20px;\n  transition: background-color 0.3s;\n}\n\nnav ul li a:hover {\n  background-color: #555;\n}\n\nmain {\n  padding: 20px;\n}\n\nfooter {\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  padding: 10px 20px;\n  margin-top: 20px;\n}\n\nsection {\n  background-color: #fff;\n  padding: 20px;\n  margin-bottom: 20px;\n  border-radius: 8px;\n}\n\nsection h2 {\n  margin-top: 0;\n}\n\na {\n  color: #007BFF;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}"
     },
     {
       "path": "synergy-engine.js",
@@ -1279,6 +1325,20 @@
       "imports": [],
       "exports": [],
       "preview": "## 📌 Team Summary\n\n**Locked Fighters:** [Number]/3 fighters selected\n**Recommended Order:** [Dynamic text based on team composition]"
+    },
+    {
+      "path": "teams.html",
+      "name": "teams.html",
+      "size": 1112,
+      "modified": 1788230728.967982,
+      "tags": [
+        "fighter",
+        "picker",
+        "style"
+      ],
+      "imports": [],
+      "exports": [],
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Marvel Tokon Teams</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"index.html\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Marvel Tokon Teams</h2>\n      <ul>\n        <li><a href=\"\">Unbreakable X-Men</a></li>\n        <li><a href=\"\">Amazing Guardians</a></li>\n        <li><a href=\"\">Fighting Avengers</a></li>\n        <li><a href=\"\">Knights of Doom</a></li>\n        <li><a href=\"\">Samurai Outriders</a></li>\n      </ul>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
     },
     {
       "path": "tournament-evidence.js",
@@ -4707,6 +4767,36 @@
       "imports": [],
       "exports": [],
       "preview": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://fg-lab.local/schemas/synergy-entry.json\",\n  \"title\": \"FG Lab Synergy Entry\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\"team\", \"rating\", \"difficulty\", \"playstyles\", \"strengths\", \"weaknesses\", \"recommendedFuses\", \"routes\", \"notes\", \"sources\", \"verified\"],\n  \"properties\": {\n    \"team\": {\n      \"type\": \"array\",\n      \"minItems\": 2,\n      \"items\": { \"type\": \"string\" }\n    },\n    \"rating\": { \"type\": [\"number\", \"null\"], \"minimum\": 1, \"maximum\": 10 },\n    \"difficulty\": { \"type\": [\"string\", \"null\"] },\n    \"playstyles\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"strengths\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"weaknesses\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"recommendedFuses\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"routes\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"notes\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"string\" }\n    },\n    \"sources\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"object\" }\n    },\n    \"verified\": { \"type\": \"boolean\" }\n  }\n}\n"
+    },
+    {
+      "path": "RiftLab/config/game_launcher.json",
+      "name": "game_launcher.json",
+      "size": 99,
+      "modified": 1788230105.5460742,
+      "tags": [],
+      "imports": [],
+      "exports": [],
+      "preview": "This file will ensure the game launcher loads Marvel Tokon first and hides 2XKO from the main menu."
+    },
+    {
+      "path": "RiftLab/config/game_settings.json",
+      "name": "game_settings.json",
+      "size": 69,
+      "modified": 1788230105.5445647,
+      "tags": [],
+      "imports": [],
+      "exports": [],
+      "preview": "This file will set Marvel Tokon as the default game and disable 2XKO."
+    },
+    {
+      "path": "RiftLab/config/legacy_mods.json",
+      "name": "legacy_mods.json",
+      "size": 85,
+      "modified": 1788230105.5491145,
+      "tags": [],
+      "imports": [],
+      "exports": [],
+      "preview": "This file will list all 2XKO mods and assets that are preserved in the legacy folder."
     },
     {
       "path": "scripts/build-static.js",
