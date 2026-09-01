@@ -1,7 +1,7 @@
 {
   "project_id": "riftlab",
   "project_root": "C:\\Users\\Tora\\Documents\\DBFZ TEAM BUILDER",
-  "scanned_at": "2026-09-01T04:45:32",
+  "scanned_at": "2026-09-01T04:52:06",
   "framework": {
     "framework": "Node",
     "language": "JavaScript"
@@ -765,8 +765,8 @@
     {
       "path": "index.html",
       "name": "index.html",
-      "size": 1028,
-      "modified": 1788230728.950436,
+      "size": 970,
+      "modified": 1788231126.1141326,
       "tags": [
         "fighter",
         "picker",
@@ -774,7 +774,7 @@
       ],
       "imports": [],
       "exports": [],
-      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Marvel Tokon: Fighting Souls</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"\">Home</a></li>\n        <li><a href=\"characters.html\">Characters</a></li>\n        <li><a href=\"teams.html\">Teams</a></li>\n        <li><a href=\"guides.html\">Guides</a></li>\n        <li><a href=\"news.html\">News</a></li>\n        <li><a href=\"contact.html\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Welcome to RiftLab</h2>\n      <p>Explore the world of Marvel Tokon: Fighting Souls, the groundbreaking tag team fighting game developed in collaboration by PlayStation Studios, Arc System Works, and Marvel Games.</p>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
+      "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>RiftLab - Marvel Tokon: Fighting Souls</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <h1>RiftLab</h1>\n    <nav>\n      <ul>\n        <li><a href=\"\">Home</a></li>\n        <li><a href=\"characters\">Characters</a></li>\n        <li><a href=\"teams\">Teams</a></li>\n        <li><a href=\"guides\">Guides</a></li>\n        <li><a href=\"news\">News</a></li>\n        <li><a href=\"community\">Community</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h2>Welcome to RiftLab</h2>\n      <p>Explore the world of <strong>Marvel Tokon: Fighting Souls</strong> with our comprehensive guides, character profiles, and community resources.</p>\n    </section>\n  </main>\n  <footer>\n    <p>&copy; 2026 RiftLab. All rights reserved.</p>\n  </footer>\n</body>\n</html>"
     },
     {
       "path": "knowledge-ingestion.js",
@@ -1224,14 +1224,15 @@
     {
       "path": "styles.css",
       "name": "styles.css",
-      "size": 917,
-      "modified": 1788230728.9629252,
+      "size": 889,
+      "modified": 1788231126.1186814,
       "tags": [
+        "mobile",
         "style"
       ],
       "imports": [],
       "exports": [],
-      "preview": "body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 0;\n  background-color: #f4f4f4;\n}\n\nheader {\n  background-color: #333;\n  color: #fff;\n  padding: 10px 20px;\n}\n\nheader h1 {\n  margin: 0;\n}\n\nnav ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  justify-content: space-around;\n}\n\nnav ul li a {\n  color: #fff;\n  text-decoration: none;\n  padding: 10px 20px;\n  transition: background-color 0.3s;\n}\n\nnav ul li a:hover {\n  background-color: #555;\n}\n\nmain {\n  padding: 20px;\n}\n\nfooter {\n  background-color: #333;\n  color: #fff;\n  text-align: center;\n  padding: 10px 20px;\n  margin-top: 20px;\n}\n\nsection {\n  background-color: #fff;\n  padding: 20px;\n  margin-bottom: 20px;\n  border-radius: 8px;\n}\n\nsection h2 {\n  margin-top: 0;\n}\n\na {\n  color: #007BFF;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}"
+      "preview": "body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 0;\n  background-color: #f4f4f4;\n}\n\nheader {\n  background-color: #333;\n  color: #fff;\n  padding: 1rem;\n  text-align: center;\n}\n\nnav ul {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  gap: 1rem;\n}\n\nnav ul li a {\n  color: #fff;\n  text-decoration: none;\n  font-weight: bold;\n}\n\nmain {\n  padding: 2rem;\n  max-width: 1200px;\n  margin: auto;\n}\n\nsection {\n  background-color: #fff;\n  padding: 1.5rem;\n  margin-bottom: 2rem;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}\n\nfooter {\n  text-align: center;\n  padding: 1rem;\n  background-color: #333;\n  color: #fff;\n  margin-top: 2rem;\n}\n\n/* Responsive Design */\n@media (max-width: 768px) {\n  nav ul {\n    flex-direction: column;\n    align-items: center;\n  }\n}"
     },
     {
       "path": "synergy-engine.js",
